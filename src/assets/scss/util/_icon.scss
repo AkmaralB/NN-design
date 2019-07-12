@@ -1,0 +1,41 @@
+// SVG icons align
+// ---------------
+@include b(icon) {
+    display: inline-flex;
+    align-self: center;
+    position: relative;
+    height: 1em;
+    width: 1em;
+    @include e(svg) {
+        height:1em;
+        width:1em;
+    }
+    @include m(baseline) {        
+        @include e(svg) {
+            position: absolute;
+            bottom: -0.125em;
+        }
+    }
+    @include m(status) {        
+        @include e(svg) {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    @include m(medium) {
+        font-size: 16px;
+    }
+    @include m(large) {
+        font-size: 22px;
+    }
+    @include m(sort) {
+        vertical-align: middle;      
+        fill: #999;
+        transform: rotate(90deg);
+    }
+    @include m(sort-asc) {
+        vertical-align: middle;      
+        fill: #999;
+        transform: rotate(270deg);
+    }
+}
