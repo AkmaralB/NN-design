@@ -1,0 +1,19 @@
+$breakpoints: (
+	'small': ( max-width: 375px ),
+	'medium': ( max-width: 768px ),
+	'landscape': ( max-width: 1024px ),
+	'large': ( max-width: 1400px )
+) !default;
+
+@mixin respond-to($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	}
+ 
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+		+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}

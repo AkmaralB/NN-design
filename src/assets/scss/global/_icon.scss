@@ -1,0 +1,19 @@
+// SVG icons align
+// ---------------
+@include b(icon) {
+    display: inline-block;
+    align-self: center;
+    position: relative;
+    height: 1em;
+    width: 1em;
+    @include e(svg) {
+        height:1em;
+        width:1em;
+    }
+    @include m(baseline) {
+        @include e(svg) {
+            position: absolute;
+            bottom: -0.125em;
+        }
+    }
+}

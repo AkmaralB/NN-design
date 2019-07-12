@@ -1,4 +1,4 @@
-# GoCargo WebApp Template
+# Boilerplate WebApp Template based on Foundation Zurb Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
@@ -6,6 +6,8 @@
 - Sass compilation and prefixing
 - BEM naming mixins
 - Flex mixins
+- Breakpoints mixin
+- Icon grid system for SVG icons
 - JavaScript module bundling with webpack
 - Built-in BrowserSync server
 - For production builds:
@@ -26,7 +28,7 @@ To use this template, your computer needs:
 To manually set up the template, first download it with Git:
 
 ```bash
-git clone https://gitlab.com/M3etis/ecargo.git
+git clone https://gitlab.com/M3etis/boilerplate.git
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
