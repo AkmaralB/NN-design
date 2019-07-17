@@ -1,0 +1,13 @@
+@include b(layout) {
+    @include flex;
+    @include flex-direction(column);
+    @include e(header) {
+        flex: 0 0 auto;
+    }
+    @include e(body) {
+        flex: 1 1 auto;
+    }
+    @include e(footer) {
+        flex: 0 0 auto;
+    }
+}

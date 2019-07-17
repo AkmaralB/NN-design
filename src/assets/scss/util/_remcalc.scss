@@ -1,0 +1,16 @@
+// Function 
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+// Font Mixin
+@mixin fontSize($size) {
+    font-size: $size; //Fallback in px
+    font-size: calculateRem($size);
+}
+
+// Usage
+// h1 {
+//   @include fontSize(32px);
+// }

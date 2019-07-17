@@ -1,10 +1,11 @@
 @charset 'utf-8';
 
 // Utils
-@import 'normalize/normalize';
+@import 'util/normalize/normalize';
 @import 'settings';
 @import 'util/bem-mixin';
 @import 'util/flex';
+@import 'util/remcalc';
 @import 'util/breakpoints';
 
 // Global
