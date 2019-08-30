@@ -1,6 +1,7 @@
 @include b(layout) {
     @include flex;
     @include flex-direction(column);
+    @include flex-align(left, middle);
     @include e(header) {
         flex: 0 0 auto;
     }

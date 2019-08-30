@@ -1,0 +1,32 @@
+@include b(section1) {
+    @include flex;
+    @include flex-direction(row);
+    width: calc(1150px + 290px);
+    height: 557px;
+
+
+    @include e(menu) {
+        @include flex;
+        flex: 0 0 145px;
+        width: 145px;
+    }
+
+    
+    @include e(img) {
+        flex: 1 1 auto;
+
+        @include m(img1) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @include e(social) {
+        flex: 0 0 145px;
+
+        @include m(icon) {
+            display: block;
+        }
+    }
+
+
+}

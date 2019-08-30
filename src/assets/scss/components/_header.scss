@@ -1,0 +1,49 @@
+@include b(header) {
+    width: 100%;
+    height: 113px;
+    @include e(container) {
+        @include flex;
+        @include flex-direction(row);
+        width: calc(1150px + 290px);
+    }
+    @include e(logo) {
+        flex: 0 0 145px;
+    }
+    @include e(logo-src) {
+        width: 40.32px;
+        height: 32.56px;
+        margin-left: 46px;
+        margin-top: 25px;
+    }
+    @include e(divider) {
+        flex: 1 1 auto;
+
+        @include m(elem) {
+            width: 341px;
+            height: 0px;
+            margin-top: 49px;
+
+            border: 2px solid #333333;
+        }
+            
+    }
+    
+    @include e(button) {
+        flex: 0 0 126px;
+        margin-right: 145px;
+        margin-top: 49px;
+        
+
+        @include m(elem) {
+            width: 126px;
+            height: 32px;
+            text-align: center;
+            border: 1px solid #000000;
+            border-radius: 16px;
+            background-color: transparent;
+        }
+           
+    
+        
+    }
+}

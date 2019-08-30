@@ -1,0 +1,19 @@
+@include b(menu1) {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    // transform-origin: 0 0;
+    transform: rotate(-90deg);
+    height: 18px;
+    margin-top: 243px;
+    margin-left: -90px;
+    
+    @include e(item) {
+        margin-right: 48px;
+        list-style: none;
+        font-size: 14px;
+        color: #222222;
+    }
+
+}
