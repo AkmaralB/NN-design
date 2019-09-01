@@ -2,6 +2,8 @@
     @include flex;
     @include flex-direction(column);
     @include flex-align(left, middle);
+    background: #F2F2F2;
+
     @include e(header) {
         flex: 0 0 auto;
     }

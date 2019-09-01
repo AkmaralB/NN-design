@@ -1,0 +1,49 @@
+@include b(section4) {
+    @include flex;
+    @include flex-direction(column);
+    width: 1150px;
+    background: #FFFFFF;
+    
+    @include e(text) {
+        flex: 0 0 auto;
+        width: 638px;
+        margin-left: 76px;
+
+        @include m(item1) {
+            margin-top: 56px;
+            margin-bottom: 16px;
+            font-size: 24px;
+            font-family: 'Gotham Pro Medium';
+        }
+        @include m(item2) {
+            margin-bottom: 102px;
+            font-size: 14px;
+            
+        }
+    }
+    @include e(img) {
+        position: relative;
+        flex: 1 1 auto;
+
+        @include m(img) {
+            position: absolute;
+            top: 0;
+            left: 0; 
+
+        }
+
+        @include m(img4) {
+            z-index: 1;
+            width: 1150px;
+            height: 432px;
+
+        }
+
+        @include m(img5) {
+            width: 1150px;
+            height: 432px;
+        }
+    }
+    
+    
+}

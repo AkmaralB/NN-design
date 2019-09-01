@@ -1,0 +1,52 @@
+@include b(footer) {
+        @include flex;
+        @include flex-direction(row);
+        width: calc(1150px + 290px);
+        background: #333333;
+    
+    @include e(container) {
+        width: 1150px;
+        padding: 72px 358px 34px 210px;
+
+    }
+    @include e(mail) {
+        flex: 0 0 145px;
+        margin-bottom: 117px;
+        letter-spacing: 0.12em;
+
+        @include m(title) {
+            font-size: 20px;
+            font-family: 'Gotham Pro Bold';
+            margin-bottom: 17px;
+            color: #FFFFFF;
+        }
+        @include m(elem) {
+            font-size: 32px;
+            font-family: 'gothapromed';
+            text-decoration: none;
+            color: #7E92B8;
+        }
+
+    }
+
+    @include e(info) {
+        flex: 1 1 auto;  
+        margin-bottom: 125px;
+          
+    }
+    
+    @include e(social) {
+        text-align: center;
+        flex: 0 0 auto;        
+
+        @include m(icon) {
+            margin-right: 18px;
+            list-style: none;
+            color: #FFFFFF;
+
+            &:hover {
+                
+            }
+        }
+    }
+}
