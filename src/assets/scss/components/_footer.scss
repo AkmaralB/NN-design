@@ -2,6 +2,7 @@
         @include flex;
         @include flex-direction(row);
         width: calc(1150px + 290px);
+        margin: 0 auto;
         background: #333333;
     
     @include e(container) {

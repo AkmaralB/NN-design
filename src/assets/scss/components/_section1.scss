@@ -3,6 +3,7 @@
     @include flex-direction(row);
     width: calc(1150px + 290px);
     height: 557px;
+    margin: 0 auto;
 
     @include e(menu) {
         @include flex;

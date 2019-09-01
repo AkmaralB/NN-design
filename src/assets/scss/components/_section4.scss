@@ -3,6 +3,7 @@
     @include flex-direction(column);
     width: 1150px;
     background: #FFFFFF;
+    margin: 0 auto;
     
     @include e(text) {
         flex: 0 0 auto;

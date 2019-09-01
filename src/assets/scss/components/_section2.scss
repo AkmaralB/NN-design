@@ -2,7 +2,7 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 52px 0 0;
+    margin: 52px auto 0;
     background: #FFFFFF;
 
     @include e(text) {

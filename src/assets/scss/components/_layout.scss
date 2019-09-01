@@ -2,6 +2,7 @@
     @include flex;
     @include flex-direction(column);
     @include flex-align(left, top);
+    min-width: calc(1150px + 290px);
     background: #F2F2F2;
 
     @include e(header) {
@@ -9,11 +10,38 @@
         width: 100%;
         margin: 0 auto;
     }
-    @include e(body) {
-        flex: 1 1 auto;
+
+    @include e(section1) {
+        flex: 0 0 auto;
         width: 100%;
         margin: 0 auto;
     }
+    @include e(section2) {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include e(section3) {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include e(section4) {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include e(section5) {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include e(section6) {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     @include e(footer) {
         flex: 0 0 auto;
         width: 100%;
