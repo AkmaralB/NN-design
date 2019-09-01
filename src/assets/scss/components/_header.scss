@@ -4,7 +4,9 @@
     @include e(container) {
         @include flex;
         @include flex-direction(row);
+        min-width: calc(1150px + 290px);
         width: calc(1150px + 290px);
+        margin: 0 auto;
     }
     @include e(logo) {
         flex: 0 0 145px;
@@ -33,7 +35,6 @@
         margin-right: 145px;
         margin-top: 49px;
         
-
         @include m(elem) {
             width: 126px;
             height: 32px;
@@ -43,7 +44,6 @@
             background-color: transparent;
         }
            
-    
         
     }
 }

@@ -1,16 +1,22 @@
 @include b(layout) {
     @include flex;
     @include flex-direction(column);
-    @include flex-align(left, middle);
+    @include flex-align(left, top);
     background: #F2F2F2;
 
     @include e(header) {
         flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
     }
     @include e(body) {
         flex: 1 1 auto;
+        width: 100%;
+        margin: 0 auto;
     }
     @include e(footer) {
         flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
     }
 }
