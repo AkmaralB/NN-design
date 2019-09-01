@@ -1,10 +1,8 @@
 @include b(section1) {
     @include flex;
     @include flex-direction(row);
-    width: 100%;
-    // min-width: calc(1150px + 290px);
+    width: calc(1150px + 290px);
     height: 557px;
-    margin: 0 auto;
 
     @include e(menu) {
         @include flex;
