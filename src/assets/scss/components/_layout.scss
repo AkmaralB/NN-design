@@ -3,7 +3,7 @@
     @include flex-direction(column);
     @include flex-align(left, top);
     min-width: calc(1150px + 290px);
-    background: #F2F2F2;
+    background: #e5e5e5;
 
     @include e(header) {
         flex: 0 0 auto;

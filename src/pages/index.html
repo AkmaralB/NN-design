@@ -16,56 +16,22 @@
     <div class="layout">
         <div class="layout__header">
             <header class="header">
-                <div class="header__container">
-                    <div class="header__logo">
-                        <a href=".">
-                            <img src="assets/img/logo.png" alt="" class="header__logo-src">
-                        </a>
-                    </div>
-                    <div class="header__divider">
-                        <div class="header__divider--elem">
-
-                        </div>
-                    </div>
-                    <div class="header__button">
-                        <button class="header__button--elem" type="button">Хотите также?</button>
-                    </div>
-                </div>
+                {{> _header }}
             </header>
-
         </div>
 
         <div class="layout__section1">
             <div class="section1">
-                <div class="section1__menu">
-                    <ul class="menu1">
-                        <li><a href="#" class="menu1__item">Услуги</a></li>
-                        <li><a href="#" class="menu1__item">Проекты</a></li>
-                        <li><a href="#" class="menu1__item">Главная</a></li>
-                    </ul>
+                <div class="section1__left-panel">
+                    {{> _left-panel }}
                 </div>
 
                 <div class="section1__img">
-                    <img src="assets/img/img1.png" alt="img1" class="section1__img--img1">
+                    <img src="assets/img/GM-img1.png" alt="img1" class="section1__img--img1">
                 </div>
 
-                <div class="section1__social">
-                    <a href="#" class="section1__social--icon">
-                        <i class="fab fa-behance"></i>
-                    </a>
-                    <a href="#" class="section1__social--icon">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" class="section1__social--icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
-                    <a href="#" class="section1__social--icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-
-                    <div class="section1__social--divider"></div>
-
+                <div class="section1__right-panel">
+                    {{> _right-panel }}
                 </div>
 
             </div>
@@ -82,7 +48,7 @@
                 </div>
 
                 <div class="section2__img">
-                    <img src="assets/img/img2.png" alt="img2" class="section2__img--img2">
+                    <img src="assets/img/GM-img2.png" alt="img2" class="section2__img--img2">
                 </div>
 
             </div>
@@ -101,7 +67,7 @@
                 </div>
 
                 <div class="section3__img">
-                    <img src="assets/img/img3.png" alt="img3" class="section3__img--img3">
+                    <img src="assets/img/GM-img3.png" alt="img3" class="section3__img--img3">
                 </div>
 
             </div>
@@ -117,10 +83,10 @@
 
                 <div class="section4__img">
                     <div class="section4__img--right">
-                        <img src="assets/img/img5.png" alt="img5">
+                        <img src="assets/img/GM-img5.png" alt="img5">
                     </div>
                     <div class="section4__img--left">
-                        <img src="assets/img/img4.png" alt="img4">
+                        <img src="assets/img/GM-img4.png" alt="img4">
                         <div class="section4__img--splitter">
                             <span>< ></span>
                         </div>
@@ -183,57 +149,10 @@
         </div>
 
         <footer class="layout__footer">
-            <div class="footer">
-                <div class="footer__container">
-                    <div class="footer__mail">
-                        <p class="footer__mail--title">Напишите нам:</p>
-                        <a href="#" class="footer__mail--elem">info@nn.kz</a>
-                    </div>
-
-                    <div class="footer__info">
-                        <div class="info">
-                            <div class="info__col">
-                                <a href="#" class="info__col--title">NN Design</a>
-                                <p class="info__col--text">
-                                    г. Астана,<br>
-                                    ул. Шамши Калдаякова
-                                    д.13, офис 3<br>
-                                    8 (777) 444 33 22;<br>
-                                    8 (7222) 54 23 23
-                                    info@nn.kz
-                                </p>
-                            </div>
-                            <div class="info__col">
-                                <p class="info__col--title">Услуги</p>
-                                <a href="#" class="info__col--text">Брендинг и стиль</a>
-                                <a href="#" class="info__col--text">Web-сайты и приложения</a>
-                                <a href="#" class="info__col--text">Упаковка</a>
-                                <a href="#" class="info__col--text">Социальные сети</a>
-                            </div>
-                            <div class="info__col">
-                                <p class="info__col--title">Подробнее</p>
-                                <a href="#" class="info__col--text">Другие наши проекты</a>
-                                <a href="#" class="info__col--text">Услуги</a>
-                                <a href="#" class="info__col--text">Блог</a>
-                                <a href="#" class="info__col--text">Контакты</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="footer__social">
-                        <a href="#" class="footer__social--icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="footer__social--icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="footer__social--icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="footer__social--icon"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
+                {{> _footer }}
         </footer>
 
     </div>
-
-    </div>
-
 
     <script src="assets/js/app.js"></script>
 </body>

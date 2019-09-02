@@ -1,0 +1,46 @@
+@include b(section2-projects) {
+    @include flex;
+    @include flex-direction(column);
+    width: 1150px;
+    margin: 72px auto 0 auto;
+    background: #e5e5e5;
+
+    @include e(title) {
+        flex: 0 0 auto;
+        font-size: 32px;
+        margin-bottom: 32px;
+        font-family: 'Gotham Pro Black';
+    }
+    
+    @include e(latest) {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+}
+
+@include b(columns) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+
+    @include e(col) {
+        width: 367px;
+        height: 423px;        
+        background: #ffffff;
+    
+        @include m(text) {
+            height: auto;
+    
+            p {
+                font-size: 18px;
+                font-family: 'Gotham Pro Medium';
+            }
+        }
+
+    }
+
+
+
+}
