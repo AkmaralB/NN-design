@@ -7,40 +7,51 @@
 
     @include e(title) {
         flex: 0 0 auto;
+        margin-bottom: 8px;            
         font-size: 32px;
-        margin-bottom: 32px;
         font-family: 'Gotham Pro Black';
+        line-height: 0em;
     }
     
     @include e(latest) {
         flex: 1 1 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;    
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;    
     }
+}
+
+@include b(columns-container) {
+    overflow: hidden;
 }
 
 @include b(columns) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
+    width: 100%;
 
     @include e(col) {
         width: 367px;
-        height: 423px;        
+        height: 423px;
+        margin-right: 24px;
         background: #ffffff;
+
+        img {
+            width: 367px;
+            height: 314px;
+            margin-bottom: 32px;
+        }
     
         @include m(text) {
             height: auto;
-    
-            p {
-                font-size: 18px;
-                font-family: 'Gotham Pro Medium';
-            }
+            margin-left: 24px;
+        }
+        @include m(title) {
+            font-size: 18px;
+            font-family: 'Gotham Pro Medium';
+            line-height: 0;
         }
 
     }
-
-
-
 }
