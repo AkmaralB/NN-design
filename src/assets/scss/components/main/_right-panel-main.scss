@@ -1,15 +1,17 @@
-@include b(right-panel) {
+@include b(right-panel-main) {
 
     @include e(icon) {
         display: block;
         margin-left: 95px;
         margin-bottom: 24px;
         list-style: none;
-        color: #777777;
+        color: #ffffff;
+        opacity: 0.7;
 
         &:hover,
         &:focus {
-            color:#222222;
+            color:#ffffff;
+            opacity: 1;
         }
         
     }
@@ -18,7 +20,7 @@
         height: 341px;
         margin-left: 100px;
         margin-top: 4px;
-        border-right: 3px solid #333333;
+        border-right: 3px solid #ffffff;
     }
 
 }

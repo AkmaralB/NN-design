@@ -25,3 +25,9 @@ $(document).ready(function () {
         resizeHeight: false
     });
 });
+
+$(document).ready(function(){
+    $('.main-right').slick({
+      setting-name: setting-value
+    });
+  });

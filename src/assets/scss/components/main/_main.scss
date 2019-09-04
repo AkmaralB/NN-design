@@ -1,16 +1,16 @@
+@include b(main-header) {
+}
+
 @include b(main-body) {
     @include flex;
     @include flex-direction(row);
-    width: calc(1150px + 290px);
+    width: calc(1150px+290px);
     margin: 0 auto;
 
     @include e(left-panel) {
         @include flex;
         flex: 0 0 145px;
         width: 145px;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
     
     @include e(img) {
@@ -20,16 +20,13 @@
 
     @include e(right-panel) {
         flex: 0 0 145px;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
 }
 
 @include b(main-left) {
     width: 50%;
     float: left;
-    padding-top: 237px;
+    padding-top: 157px;
     padding-left: 170px;
     background: #ffffff;
 
@@ -46,17 +43,20 @@
         color: #7E92B8;
     }
     @include e(button) {
-        width: 185px;
-        height: 56px;
         margin-top: 100px;
-        border: 2px solid #7E92B8;
+        margin-bottom: 228px;
 
         a {
+            width: 185px;
+            height: 56px;    
+            display: block;
+            padding-top: 18px;
+            padding-left: 20px;
             text-decoration: none;
             font-size: 16px;
-            line-height: 125.7%;
             box-sizing: border-box;
-            color: #222222;    
+            color: #222222;
+            border: 2px solid #7E92B8;
         }
     }
     

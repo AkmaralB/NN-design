@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text.css" href="assets/css/slick.css"/>
     <script src="assets/js/lib/fontawesome.js"></script>
     <script src="https://kit.fontawesome.com/c9e7a7719e.js"></script>
 </head>
@@ -23,13 +24,9 @@
         <div class="layout__main-body">
             <div class="main-body">
                 <div class="main-body__left-panel">
-                    {{> _left-panel }}
+                    {{> _left-panel-main }}
                 </div>
 
-                <div class="main-body__right-panel">
-                    {{> _right-panel }}
-                </div>
-                
                 <div class="main-left">
                     <div class="main-left__title">
                         <p>NN Design</p>
@@ -43,9 +40,14 @@
                 </div>
                 <div class="main-right">
                     <img src="assets/img/main-img1.png" alt="img1" class="main-right__img">
-                    <img src="assets/img/main-img2.png" alt="img2" class="main-right__img">
-                    <img src="assets/img/main-img3.png" alt="img3" class="main-right__img">
+                    <!-- <img src="assets/img/main-img2.png" alt="img2" class="main-right__img">
+                    <img src="assets/img/main-img3.png" alt="img3" class="main-right__img"> -->
+                </div>       
+
+                <div class="main-body__right-panel">
+                    {{> _right-panel-main }}
                 </div>
+                
             </div>
         </div>
 
@@ -53,6 +55,9 @@
     </div>
 
     <script src="assets/js/app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
 </body>
 
 </html>
