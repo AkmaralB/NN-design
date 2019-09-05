@@ -1,26 +1,48 @@
-@include b(main-header) {
-}
-
-@include b(main-body) {
+@include b(main) {
     @include flex;
     @include flex-direction(row);
-    width: calc(1150px+290px);
+    position: relative;
+    width: 100%;
     margin: 0 auto;
 
     @include e(left-panel) {
         @include flex;
+        position: absolute;
+        left: 0;
+        top: 118px;
         flex: 0 0 145px;
         width: 145px;
-    }
-    
-    @include e(img) {
-        flex: 1 1 auto;
-
     }
 
     @include e(right-panel) {
         flex: 0 0 145px;
+        position: absolute;
+        right: 32px;
+        top: 113px;
     }
+
+    @include e(header) {
+        position: absolute;
+        top: 0;
+    }
+
+    @include m(hide) {
+        display: none;
+    }
+    @include m(color-d) {
+        border-right: 3px solid #ffffff;
+    }
+    @include m(color) {
+        color: #ffffff;
+        opacity: 0.7;
+
+        &:hover,
+        &:focus {
+            color:#ffffff;
+            opacity: 1;
+        }
+    }
+
 }
 
 @include b(main-left) {
@@ -44,7 +66,7 @@
     }
     @include e(button) {
         margin-top: 100px;
-        margin-bottom: 228px;
+        margin-bottom: 150px;
 
         a {
             width: 185px;
@@ -57,6 +79,41 @@
             box-sizing: border-box;
             color: #222222;
             border: 2px solid #7E92B8;
+        }
+    }
+    @include e(number) {
+        display: block;
+        float: right;
+        margin-right: 38px;
+        margin-bottom: 38px;
+        font-size: 32px;
+        font-family: 'Gotham Pro Bold';
+        line-height: 125.7%;
+        color: #7E92B8;
+    }
+    @include e(arrow) {
+        display: block;
+        position: absolute;
+        right: 520px;
+        bottom: 40px;
+        @include flex;
+        @include flex-direction(row);
+
+        @include m(elem) {
+            display: block;
+            margin-right: 20px;
+            padding: 8px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 100%;    
+            font-size: 18px;
+            font-family: Arial;
+            color:  rgba(255, 255, 255, 0.5);
+
+            &:active,
+            &:focus {
+                border: 1px solid #ffffff;
+                color:  #ffffff;
+            }
         }
     }
     

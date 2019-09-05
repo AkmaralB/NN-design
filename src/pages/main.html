@@ -15,42 +15,39 @@
 <body>
 
     <div class="layout">
-        <div class="layout__header">
-            <header class="header main-header">
+        <div class="main">
+            <div class="main-left">
+                <div class="main-left__title">
+                    <p>NN Design</p>
+                </div>
+                <div class="main-left__text">
+                    <p>Хороший дизайн — продуман до каждой детали</p>
+                </div>
+                <div class="main-left__button">
+                    <a href="#">Все проекты</a>
+                </div>
+                <span class="main-left__number">01/03</span>
+                <div class="main-left__arrow">
+                    <a class="main-left__arrow--elem"> < </a>
+                    <a class="main-left__arrow--elem"> > </a>
+                </div>
+            </div>
+            <div class="main-right">
+                <img src="assets/img/main-img1.png" alt="img1" class="main-right__img">
+                <!-- <img src="assets/img/main-img2.png" alt="img2" class="main-right__img">
+                <img src="assets/img/main-img3.png" alt="img3" class="main-right__img"> -->
+            </div>
+            <header class="main__header header">
                 {{> _header }}
             </header>
-        </div>
-        
-        <div class="layout__main-body">
-            <div class="main-body">
-                <div class="main-body__left-panel">
-                    {{> _left-panel-main }}
-                </div>
-
-                <div class="main-left">
-                    <div class="main-left__title">
-                        <p>NN Design</p>
-                    </div>
-                    <div class="main-left__text">
-                        <p>Хороший дизайн — продуман до каждой детали</p>
-                    </div>
-                    <div class="main-left__button">
-                        <a href="#">Все проекты</a>
-                    </div>
-                </div>
-                <div class="main-right">
-                    <img src="assets/img/main-img1.png" alt="img1" class="main-right__img">
-                    <!-- <img src="assets/img/main-img2.png" alt="img2" class="main-right__img">
-                    <img src="assets/img/main-img3.png" alt="img3" class="main-right__img"> -->
-                </div>       
-
-                <div class="main-body__right-panel">
-                    {{> _right-panel-main }}
-                </div>
-                
+            <div class="main__left-panel">
+                {{> _left-panel }}
             </div>
-        </div>
+            <div class="main__right-panel">
+                {{> _right-panel }}
+            </div>
 
+        </div>
 
     </div>
 

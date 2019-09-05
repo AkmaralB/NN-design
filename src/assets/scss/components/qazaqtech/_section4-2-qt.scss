@@ -1,0 +1,36 @@
+@include b(section4-2-qt) {
+    @include flex;
+    @include flex-direction(column);
+    width: 1150px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+
+    @include e(text) {
+        flex: 0 0 auto;
+        width: 664px;
+        margin-left: 76px;
+
+        @include m(item1) {
+            margin-bottom: 16px;
+            font-size: 24px;
+            font-family: 'Gotham Pro Medium';
+        }
+        @include m(item2) {
+            margin-bottom: 32px;
+            font-size: 14px;
+            line-height: 138.2%;
+            white-space: pre-line;
+        }
+    }
+    @include e(img) {
+        flex: 1 1 auto;
+
+        @include m(img5) {
+            width: 1150px;
+            height: auto;
+        }
+    }
+    
+    
+}

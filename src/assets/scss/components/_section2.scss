@@ -1,34 +1,40 @@
-@include b(section3) {
+@include b(section2) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 0 auto;
+    margin: 52px auto 0;
+    padding-bottom: 20px;
     background: #FFFFFF;
 
     @include e(text) {
         flex: 0 0 auto;
-        width: 664px;
+        width: 714px;
         margin-left: 76px;
 
         @include m(item1) {
-            margin-top: 56px;
+            margin-top: 68px;
+            margin-bottom: 48px;
+            font-size: 32px;
+            font-family: 'Gotham Pro Black';
+        }
+        @include m(item2) {
             margin-bottom: 16px;
             font-size: 24px;
             font-family: 'Gotham Pro Medium';
         }
-        @include m(item2) {
+        @include m(item3) {
             margin-bottom: 32px;
             font-size: 14px;
+            line-height: 138.2%;
+            white-space: pre-line;
         }
     }
     @include e(img) {
         flex: 1 1 auto;
 
-        @include m(img3) {
+        @include m(img2) {
             width: 1150px;
             height: auto;
         }
     }
-    
-    
 }

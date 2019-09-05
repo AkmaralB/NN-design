@@ -3,6 +3,7 @@
     @include flex-direction(column);
     width: 1150px;
     margin: 0 auto;
+    padding-bottom: 78px;
     background: #FFFFFF;
     
     @include e(text) {
@@ -11,7 +12,6 @@
         margin-left: 76px;
 
         @include m(item1) {
-            margin-top: 56px;
             margin-bottom: 16px;
             font-size: 24px;
             font-family: 'Gotham Pro Medium';
@@ -19,6 +19,8 @@
         @include m(item2) {
             margin-bottom: 102px;
             font-size: 14px;
+            line-height: 138.2%;
+            white-space: pre-line;
         }
     }
     @include e(img) {

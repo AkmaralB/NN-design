@@ -22,12 +22,9 @@ $(document).foundation();
 $(document).ready(function () {
     $(".section4__img--left").resizable({
         handleSelector: ".section4__img--splitter",
-        resizeHeight: false
+        resizeHeight: false});
+    $('.main-right').slick({
+      settingName: setting-value
     });
 });
 
-$(document).ready(function(){
-    $('.main-right').slick({
-      setting-name: setting-value
-    });
-  });
