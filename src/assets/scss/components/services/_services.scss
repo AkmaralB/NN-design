@@ -1,0 +1,127 @@
+@include b(services) {
+
+    @include m(color) {
+        background-color: #ffffff;
+    }
+}
+
+@include b(section1-services) {
+    @include flex;
+    @include flex-direction(row);
+    width: calc(1150px + 290px);
+    margin: 0 auto;
+
+    @include e(left-panel) {
+        @include flex;
+        flex: 0 0 145px;
+        width: 145px;
+    }
+    
+    @include e(center) {
+        flex: 1 1 auto;
+    }
+
+    @include e(right-panel) {
+        flex: 0 0 145px;
+    }
+}
+
+@include b(center) {
+    @include flex;
+    @include flex-direction(column);
+    width: 1150px;
+    background: #e5e5e5;
+
+    @include e(title) {
+        flex: 0 0 auto;
+        margin-bottom: 20px;
+        padding-left: 77px; 
+
+        @include m(big) {
+            font-size: 32px;
+            font-family: 'Gotham Pro Black';
+            line-height: 0em;
+        }
+        @include m(little) {
+            line-height: 138.2%;
+            white-space: pre-line;
+        }
+    }
+    
+    @include e(rows) {
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+    @include e(arrow) {
+        float: right;
+        @include flex;
+        @include flex-direction(row);
+        justify-content: flex-end;
+        margin-bottom: 56px;
+
+
+        @include m(elem) {
+            display: block;
+            margin-left: 20px;
+            padding: 3px 5px;
+            border: 2px solid rgba(126, 146, 184, 0.5);  
+            border-radius: 100%;    
+            font-size: 18px;
+            font-family: 'Gotham Pro Bold';
+            color:  rgba(126, 146, 184, 0.5);
+
+            &:active,
+            &:focus {
+                border: 2px solid #222222;    
+                color:  #222222;
+            }
+        }
+    }
+
+}
+
+@include b(rows) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    width: 100%;
+
+    @include e(row) {
+        width: 324px;
+        height: 438px;
+        margin-right: 32px;
+        margin-bottom: 32px;
+        background: #ffffff;
+
+        img {
+            width: 324px;
+            height: 244px;
+            margin-bottom: 32px;
+        }
+    
+        @include m(text) {
+            height: 110px;
+            margin-left: 35px;
+            line-height: 125.7%;
+            white-space: pre-line;
+        }
+        @include m(title) {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Gotham Pro Medium';
+            line-height: 0;
+        }
+        @include m(button) {
+            margin-left: 35px;
+            margin-bottom: 32px;
+            font-size: 16px;
+            font-family: 'Gotham Pro Bold';
+            line-height: 0;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #7E92B8;
+        }
+
+    }
+
+}

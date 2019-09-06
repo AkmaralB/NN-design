@@ -1,0 +1,44 @@
+@include b(section1-logo) {
+    @include flex;
+    @include flex-direction(row);
+    width: calc(1150px + 290px);
+    margin: 0 auto;
+
+    @include e(left-panel) {
+        @include flex;
+        flex: 0 0 145px;
+        width: 145px;
+    }
+    
+    @include e(content) {
+        flex: 1 1 auto;
+    }
+
+    @include e(right-panel) {
+        flex: 0 0 145px;
+    }
+}
+
+@include b(content) {
+    @include flex;
+    @include flex-direction(column);
+    width: 1150px;
+    background: #e5e5e5;
+
+    @include e(title) {
+        flex: 0 0 auto;
+        margin-bottom: 20px;
+        padding-left: 77px; 
+
+        @include m(big) {
+            font-size: 32px;
+            font-family: 'Gotham Pro Black';
+            line-height: 0em;
+        }
+        @include m(little) {
+            line-height: 138.2%;
+            white-space: pre-line;
+        }
+    }
+
+}

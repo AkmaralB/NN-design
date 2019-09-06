@@ -2,10 +2,10 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 0 auto;
+    margin: 0 auto 72px;
 
     @include e(container) {
-        margin: 72px 318px 56px 76px;
+        margin: 72px 318px 0px 76px;
     }
 
     @include e(title) {
@@ -64,11 +64,12 @@
 
         @include m(button) {
             float: right;
-            padding: 19px 25px;
+            padding: 15px 30px;
             border: 1px solid #7E92B8;
             box-sizing: border-box;
             border-radius: 32px;
             font-size: 14px;
+            font-family: 'Gotham Pro Medium';
             line-height: 17px;
             text-align: center;
             letter-spacing: 0.15em;

@@ -13,69 +13,79 @@
 
 <body>
 
-    <div class="layout">
+    <div class="layout services">
         <div class="layout__header">
             {{> _header }}
         </div>
 
         <div class="layout__section1">
-            <div class="section1">
-                <div class="section1__left-panel">
+            <div class="section1-services">
+                <div class="section1-services__left-panel">
                     {{> _left-panel }}
                 </div>
 
-            <div class="section2-projects">
-                <div class="section2-projects__title">
-                    <p>Последние проекты</p>
-                </div>
-                <div class="section2-projects__latest">
-                    <div class="columns-container">
-                        <div class="columns">
-                            <div class="columns__col">
-                                <img src="assets/img/projects-img2.png" alt="projects-img2">
-                                <div class="columns__col--text">
-                                    <p class="columns__col--title">QazaqTech</p>
-                                    <p>Фирменный стиль</p>
+                <div class="section1-services__center center">
+                    <div class="center__title">
+                        <p class="center__title--big">Выберите услугу</p>
+                        <p class="center__title--little">Мы гордимся каждой работой, за которую берёмся, и не 
+                            боимся рисковать</p>
+                    </div>
+                    <div class="center__rows">
+                        <div class="rows">
+                            <div class="rows__row">
+                                <img src="assets/img/serv-img1.png" alt="services-img1">
+                                <div class="rows__row--text">
+                                    <p class="rows__row--title">Логотип</p>
+                                    <p>Ваш фирменный знак</p>
                                 </div>
+                                <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
-                            <div class="columns__col">
-                                <img src="assets/img/projects-img3.png" alt="projects-img3">
-                                <div class="columns__col--text">
-                                    <p class="columns__col--title">Международная школа IBS</p>
-                                    <p>Веб сайт</p>
+                            <div class="rows__row">
+                                <img src="assets/img/serv-img2.png" alt="services-img2">
+                                <div class="rows__row--text">
+                                    <p class="rows__row--title">Брендинг и стиль</p>
+                                    <p>Ваш имидж и отличительная
+                                        черта</p>
                                 </div>
+                                <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
-                            <div class="columns__col">
-                                <img src="assets/img/projects-img4.png" alt="projects-img4">
-                                <div class="columns__col--text">
-                                    <p class="columns__col--title">Green Medicus</p>
-                                    <p>Упаковка</p>
+                            <div class="rows__row">
+                                <img src="assets/img/serv-img3.png" alt="services-img3">
+                                <div class="rows__row--text">
+                                    <p class="rows__row--title">Веб-дизайн</p>
+                                    <p>Сервис для вашего
+                                        бизнеса</p>
                                 </div>
+                                <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
-<!-- Добавить другие последние проекты -->
-                            <div class="columns__col">
-                                <img src="assets/img/projects-img4.png" alt="projects-img4">
-                                <div class="columns__col--text">
-                                    <p class="columns__col--title">Green Medicus</p>
-                                    <p>Упаковка</p>
+                            <div class="rows__row">
+                                <img src="assets/img/serv-img4.png" alt="services-img4">
+                                <div class="rows__row--text">
+                                    <p class="rows__row--title">Упаковка</p>
+                                    <p>Конкурентное преимущество
+                                        вашего продукта</p>
                                 </div>
+                                <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
-
+                            
                         </div>
                     </div>
+                    <div class="center__arrow">
+                        <a class="center__arrow--elem"> < </a>
+                        <a class="center__arrow--elem"> > </a>
+                    </div>
+
                 </div>
 
-            </div>
-
-                <div class="section1__right-panel">
+                <div class="section1-services__right-panel">
                     {{> _right-panel }}
                 </div>
 
             </div>
 
         </div>
-    
-        <div class="layout__section2">
+        <div class="layout__section6">
+            {{> _section6 }}
         </div>
 
         <footer class="layout__footer">

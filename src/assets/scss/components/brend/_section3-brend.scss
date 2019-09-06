@@ -1,0 +1,24 @@
+@include b(section3-brend) {
+    @include flex;
+    @include flex-direction(column);
+    width: 1150px;
+    margin: 0 auto 56px auto;
+    background: #ffffff;
+
+    @include e(title) {
+        flex: 0 0 auto;
+        margin-bottom: 56px;
+        padding-top: 48px;
+        padding-left: 48px;
+        font-size: 24px;
+        font-family: 'Gotham Pro Medium';
+        line-height: 0em;
+    }
+    
+    @include e(diagram) {
+        flex: 1 1 auto;
+        height: 372px;
+        font-size: 12px;
+        font-family: 'Gotham Pro Medium';
+    }
+}

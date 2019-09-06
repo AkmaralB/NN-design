@@ -21,17 +21,14 @@
     }
 }
 
-@include b(columns-container) {
-    overflow: hidden;
-}
-
-@include b(columns) {
+@include b(latest-rows) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;    
+    flex-direction: row;
+    overflow: hidden;
     width: 100%;
 
-    @include e(col) {
+    @include e(row) {
         width: 367px;
         height: 423px;
         margin-right: 24px;
@@ -40,7 +37,7 @@
         img {
             width: 367px;
             height: 314px;
-            margin-bottom: 32px;
+            margin-bottom: 20px;
         }
     
         @include m(text) {
