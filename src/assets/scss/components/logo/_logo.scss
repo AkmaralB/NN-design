@@ -1,0 +1,135 @@
+@include b(section1-logo) {
+    @include flex;
+    @include flex-direction(row);
+    width: calc(1150px + 290px);
+    margin: 0 auto;
+
+    @include e(left-panel) {
+        @include flex;
+        flex: 0 0 145px;
+        width: 145px;
+    }
+    
+    @include e(content) {
+        flex: 1 1 auto;
+    }
+
+    @include e(right-panel) {
+        flex: 0 0 145px;
+    }
+    .section1-logo--hide {
+        display: none;
+    }
+}
+
+@include b(content) {
+    @include flex;
+    @include flex-direction(column);
+    width: 1150px;
+    background: #e5e5e5;
+
+    @include e(title) {
+        flex: 0 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-left: 77px;
+
+        @include m(big) {
+            font-size: 32px;
+            font-family: 'Gotham Pro Black';
+            line-height: 0em;
+        }
+        @include m(little) {
+            font-size: 16px;
+            line-height: 138.2%;
+            white-space: pre-line;
+        }
+    }
+    @include e(inner) {
+        width: 100%;
+        height: 456px;
+        @include flex;
+        @include flex-direction(row);    
+        background: url(../img/background.png) #ffffff 10% 100% no-repeat; 
+        background-size: 25% auto;
+    }
+
+    @include e(text) {
+        width: 100%;
+        padding-left: 77px;
+
+        @include m(big) {
+            margin-top: 114px;
+            margin-bottom: 154px;
+            font-size: 20px;
+            font-family: 'Gotham Pro Bold';
+            line-height: 0;
+        }
+        @include m(little) {
+            font-size: 16px;
+            white-space: pre-line;
+        }
+    }
+
+    @include e(type) {
+        display: grid;
+        float: right;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 12px;
+        justify-content: space-between;
+        width: 380px;
+        height: 380px;
+        margin-right: 42px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    @include e(elem) {
+        width: 180px;
+        height: 180px;
+        border: 1px solid #7E92B8;
+        text-align: center;
+        line-height: 0;
+        &:hover {
+            cursor: pointer;
+            p {
+                font-family: 'Gotham Pro Medium';
+            }
+        }
+
+        @include m(text) {
+            margin-top: 160px;
+        }
+    }
+    @include e(elem1) {
+        background: url(../img/logo-img1.png);
+
+        &:hover {
+            background: url(../img/logo-img1-2.png);
+        }
+    }
+    @include e(elem2) {
+        background: url(../img/logo-img2.png);
+
+        &:hover {
+            background: url(../img/logo-img2-2.png);
+        }
+    }
+    @include e(elem3) {
+        background: url(../img/logo-img3.png);
+
+        &:hover {
+            background: url(../img/logo-img3-2.png);
+        }
+    }
+    @include e(elem4) {
+        background: url(../img/logo-img4.png);
+
+        &:hover {
+            background: url(../img/logo-img4-2.png);
+        }
+    }
+
+
+}

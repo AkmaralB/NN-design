@@ -4,6 +4,7 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+    background: #ffffff;
 
     @include e(left-panel) {
         @include flex;
@@ -26,48 +27,48 @@
         top: 0;
     }
 
-    @include m(hide) {
+    .mine--hide {
         display: none;
     }
-    @include m(color-d) {
+
+    .main--color-d {
         border-right: 3px solid #ffffff;
     }
-    @include m(color) {
+    .main--color {
         color: #ffffff;
         opacity: 0.7;
 
-        &:hover,
-        &:focus {
+        &:hover {
             color:#ffffff;
             opacity: 1;
         }
     }
-
 }
 
 @include b(main-left) {
     width: 50%;
     float: left;
-    padding-top: 157px;
-    padding-left: 170px;
-    background: #ffffff;
 
     @include e(title) {
+        display: inline-block;
+        padding-top: 200px;
+        padding-left: 170px; 
         font-size: 80px;
         font-family: 'Gotham Pro Medium';
-        line-height: 125.7%;
+        line-height: 0;
         color: #222222;
     }
     @include e(text) {
         width: 350px;
+        padding-left: 170px;    
         font-size: 24px;
         line-height: 125.7%;
         color: #7E92B8;
     }
     @include e(button) {
-        margin-top: 100px;
-        margin-bottom: 150px;
-
+        margin-top: 113px;
+        padding-left: 170px;
+        margin-bottom: 110px;
         a {
             width: 185px;
             height: 56px;    
@@ -85,7 +86,6 @@
         display: block;
         float: right;
         margin-right: 38px;
-        margin-bottom: 38px;
         font-size: 32px;
         font-family: 'Gotham Pro Bold';
         line-height: 125.7%;
@@ -94,7 +94,7 @@
     @include e(arrow) {
         display: block;
         position: absolute;
-        right: 520px;
+        right: 580px;
         bottom: 40px;
         @include flex;
         @include flex-direction(row);
@@ -108,7 +108,9 @@
             font-size: 18px;
             font-family: Arial;
             color:  rgba(255, 255, 255, 0.5);
-
+            &:hover {
+                cursor: pointer;
+            }
             &:active,
             &:focus {
                 border: 1px solid #ffffff;

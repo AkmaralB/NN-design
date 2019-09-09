@@ -2,7 +2,7 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 72px auto 32px auto;
+    margin: 40px auto 32px auto;
     background: #e5e5e5;
 
     @include e(title) {
