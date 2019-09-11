@@ -2,7 +2,8 @@
     @include flex;
     @include flex-direction(row);
     position: relative;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     background: #ffffff;
 
@@ -27,7 +28,7 @@
         top: 0;
     }
 
-    .mine--hide {
+    .main--hide {
         display: none;
     }
 
@@ -47,6 +48,7 @@
 
 @include b(main-left) {
     width: 50%;
+    height: 100%;
     float: left;
 
     @include e(title) {
@@ -122,6 +124,7 @@
 }
 @include b(main-right) {
     width: 50%;
+    height: 100%;
     float: right;
 
     @include e(img) {
