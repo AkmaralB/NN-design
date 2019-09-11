@@ -144,7 +144,7 @@
     }
 }
 
-@include respond-to(large) {
+@include respond-to(desktop) {
     @include b(main-left) {
         @include e(title) {
             padding-top: 90px;
