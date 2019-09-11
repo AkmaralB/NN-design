@@ -1,0 +1,25 @@
+@include respond-to(landscape) {
+        @include b(main) {
+        display: none;
+    }
+    @include b(main-mob) {
+        @include flex;
+        @include flex-direction(column);
+        position: relative;
+        min-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        background: #ffffff;
+        
+    }
+    @include b(main-mob-top) {
+        width: 100%;
+        height: 50%;
+        float: right;
+    
+        @include e(img) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

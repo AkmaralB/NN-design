@@ -1,11 +1,59 @@
+@include b(main-mob) {
+    display: none;
+}
 @include b(main) {
     @include flex;
     @include flex-direction(row);
     position: relative;
-    width: 100vw;
+    min-width: 100%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     background: #ffffff;
+    @include e(toggle) {
+        @include flex;
+        @include flex-direction(row);
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        width: 230x;
+        height: 35px;
+        margin-left: -135px;;
+        z-index: 1;
+    }
+    @include e(number) {
+        display: block;
+        float: right;
+        height: 32px;
+        margin: 0;
+        margin-right: 80px;
+        font-size: 32px;
+        font-family: 'Gotham Pro Bold';
+        color: #7E92B8;
+    }
+    @include e(arrow) {
+        display: block;
+        @include flex;
+        @include flex-direction(row);
+        justify-content: baseline;
+
+        @include m(elem) {
+            display: block;
+            height: 24px;
+            margin-right: 20px;
+            padding: 8px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 100%;    
+            font-size: 18px;
+            font-family: Arial;
+            color:  rgba(255, 255, 255, 0.5);
+            &:hover {
+                cursor: pointer;
+                border: 1px solid #ffffff;
+                color:  #ffffff;
+            }
+        }
+    }
 
     @include e(left-panel) {
         @include flex;
@@ -70,7 +118,7 @@
     @include e(button) {
         margin-top: 113px;
         padding-left: 170px;
-        margin-bottom: 110px;
+        margin-bottom: 200px;
         a {
             width: 185px;
             height: 56px;    
@@ -84,43 +132,6 @@
             border: 2px solid #7E92B8;
         }
     }
-    @include e(number) {
-        display: block;
-        float: right;
-        margin-right: 38px;
-        font-size: 32px;
-        font-family: 'Gotham Pro Bold';
-        line-height: 125.7%;
-        color: #7E92B8;
-    }
-    @include e(arrow) {
-        display: block;
-        position: absolute;
-        right: 580px;
-        bottom: 40px;
-        @include flex;
-        @include flex-direction(row);
-
-        @include m(elem) {
-            display: block;
-            margin-right: 20px;
-            padding: 8px 10px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 100%;    
-            font-size: 18px;
-            font-family: Arial;
-            color:  rgba(255, 255, 255, 0.5);
-            &:hover {
-                cursor: pointer;
-            }
-            &:active,
-            &:focus {
-                border: 1px solid #ffffff;
-                color:  #ffffff;
-            }
-        }
-    }
-    
 }
 @include b(main-right) {
     width: 50%;
@@ -130,5 +141,29 @@
     @include e(img) {
         width: 100%;
         height: 100%;
+    }
+}
+
+@include respond-to(large) {
+    @include b(main-left) {
+        @include e(title) {
+            padding-top: 90px;
+            padding-left: 100px;
+            font-size: 75px;
+        }
+        @include e(text) {
+            padding-left: 100px;
+        }
+
+        @include e(button) {
+            margin-top: 100px;
+            padding-left: 100px;
+            margin-bottom: 200px;
+        }
+    }
+    @include b(main) {
+        @include e(right-panel) {
+            top: 80px;
+        }
     }
 }

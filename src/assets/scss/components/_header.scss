@@ -4,8 +4,8 @@
     @include e(container) {
         @include flex;
         @include flex-direction(row);
-        min-width: calc(1150px + 290px);
-        width: calc(1150px + 290px);
+        min-width: 100%;
+        width: 100%;
         margin: 0 auto;
     }
     @include e(logo) {

@@ -2,7 +2,8 @@
     @include flex;
     @include flex-direction(column);
     @include flex-align(left, top);
-    min-width: calc(1150px + 290px);
+    min-width: 100%;
+    width: 100%;
     background: #e5e5e5;
 
     @include e(header) {
