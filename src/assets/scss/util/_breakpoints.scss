@@ -1,10 +1,13 @@
 $breakpoints: (
-	'small': ( max-width: 375px ),
-	'medium': ( max-width: 768px ),
+	'xxsmall': ( max-width: 319px ),
+	'xsmall': ( max-width: 479px ),
+	'small': ( max-width: 639px ),
+	'medium': ( max-width: 799px ),
 	'landscape': ( max-width: 1023px ),
-	'desktop': ( max-width: 1280px ),
+	'desktop': ( max-width: 1279px ),
 	'large': ( max-width: 1440px),
-	'xlarge': ( min-width: 1440px),
+	'xlarge': ( min-width: 1441px),
+	'xxlarge': ( min-width: 1681px),
 );
 
 @mixin respond-to($breakpoint) {

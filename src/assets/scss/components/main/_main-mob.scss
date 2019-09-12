@@ -1,6 +1,6 @@
 @include respond-to(landscape) {
-        @include b(main) {
-        display: none;
+    @include b(main) {
+    display: none;
     }
     @include b(main-mob) {
         @include flex;
@@ -10,7 +10,6 @@
         width: 100%;
         margin: 0 auto;
         background: #ffffff;
-        
     }
     @include b(main-mob-top) {
         width: 100%;
@@ -63,4 +62,56 @@
         }
     }
     
+}
+
+@include respond-to(small) {
+    @include b(main-mob-bottom) {
+        @include e(title) {
+            margin-left: 10%;
+            font-size: 60px;
+        }
+        @include e(text) {
+            width: 80%;
+            margin-left: 10%;
+            font-size: 25px;
+        }
+        @include e(button) {
+            margin-left: 10%;
+            
+            a {
+                width: 220px;
+                height: 75px;    
+                padding: 20px;
+                font-size: 22px;
+            }
+        }
+    
+    }
+}
+@include respond-to(xsmall) {
+    @include b(main-mob-bottom) {
+        @include e(title) {
+            font-size: 48px;
+        }
+        @include e(text) {
+            font-size: 16px;
+        }
+        @include e(button) {
+            
+            a {
+                width: 130px;
+                height: 50px;    
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+    
+    }
+}
+@include respond-to(xxsmall) {
+    @include b(main-mob-bottom) {
+        @include e(title) {
+            font-size: 34px;
+        }
+    }
 }

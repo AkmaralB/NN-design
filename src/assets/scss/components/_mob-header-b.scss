@@ -1,0 +1,38 @@
+@include b(mob-header-b) {
+    width: 100%;
+    height: 190px;
+    @include e(container) {
+        @include flex;
+        @include flex-direction(row);
+        min-width: 100%;
+        width: 100%;
+        margin: 60px;
+    }
+    @include e(logo) {
+        flex: 0 0 60px;
+        float: left;
+    }
+    @include e(logo-src) {
+        width: 60px;
+        height: auto;
+    }    
+    @include e(menu) {
+        flex: 0 0 60px;
+        float: right;
+        @include m(elem) {
+            width: 60px;
+            height: auto;
+            &:hover {
+                @include e(menu-child) {
+                    display: flex;
+                }
+            }
+        }
+    }
+    @include e(menu-child) {
+        display: none;
+        @include flex;
+        @include flex-direction(column);
+
+    }
+}

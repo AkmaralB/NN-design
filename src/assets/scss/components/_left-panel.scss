@@ -22,5 +22,29 @@
             border-bottom: 2px solid #222222;
         }
     }
-
 }
+@include respond-to(xlarge) {
+    @include b(right-panel) {
+        @include e(divider) {
+            height: 300px;
+        }
+    }
+    @include b(left-panel) {
+        @include e(item) {
+            margin-right: 60px;
+            font-size: 17px;
+        }
+    }
+}//.xlarge
+
+@include respond-to(xxlarge) {
+    @include b(left-panel) {
+        margin-left: -170px;
+    
+        @include e(item) {
+            margin-right: 80px;
+            font-size: 20px;
+        }
+    }
+}//.xxlarge
+
