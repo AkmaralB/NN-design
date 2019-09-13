@@ -1,0 +1,49 @@
+@include b(section3-projects) {
+    width: 100%;
+    margin: 0 40px 20px;
+
+    @include e(title) {
+        margin-bottom: 40px;
+        font-size: 64px;
+    }
+    
+    @include e(items) {
+        margin-bottom: 40px;
+    }
+
+    @include e(button) {
+        width: auto;
+        margin: 40px auto 100px;
+        font-size: 43px;
+        font-family: 'Gotham Pro Medium';
+        color: #7E92B8;
+    }
+}
+
+@include b(item) {
+    @include e(left) {
+        width: 410px;
+        height: auto;        
+        @include m(img) {
+            width: 410px;
+            height: auto;
+        }
+    }
+    @include e(right) {
+        margin: 43px 70px 0 32px; 
+
+        @include m(text) {
+            p {
+                font-size: 12px;
+                line-height: 125.7%;;
+            }
+        }
+        @include m(title) {
+            display: none;
+        }
+        @include m(open) {
+            display: none;
+        }    
+    }
+}
+

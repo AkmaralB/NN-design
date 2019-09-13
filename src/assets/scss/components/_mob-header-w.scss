@@ -1,4 +1,4 @@
-@include b(mob-header-b) {
+@include b(mob-header-w) {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,19 +53,19 @@
         }
     }
 }    
-@include b(mob-header-b-menu) {
+@include b(mob-header-w-menu) {
     &:hover {
-        .mob-header-b__menu-child {
+        .mob-header-w__menu-child {
             display: block;
         }
         cursor: pointer;
-        .mob-header-b__menu-btn {
+        .mob-header-w__menu-btn {
             outline: none;
         }
     }
 }
 @include respond-to(small) {
-    @include b(mob-header-b) {
+    @include b(mob-header-w) {
         @include e(container) {
             margin: 45px;
         }
@@ -95,7 +95,7 @@
     }
 }//.xsmall
 @include respond-to(xsmall) {
-    @include b(mob-header-b) {
+    @include b(mob-header-w) {
         @include e(container) {
             margin: 24px;
         }

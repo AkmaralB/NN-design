@@ -2,17 +2,15 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 72px auto 0 auto;
+    margin: 0 auto 72px;
     background: #e5e5e5;
-
     @include e(title) {
         flex: 0 0 auto;
-        margin-bottom: 8px;            
+        margin-bottom: 8px;         
         font-size: 32px;
         font-family: 'Gotham Pro Black';
         line-height: 0em;
     }
-    
     @include e(latest) {
         flex: 1 1 auto;
         // display: flex;
@@ -20,11 +18,10 @@
         // justify-content: space-between;    
     }
 }
-
 @include b(latest-rows) {
-    display: flex;
+    @include flex;
+    @include flex-direction(row);
     justify-content: space-between;    
-    flex-direction: row;
     overflow: hidden;
     width: 100%;
 

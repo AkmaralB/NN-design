@@ -1,6 +1,7 @@
 @include b(header) {
-    width: 100%;
+    width: 1440px;
     height: 113px;
+    margin: 0 auto;
     @include e(container) {
         @include flex;
         @include flex-direction(row);

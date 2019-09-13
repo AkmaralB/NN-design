@@ -11,7 +11,12 @@
         width: 100%;
         margin: 0 auto;
     }
-
+    @include e(mob-header) {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 0 auto;
+        display: none;
+    }
     @include e(section1) {
         flex: 0 0 auto;
         width: 100%;
@@ -62,5 +67,15 @@
         flex: 0 0 auto;
         width: 100%;
         margin: 0 auto;
+    }
+}
+@include respond-to(landscape) {
+    @include b(layout) {
+        @include e(header) {
+            display: none;
+        }    
+        @include e(mob-header) {
+            display: block;
+        }
     }
 }

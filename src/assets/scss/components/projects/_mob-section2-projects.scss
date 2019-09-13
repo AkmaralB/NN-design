@@ -1,0 +1,39 @@
+@include respond-to(landscape) {
+    @include b(section2-projects) {
+        @include flex;
+        @include flex-direction(column);
+        width: 100%;
+        margin: 0 40px 60px;
+        @include e(title) {
+            margin-bottom: 30px;            
+            font-size: 64px;
+        }
+    }
+    @include b(latest-rows) {
+        @include flex-direction(column);
+        overflow: auto;
+    
+        @include e(row) {
+            width: 875px;
+            height: auto;
+            margin-right: 0;
+            margin-bottom: 40px;
+    
+            img {
+                width: 875px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        
+            @include m(text) {
+                margin-left: 60px;
+                margin-bottom: 20px;
+                font-size: 32px;
+            }
+            @include m(title) {
+                font-size: 43px;
+            }
+    
+        }
+    }    
+}

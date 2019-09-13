@@ -11,8 +11,8 @@
     
     @include e(item) {
         margin-right: 48px;
-        text-decoration: none;
         font-size: 14px;
+        text-decoration: none;
         color: #222222;
 
         &:hover {

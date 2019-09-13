@@ -1,9 +1,9 @@
 @include b(section1) {
     @include flex;
     @include flex-direction(row);
-    width: calc(1150px + 290px);
+    width: 1440px;
     height: 557px;
-    margin: 0 auto;
+    margin: 0 auto 72px;
 
     @include e(left-panel) {
         @include flex;

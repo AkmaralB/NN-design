@@ -1,0 +1,35 @@
+@include respond-to(landscape) {
+    @include b(footer) {
+        @include e(container) {
+            
+        }
+        @include e(mail) {
+            margin-left: 0;
+        }
+        @include e(line) {
+
+        }
+        @include e(info) {
+
+        }
+        @include e(social) {
+            @include flex-direction(column);
+            @include m(icon) {
+                margin-right: 18px;
+            }
+        }
+    }
+    @include b(info) {
+        margin-left: 0;
+        margin-bottom: 0;
+        @include e(col) {
+
+        }
+        @include e(col1) {
+
+        }
+        @include e(col2) {
+            display: none;
+        }
+    }
+}//.landscape
