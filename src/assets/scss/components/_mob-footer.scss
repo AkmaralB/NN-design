@@ -1,29 +1,45 @@
 @include respond-to(landscape) {
     @include b(footer) {
         @include e(container) {
-            
+            width: auto;
+            margin: 40px;
         }
         @include e(mail) {
-            margin-left: 0;
-        }
-        @include e(line) {
-
+            margin-left: 50px;
+            @include m(title) {
+                font-size: 32px;
+            }
+            @include m(elem) {
+                font-size: 48px;
+            }
         }
         @include e(info) {
-
+            @include flex;
+            @include flex-direction(row);
+            justify-content: space-between;
         }
         @include e(social) {
+            @include flex;
             @include flex-direction(column);
+            justify-content: space-between;
+            width: auto;
             @include m(icon) {
-                margin-right: 18px;
+                margin-bottom: 18px;
             }
         }
     }
     @include b(info) {
-        margin-left: 0;
+        width: 90%;
+        margin-left: 50px;
         margin-bottom: 0;
         @include e(col) {
-
+            width: 90%;
+            @include m(title) {
+                display: none;
+            }
+            @include m(text) {
+                font-size: 32px;
+            }
         }
         @include e(col1) {
 
@@ -33,3 +49,87 @@
         }
     }
 }//.landscape
+@include respond-to(medium) {
+    @include b(footer) {
+        @include e(container) {
+            margin: 30px;
+            padding: 0;
+        }
+        @include e(mail) {
+            @include m(title) {
+                font-size: 27px;
+            }
+            @include m(elem) {
+                font-size: 40px;
+            }
+        }
+        @include e(social) {
+            @include m(icon) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @include b(info) {
+        @include e(col) {
+            @include m(text) {
+                font-size: 27px;
+            }
+        }
+    }
+}//.medium
+@include respond-to(small) {
+    @include b(footer) {
+        @include e(container) {
+        }
+        @include e(mail) {
+            margin-left: 20px;
+            @include m(title) {
+                font-size: 22px;
+            }
+            @include m(elem) {
+                font-size: 32px;
+            }
+        }
+        @include e(social) {
+            @include m(icon) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    @include b(info) {
+        margin-left: 20px;
+        @include e(col) {
+            @include m(text) {
+                font-size: 22px;
+            }
+        }
+    }
+}//.small
+@include respond-to(xsmall) {
+    @include b(footer) {
+        @include e(container) {
+            margin: 24px;
+        }
+        @include e(mail) {
+            line-height: 0;
+            @include m(title) {
+                font-size: 12px;
+            }
+            @include m(elem) {
+                font-size: 18px;
+            }
+        }
+        @include e(social) {
+            @include m(icon) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @include b(info) {
+        @include e(col) {
+            @include m(text) {
+                font-size: 12px;
+            }
+        }
+    }
+}//.xsmall

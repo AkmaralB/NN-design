@@ -1,49 +1,109 @@
-@include b(section3-projects) {
-    width: 100%;
-    margin: 0 40px 20px;
-
-    @include e(title) {
-        margin-bottom: 40px;
-        font-size: 64px;
-    }
-    
-    @include e(items) {
-        margin-bottom: 40px;
-    }
-
-    @include e(button) {
+@include respond-to(landscape) {
+    @include b(section3-projects) {
         width: auto;
-        margin: 40px auto 100px;
-        font-size: 43px;
+        margin: 0 40px 20px;
+        @include e(title) {
+            font-size: 60px;
+            margin-bottom:0;
+            font-family: 'Gotham PRo BOld';
+            p {
+                line-height: 0;
+            }
+        }   
+        @include e(items) {
+            margin-bottom: 30px;
+        }
+    }
+    @include b(item) {
+        @include e(left) {
+            height: 330px;
+            @include m(img) {
+            }
+        }
+        @include e(right) {
+            @include m(inner) {
+                margin: auto 40px auto 32px; 
+            }
+            @include m(text) {
+                height: auto;
+                p {
+                    margin-top: 0;
+                    font-size: 19px;
+                    line-height: 1em;
+                }
+            }
+            @include m(title) {
+                display: none;
+            }
+            @include m(open) {
+                display: none;
+            }    
+        }
+    }
+    @include b(section3-projects-button) {
+        margin: 40px auto 60px;
+        font-size: 40px;
         font-family: 'Gotham Pro Medium';
         color: #7E92B8;
     }
-}
-
-@include b(item) {
-    @include e(left) {
-        width: 410px;
-        height: auto;        
-        @include m(img) {
-            width: 410px;
-            height: auto;
+}//.landscape
+@include respond-to(medium) {
+    @include b(section3-projects) {
+        margin: 0 35px 20px;
+        @include e(title) {
+            font-size: 50px;
+        }   
+        @include e(items) {
+            margin-bottom: 25px;
         }
     }
-    @include e(right) {
-        margin: 43px 70px 0 32px; 
-
-        @include m(text) {
-            p {
-                font-size: 12px;
-                line-height: 125.7%;;
+    @include b(item) {
+        @include e(left) {
+            height: 260px;
+        }
+        @include e(right) {
+            @include m(inner) {
+                margin: auto 30px auto 22px; 
+            }
+            @include m(text) {
+                p {
+                    font-size: 15px;
+                }
             }
         }
-        @include m(title) {
-            display: none;
-        }
-        @include m(open) {
-            display: none;
-        }    
     }
-}
-
+    @include b(section3-projects-button) {
+        margin: 30px auto 50px;
+        font-size: 32px;
+    }
+}//.medium
+@include respond-to(small) {
+    @include b(section3-projects) {
+        margin: 0 25px 20px;
+        @include e(title) {
+            font-size: 40px;
+        }   
+        @include e(items) {
+            margin-bottom: 25px;
+        }
+    }
+    @include b(item) {
+        @include e(left) {
+            height: 205px;
+        }
+        @include e(right) {
+            @include m(inner) {
+                margin: auto 15px auto 15px; 
+            }
+            @include m(text) {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    @include b(section3-projects-button) {
+        margin: 30px auto 40px;
+        font-size: 25px;
+    }
+}//.small

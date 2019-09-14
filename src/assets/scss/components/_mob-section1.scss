@@ -1,7 +1,7 @@
 @include respond-to(landscape) {
     @include b(section1) {
         width: 100%;
-        height: 600px;
+        height: 525px;
         margin: 0 0 40px;
 
         @include e(left-panel) {
@@ -15,4 +15,25 @@
             display: none;
         }
     }
-}
+}//.landscape
+@include respond-to(medium) {
+    @include b(section1) {
+        width: 100%;
+        height: 415px;
+        margin: 0 0 30px;
+    }
+}//.medium
+@include respond-to(small) {
+    @include b(section1) {
+        width: 100%;
+        height: 325px;
+        margin: 0 0 20px;
+    }
+}//.small
+@include respond-to(xsmall) {
+    @include b(section1) {
+        width: 100%;
+        height: 210px;
+    }
+}//.xsmall
+

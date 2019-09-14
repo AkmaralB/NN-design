@@ -1,10 +1,10 @@
 @include respond-to(landscape) {
     @include b(section2-projects) {
-        @include flex;
         @include flex-direction(column);
-        width: 100%;
-        margin: 0 40px 60px;
+        width: auto;
+        margin: 0 40px;
         @include e(title) {
+            font-family: 'Gotham Pro Bold';
             margin-bottom: 30px;            
             font-size: 64px;
         }
@@ -12,19 +12,17 @@
     @include b(latest-rows) {
         @include flex-direction(column);
         overflow: auto;
-    
+        width: 100%;
         @include e(row) {
-            width: 875px;
+            width: 100%;
             height: auto;
             margin-right: 0;
             margin-bottom: 40px;
-    
             img {
-                width: 875px;
-                height: auto;
+                width: 100%;
+                height: 510px;
                 margin-bottom: 20px;
             }
-        
             @include m(text) {
                 margin-left: 60px;
                 margin-bottom: 20px;
@@ -33,7 +31,79 @@
             @include m(title) {
                 font-size: 43px;
             }
-    
         }
     }    
-}
+}//.landsape
+@include respond-to(medium) {
+    @include b(section2-projects) {
+        margin: 0 35px;
+        @include e(title) {
+            font-size: 48px;
+        }
+    }
+    @include b(latest-rows) {
+        @include e(row) {
+            margin-bottom: 25px;
+            img {
+                height: 400px;
+            }
+            @include m(text) {
+                margin-left: 35px;
+                font-size: 24px;
+            }
+            @include m(title) {
+                font-size: 32px;
+            }
+        }
+    }    
+}//.medium
+@include respond-to(small) {
+    @include b(section2-projects) {
+        margin: 0 25px;
+        @include e(title) {
+            margin-bottom: 20px;       
+            font-size: 38px;
+        }
+    }
+    @include b(latest-rows) {
+        @include e(row) {
+            margin-bottom: 25px;
+            img {
+                height: 310px;
+                margin-bottom: 10px;
+            }
+            @include m(text) {
+                margin-left: 35px;
+                margin-bottom: 20px;
+                font-size: 19px;
+            }
+            @include m(title) {
+                font-size: 25px;
+            }
+        }
+    }    
+}//.small
+@include respond-to(xsmall) {
+    @include b(section2-projects) {
+        margin: 0 16px;
+        @include e(title) {
+            font-size: 24px;
+        }
+    }
+    @include b(latest-rows) {
+        @include e(row) {
+            margin-bottom: 16px;
+            img {
+                height: 185px;
+            }
+            @include m(text) {
+                margin-left: 20px;
+                margin-bottom: 16px;
+                font-size: 12px;
+            }
+            @include m(title) {
+                font-size: 16px;
+            }
+        }
+    }    
+}//.xsmall

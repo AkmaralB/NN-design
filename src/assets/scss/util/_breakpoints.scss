@@ -1,9 +1,9 @@
 $breakpoints: (
 	'xxsmall': ( max-width: 319px ),
-	'xsmall': ( max-width: 479px ),
-	'small': ( max-width: 639px ),
-	'medium': ( max-width: 799px ),
-	'landscape': ( max-width: 1023px ),
+	'xsmall': ( max-width: 479px ),//400
+	'small': ( max-width: 639px ),//560
+	'medium': ( max-width: 799px ),//720
+	'landscape': ( max-width: 1023px ),//910
 	'desktop': ( max-width: 1279px ),
 	'large': ( max-width: 1440px),
 	'xlarge': ( min-width: 1441px),

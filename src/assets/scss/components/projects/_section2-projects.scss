@@ -23,7 +23,6 @@
     @include flex-direction(row);
     justify-content: space-between;    
     overflow: hidden;
-    width: 100%;
 
     @include e(row) {
         width: 367px;
@@ -46,6 +45,5 @@
             font-family: 'Gotham Pro Medium';
             line-height: 0;
         }
-
     }
 }
