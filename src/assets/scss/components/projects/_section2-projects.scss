@@ -2,6 +2,7 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
+    max-width: 1150px;
     margin: 0 auto 72px;
     background: #e5e5e5;
     @include e(title) {
@@ -10,12 +11,6 @@
         font-size: 32px;
         font-family: 'Gotham Pro Black';
         line-height: 0em;
-    }
-    @include e(latest) {
-        flex: 1 1 auto;
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;    
     }
 }
 @include b(latest-rows) {
@@ -46,4 +41,49 @@
             line-height: 0;
         }
     }
+}
+@include respond-to(large) {
+    @include b(section2-projects) {
+        width: auto;
+        margin: 0 145px 72px;
+    }
+}
+@include respond-to(desktop) {
+    @include b(section2-projects) {
+        width: auto;
+        margin: 0 100px 50px;
+    }
+    @include b(latest-rows) {
+        @include e(row) {
+            width: 300px;
+            height: 365px;
+            img {
+                width: 300px;
+                height: 256px;
+            }
+        }
+    }    
+}
+@include respond-to(xxlarge) {
+    @include b(section2-projects) {
+        @include e(title) {
+            margin-bottom: 20px;         
+            font-size: 38px;
+        }
+    }
+    @include b(latest-rows) {
+        @include e(row) {
+            height: 423px;
+            img {
+                margin-bottom: 20px;
+            }
+            @include m(text) {
+                margin-left: 30px;
+            }
+            @include m(title) {
+                font-size: 21px;
+                margin-bottom: 25px;
+            }
+        }
+    }    
 }

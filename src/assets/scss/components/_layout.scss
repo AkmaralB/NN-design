@@ -79,3 +79,15 @@
         }
     }
 }
+
+@include respond-to(xlarge) {
+    body {
+      font-size: 15px;
+    }
+}
+@include respond-to(xxlarge) {
+    body {
+      font-size: 16px;
+    }
+}
+

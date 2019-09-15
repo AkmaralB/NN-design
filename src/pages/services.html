@@ -17,6 +17,9 @@
         <div class="layout__header">
             {{> _header }}
         </div>
+        <div class="layout__mob-header">
+            {{> _mob-header-b }}
+        </div>
 
         <div class="layout__section1">
             <div class="section1-services">
@@ -33,7 +36,8 @@
                     <div class="center__rows">
                         <div class="rows">
                             <div class="rows__row">
-                                <img src="assets/img/serv-img1.png" alt="services-img1">
+                                <img src="assets/img/serv-img1.png" alt="services-img1" class="rows__row--img">
+                                <img src="assets/img/mob-serv-img1.png" alt="services-img1" class="rows__row--mob-img">
                                 <div class="rows__row--text">
                                     <p class="rows__row--title">Логотип</p>
                                     <p>Ваш фирменный знак</p>
@@ -41,7 +45,8 @@
                                 <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
                             <div class="rows__row">
-                                <img src="assets/img/serv-img2.png" alt="services-img2">
+                                <img src="assets/img/serv-img2.png" alt="services-img2" class="rows__row--img">
+                                <img src="assets/img/mob-serv-img2.png" alt="services-img2" class="rows__row--mob-img">
                                 <div class="rows__row--text">
                                     <p class="rows__row--title">Брендинг и стиль</p>
                                     <p>Ваш имидж и отличительная
@@ -50,7 +55,8 @@
                                 <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
                             <div class="rows__row">
-                                <img src="assets/img/serv-img3.png" alt="services-img3">
+                                <img src="assets/img/serv-img3.png" alt="services-img3" class="rows__row--img">
+                                <img src="assets/img/mob-serv-img3.png" alt="services-img3" class="rows__row--mob-img">
                                 <div class="rows__row--text">
                                     <p class="rows__row--title">Веб-дизайн</p>
                                     <p>Сервис для вашего
@@ -59,7 +65,8 @@
                                 <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
                             <div class="rows__row">
-                                <img src="assets/img/serv-img4.png" alt="services-img4">
+                                <img src="assets/img/serv-img4.png" alt="services-img4" class="rows__row--img">
+                                <img src="assets/img/mob-serv-img4.png" alt="services-img4" class="rows__row--mob-img">
                                 <div class="rows__row--text">
                                     <p class="rows__row--title">Упаковка</p>
                                     <p>Конкурентное преимущество
@@ -67,31 +74,24 @@
                                 </div>
                                 <a href="#" class="rows__row--button">Подробнее</a>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="center__arrow">
                         <a class="center__arrow--elem"> < </a>
                         <a class="center__arrow--elem"> > </a>
                     </div>
-
                 </div>
-
                 <div class="section1-services__right-panel">
                     {{> _right-panel }}
                 </div>
-
             </div>
-
         </div>
         <div class="layout__section6">
             {{> _section6 }}
         </div>
-
         <footer class="layout__footer">
             {{> _footer }}
         </footer>
-
     </div>
 
     <script src="assets/js/app.js"></script>

@@ -1,12 +1,13 @@
 @include b(header) {
     width: 1440px;
-    height: 113px;
-    margin: 0 auto;
+    height: 70px;
+    margin: 0 auto 40px;
     @include e(container) {
         @include flex;
         @include flex-direction(row);
         min-width: 100%;
         width: 100%;
+        height: 100%;
         margin: 0 auto;
     }
     @include e(logo) {
@@ -20,37 +21,119 @@
     }
     @include e(divider) {
         flex: 1 1 auto;
-
         @include m(elem) {
             width: 341px;
-            height: 0px;
-            margin-top: 49px;
-
-            border: 1px solid #333333;
+            height: 50px;
+            border-bottom: 2px solid #333333;
         }
-            
     }
-    
     @include e(button) {
         flex: 0 0 126px;
         margin-right: 145px;
-        margin-top: 49px;
-        
+        margin-top: 40px;
         @include m(elem) {
             width: 126px;
             height: 32px;
+            font-size: 12px;
             text-align: center;
             border: 1px solid #000000;
             border-radius: 16px;
             background-color: transparent;
-
             &:hover {
                 color: #ffffff;
                 border: 1px solid #7E92B8;
                 background-color: #7E92B8;
             }
         }
-           
-        
     }
 }
+@include respond-to(large) {
+    @include b(header) {
+        width: 100%;
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(header) {
+        height: 60px;
+        margin: 0 auto 40px;
+        @include e(logo) {
+            flex: 0 0 100px;
+        }
+        @include e(logo-src) {
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        @include e(divider) {
+            @include m(elem) {
+                width: 270px;
+                height: 70px;
+            }
+        }
+        @include e(button) {
+            flex: 0 0 126px;
+            margin-top: 40px;
+            margin-right: 100px;
+            @include m(elem) {
+                width: 126px;
+                height: 32px;
+            }
+        }
+    }    
+}//.desktop
+@include respond-to(xlarge) {
+    @include b(header) {
+        margin: 0 auto 80px;
+        @include e(logo-src) {
+            width: 50px;
+            height: auto;
+            margin-left: 46px;
+            margin-top: 50px;
+        }
+        @include e(divider) {
+            @include m(elem) {
+                width: 400px;
+                height: 0px;
+                margin-top: 90px;
+                border: 2px solid #333333;
+            }
+        }
+        @include e(button) {
+            flex: 0 0 170px;
+            margin-top: 60px;
+            @include m(elem) {
+                width: 170px;
+                height: 50px;
+                font-size: 16px;
+                border-radius: 35px;
+            }
+        }
+    }    
+}//.xlarge
+@include respond-to(xxlarge) {
+    @include b(header) {
+        margin: 0 auto 100px;
+        @include e(logo-src) {
+            width: 60px;
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+        @include e(divider) {
+            @include m(elem) {
+                margin-top: 120px;
+            }
+        }
+        @include e(button) {
+            flex: 0 0 190px;
+            margin-top: 80px;
+            @include m(elem) {
+                width: 190px;
+                height: 50px;
+                font-size: 18px;
+                border: 2px solid #000000;
+                &:hover {
+                    border: 2px solid #7E92B8;
+                }
+            }
+        }
+    }    
+}//.xxlarge

@@ -1,7 +1,7 @@
 @include b(right-panel) {
+    margin-left: 100px;
     @include e(icon) {
         display: block;
-        margin-left: 95px;
         margin-bottom: 24px;
         list-style: none;
         color: #777777;
@@ -13,8 +13,22 @@
     @include e(divider) {
         width: 0px;
         height: 341px;
-        margin-left: 100px;
+        margin-left: 5px;
         margin-top: 4px;
         border-right: 3px solid #333333;
     }
 }//.right-panel
+@include respond-to(desktop) {
+    @include b(right-panel) {
+        margin-left: 60px;
+        @include e(icon) {
+            margin-bottom: 20px;
+        }
+        @include e(divider) {
+            height: 270px;
+            margin-left: 5px;
+            border-right: 2px solid #333333;
+        }
+    }
+}//.desktop
+

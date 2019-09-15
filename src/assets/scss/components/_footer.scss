@@ -20,7 +20,7 @@
         }
         @include m(elem) {
             font-size: 32px;
-            font-family: 'gothapromed';
+            font-family: 'Gotham Pro Medium';
             text-decoration: none;
             color: #7E92B8;
         }
@@ -67,7 +67,6 @@
         }
         @include m(text) {
             margin: 0;
-            font-size: 14px;
             list-style: none;
             line-height: 1.5em;
             color: #777777;
@@ -76,3 +75,48 @@
         } 
     }
 }
+
+@include respond-to(desktop) {
+    @include b(footer) {
+        @include e(container) {
+            width: 100%;
+            margin: 50px auto;
+        }
+        @include e(social) {
+            @include m(icon) {
+                margin-right: 25px;
+            }
+        }
+    }
+    @include b(info) {
+        margin-bottom: 70px;
+    }
+}//.desktop
+@include respond-to(xxlarge) {
+    @include b(footer) {
+        @include e(mail) {
+            @include m(title) {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+            @include m(elem) {
+                font-size: 45px;
+            }
+        }
+        @include e(social) {
+            @include m(icon) {
+                margin-right: 30px;
+            }
+        }
+    }
+    @include b(info) {
+        @include e(col) {
+            width: 170px;
+            margin-right: 100px;
+            @include m(title) {
+                margin: 0 0 30px 0;
+                font-size: 24px;
+            }
+        }
+    }
+}//.xxlarge

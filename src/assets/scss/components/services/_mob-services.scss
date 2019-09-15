@@ -1,0 +1,73 @@
+@include respond-to(landscape) {
+    @include b(rows) {
+        @include e(row) {
+            @include m(mob-img) {
+                display: block;
+            }
+        }
+    }
+    @include b(section1-services) {
+        width: 100%;
+        margin: auto 40px;
+        @include e(left-panel) {
+            display: none;
+        }
+        @include e(center) {
+            // flex: 1 1 auto;
+        }
+        @include e(right-panel) {
+            display: none;
+        }
+    }
+    @include b(center) {
+        width: 100%;
+        @include e(title) {
+            // flex: 0 0 auto;
+            margin-bottom: 20px;
+            padding-left: 77px; 
+            @include m(big) {
+                font-size: 64px;
+            }
+            @include m(little) {
+                font-size: 37px;
+                line-height: 125.7%;
+                white-space: normal;
+            }
+        }
+        @include e(rows) {
+            // flex: 1 1 auto;
+        }
+        @include e(arrow) {
+            display: none;
+        }
+    }
+    @include b(rows) {
+        // width: 100%;
+        @include e(row) {
+            width: 260px;
+            height: 260px;
+            // margin-right: 32px;
+            // margin-bottom: 32px;
+            @include m(img) {
+                display: none;
+            }
+            @include m(mob-img) {
+                width: 260px;
+                height: 260px;
+                // margin-bottom: 32px;
+            }
+            @include m(text) {
+                // height: 110px;
+                margin-left: 21px;
+                white-space: normal;
+            }
+            @include m(title) {
+                // margin: 0;
+                font-size: 64px;
+            }
+            @include m(button) {
+                display: none;
+            }
+        }
+    }    
+}

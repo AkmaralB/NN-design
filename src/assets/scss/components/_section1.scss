@@ -24,3 +24,22 @@
         flex: 0 0 145px;
     }
 }
+@include respond-to(large) {
+    @include b(section1) {
+        width: 100%;
+    }
+}
+@include respond-to(desktop) {
+    @include b(section1) {
+        width: 100%;
+        height: 440px;
+        margin: 0 auto 50px;
+        @include e(left-panel) {
+            flex: 0 0 100px;
+            width: 100px;
+        }   
+        @include e(right-panel) {
+            flex: 0 0 100px;
+        }
+    }    
+}

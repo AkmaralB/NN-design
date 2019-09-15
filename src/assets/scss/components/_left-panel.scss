@@ -23,24 +23,24 @@
         }
     }
 }
-@include respond-to(xlarge) {
-    @include b(right-panel) {
-        @include e(divider) {
-            height: 300px;
-        }
-    }
+@include respond-to(desktop) {
     @include b(left-panel) {
+        margin-top: 200px;
+        margin-left: -130px;
+    }
+}//.desktop
+@include respond-to(xlarge) {
+    @include b(left-panel) {
+        margin-left: -150px;
         @include e(item) {
             margin-right: 60px;
             font-size: 17px;
         }
     }
 }//.xlarge
-
 @include respond-to(xxlarge) {
     @include b(left-panel) {
-        margin-left: -170px;
-    
+        margin-left: -190px;
         @include e(item) {
             margin-right: 80px;
             font-size: 20px;

@@ -1,5 +1,11 @@
+@include b(rows) {
+    @include e(row) {
+        @include m(mob-img) {
+            display: none;
+        }
+    }
+}
 @include b(services) {
-
     .services--color {
         background-color: #ffffff;
     }
@@ -7,50 +13,43 @@
         display: none;
     }
 }
-
 @include b(section1-services) {
     @include flex;
     @include flex-direction(row);
     width: calc(1150px + 290px);
     margin: 0 auto;
-
     @include e(left-panel) {
         @include flex;
         flex: 0 0 145px;
         width: 145px;
     }
-    
     @include e(center) {
         flex: 1 1 auto;
     }
-
     @include e(right-panel) {
         flex: 0 0 145px;
     }
 }
-
 @include b(center) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
     background: #e5e5e5;
-
     @include e(title) {
         flex: 0 0 auto;
         margin-bottom: 20px;
         padding-left: 77px; 
-
         @include m(big) {
             font-size: 32px;
             font-family: 'Gotham Pro Black';
             line-height: 0em;
         }
         @include m(little) {
+            font-size: 16px;
             line-height: 138.2%;
             white-space: pre-line;
         }
     }
-    
     @include e(rows) {
         flex: 1 1 auto;
         overflow: hidden;
@@ -61,11 +60,9 @@
         @include flex-direction(row);
         justify-content: flex-end;
         margin-bottom: 56px;
-
         &:hover {
             cursor: pointer;
         }
-
         @include m(elem) {
             display: block;
             margin-left: 20px;
@@ -75,7 +72,6 @@
             font-size: 18px;
             font-family: 'Gotham Pro Bold';
             color:  rgba(126, 146, 184, 0.5);
-
             &:active,
             &:focus {
                 border: 2px solid #222222;    
@@ -83,28 +79,23 @@
             }
         }
     }
-
 }
-
 @include b(rows) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
     width: 100%;
-
     @include e(row) {
         width: 324px;
         height: 438px;
         margin-right: 32px;
         margin-bottom: 32px;
         background: #ffffff;
-
-        img {
+        @include m(img) {
             width: 324px;
             height: 244px;
             margin-bottom: 32px;
         }
-    
         @include m(text) {
             height: 110px;
             margin-left: 35px;
@@ -127,7 +118,76 @@
             text-decoration: none;
             color: #7E92B8;
         }
-
     }
-
 }
+@include respond-to(desktop) {
+    @include b(section1-services) {
+        width: 100%;
+        @include e(left-panel) {
+            @include flex;
+            flex: 0 0 100px;
+            width: 100px;
+        }
+        @include e(right-panel) {
+            flex: 0 0 100px;
+        }
+    }
+    @include b(center) {
+        width: calc(100% - 200px);
+    }
+    @include b(rows) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+        width: 100%;
+        @include e(row) {
+            width: 324px;
+            height: 400px;
+            img {
+                width: 300px;
+                height: 226px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}//.desktop
+@include respond-to(large) {
+    @include b(section1-services) {
+        @include flex;
+        @include flex-direction(row);
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include b(center) {
+        width: calc(100% - 290px);
+    }    
+}//.large
+@include respond-to(xxlarge) {
+    @include b(section1-services) {
+        width: calc(1150px + 290px);
+    }
+    @include b(center) {
+        width: 1150px;
+        @include e(title) {
+            @include m(big) {
+                font-size: 38px;
+            }
+        }
+        @include e(arrow) {
+            @include m(elem) {
+                padding: 6px 10px;
+                font-size: 21px;
+            }
+        }
+    }
+    @include b(rows) {
+        @include e(row) {
+            @include m(title) {
+                font-size: 29px;
+            }
+            @include m(button) {
+                font-size: 19px;
+            }
+        }
+    }    
+}//.xxlarge

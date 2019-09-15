@@ -33,7 +33,7 @@
         @include flex-direction(column);
         width: 50%;
         @include m(inner) {
-            margin: 32px 161px 69px 56px;
+            margin: 30px 160px 70px 55px;
         }
         @include m(text) {
             height: 300px;
@@ -82,5 +82,62 @@
         @include b(items-open) {
             display: flex;
         }
+    }
+}
+@include respond-to(large) {
+    @include b(section3-projects) {
+        width: auto;
+        margin: 0 145px;
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section3-projects) {
+        margin: 0 100px;
+    }   
+    @include b(section3-projects-button) {
+        margin: 20px auto 50px;
+    }
+    @include b(item) {
+        @include e(right) {
+            @include m(text) {
+                height: 230px;
+            }
+            @include m(inner) {
+                margin: 30px 60px 70px 55px;
+            }    
+        }
+    }
+}//.desktop
+
+@include respond-to(xxlarge) {
+    @include b(section3-projects) {
+        @include e(title) {
+            margin-bottom: 20px;
+            font-size: 38px;
+        }
+    }//.section3-projects
+    @include b(item) {
+        @include e(right) {
+            @include m(inner) {
+                margin: 32px 140px 69px 56px;
+            }
+            @include m(text) {
+                height: 300px;
+                margin-top: 32px;
+                p {
+                    line-height: 138.2%;
+                }
+            }
+            @include m(title) {
+                font-size: 28px;
+            }
+            @include m(open) {
+                font-size: 19px;
+            }    
+        }
+    }
+    @include b(section3-projects-button) {
+        margin: 70px auto 80px;
+        font-size: 19px;
     }
 }

@@ -72,8 +72,8 @@ display: none;
         top: 0;
     }
     .main--short > div {
-        margin-left: 25%;
-        width: 280px;
+        margin-left: 15%;
+        width: 340px;
     }
     .main--hide {
         display: none;
@@ -169,8 +169,9 @@ display: none;
         @include e(left-panel) {
             top: 70px;
         }
-        .main--color-d {
-            height: 270px;
+        .main--short > div {
+            margin-left: 5%;
+            width: 270px;
         }
     }
 }//.desktop
@@ -205,8 +206,8 @@ display: none;
             top: 180px;
         }
         .main--short > div {
-            margin-left: 35%;
-            width: 300px;
+            margin-left: 5%;
+            width: 340px;
         }
     }
 }//.xlarge
@@ -241,7 +242,7 @@ display: none;
             top: 25%;
         }
         .main--short > div {
-            margin-left: 35%;
+            margin-left: 10%;
             width: 400px;
         }
         @include e(toggle) {
@@ -256,9 +257,6 @@ display: none;
                 padding: 13px 16px;
                 font-size: 24px;
             }
-        }
-        .main--color-d {
-            height: 400px;
         }
     }
 }//.xxlarge

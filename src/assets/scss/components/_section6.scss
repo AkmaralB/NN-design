@@ -3,23 +3,19 @@
     @include flex-direction(column);
     width: 1150px;
     margin: 0 auto 72px;
-
     @include e(container) {
         margin: 72px 318px 0px 76px;
     }
-
     @include e(title) {
         flex: 0 0 auto;
-
         @include m(item1) {
             margin: 0;
             font-size: 16px;
             font-family: 'Gotham Pro Medium';
-            line-height: 20px;
+            line-height: 118%;
             text-transform: uppercase;
             color: #7E92B8;
         }
-
         @include m(item2) {
             margin-top: 0;
             margin-bottom: 66px;
@@ -28,40 +24,35 @@
             color: #0C0C0C;
         }
     }
-
     @include e(form) {
         flex: 1 1 auto;
         @include flex;
         @include flex-direction(row);
         margin-bottom: 56px;
-
         @include m(elem) {
-            width: 225px;
+            width: 205px;
             margin-bottom: 32px;
             padding-bottom: 16px;
+            padding-left: 20px;
             border: 0;
             border-bottom: 1px solid #D1D1D6;
             background-color: transparent;
-            color: #c3c3c3;
+            color: #adadad;
 
             &:focus {
                 outline: 0;
-                border-bottom: 1px solid #D1D1D6;
+                border-bottom: 1px solid #7E92B8;
             }
         }
-        
         @include m(elem1) {
             margin-right: 30px;
         }
-
         @include m(elem2) {
             margin-right: 30px;
         }
-
         @include m(elem4) {
-            width: 100%;
+            width: calc(100% - 20px);
         }
-
         @include m(button) {
             float: right;
             padding: 15px 30px;
@@ -70,19 +61,96 @@
             border-radius: 32px;
             font-size: 14px;
             font-family: 'Gotham Pro Medium';
-            line-height: 17px;
+            line-height: 122%;
             text-align: center;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: #7E92B8;
             background-color: transparent;
-
             &:hover {
                 color: #ffffff;
                 background-color: #7E92B8;
             }
         }
     }
-    
-    
-}
+}//.section6
+@include respond-to(large) {
+    @include b(section6) {
+        width: auto;
+        margin: 0 145px 72px;
+        @include e(container) {
+            margin: 72px 220px 0px 66px;
+        }
+        @include e(title) {
+            @include m(item2) {
+                margin-bottom: 56px;
+            }
+        }
+        @include e(form) {
+            justify-content: space-between;
+            margin-bottom: 46px;
+            @include m(elem) {
+                width: 180px;
+            }
+            @include m(elem3) {
+                margin-right: 0;
+            }
+            @include m(elem4) {
+                width: calc(100% - 20px);
+            }    
+        }
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section6) {
+        margin: 0 100px 50px;
+        @include e(container) {
+            margin: 50px 70px 0px 40px;
+        }
+        @include e(title) {
+            flex: 0 0 auto;
+            @include m(item2) {
+                margin-bottom: 40px;
+            }
+        }
+        @include e(form) {
+            margin-bottom: 40px;
+            @include m(elem1) {
+                margin-right: 20px;
+            }
+            @include m(elem2) {
+                margin-right: 20px;
+            }
+            @include m(elem4) {
+                width: calc(100% - 20px);
+            }
+        }
+    }//.section6    
+}//.desktop
+@include respond-to(xxlarge) {
+    @include b(section6) {
+        @include e(title) {
+            @include m(item1) {
+                font-size: 19px;
+            }
+            @include m(item2) {
+                font-size: 29px;
+            }
+        }
+        @include e(form) {
+            @include m(elem) {
+                border-bottom: 2px solid #D1D1D6;
+                &:focus {
+                    border-bottom: 2px solid #7E92B8;
+                }
+            }
+            @include m(elem4) {
+                width: calc(100% - 20px);
+            }
+            @include m(button) {
+                border: 2px solid #7E92B8;
+                font-size: 17px;
+            }
+        }
+    }//.section6    
+}//.xxlarge
