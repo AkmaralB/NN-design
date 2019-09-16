@@ -4,7 +4,6 @@
     width: 1150px;
     margin: 0 auto 56px auto;
     background: #ffffff;
-
     @include e(title) {
         flex: 0 0 auto;
         margin-bottom: 56px;
@@ -14,7 +13,6 @@
         font-family: 'Gotham Pro Medium';
         line-height: 0em;
     }
-    
     @include e(diagram) {
         flex: 1 1 auto;
         height: 372px;
@@ -22,3 +20,26 @@
         font-family: 'Gotham Pro Medium';
     }
 }
+@include respond-to(large) {
+    @include b(section3-brend) {
+        width: calc(100% - 290px);
+        margin: 0 145px 56px;
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section3-brend) {
+        width: calc(100% - 200px);
+        margin: 0 100px 56px;
+    }
+}//.desktop
+
+@include respond-to(xxlarge) {
+    @include b(section3-brend) {
+        @include e(title) {
+            font-size: 29px;
+        }
+        @include e(diagram) {
+            font-size: 14px;
+        }
+    }
+}//.xxlarge

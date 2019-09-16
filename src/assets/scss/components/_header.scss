@@ -111,7 +111,7 @@
 }//.xlarge
 @include respond-to(xxlarge) {
     @include b(header) {
-        margin: 0 auto 100px;
+        margin: 0 auto 170px;
         @include e(logo-src) {
             width: 60px;
             margin-left: 30px;

@@ -9,11 +9,9 @@
         flex: 0 0 145px;
         width: 145px;
     }
-    
     @include e(brend) {
         flex: 1 1 auto;
     }
-
     @include e(right-panel) {
         flex: 0 0 145px;
     }
@@ -21,19 +19,16 @@
         display: none;
     }
 }
-
 @include b(brend) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
     background: #e5e5e5;
-
     @include e(title) {
         flex: 0 0 auto;
         margin-top: 20px;
         margin-bottom: 40px;
-        padding-left: 77px; 
-
+        margin-left: 77px; 
         @include m(big) {
             font-size: 32px;
             font-family: 'Gotham Pro Black';
@@ -45,7 +40,6 @@
             white-space: pre-line;
         }
     }
-
     @include e(inner) {
         width: 100%;
         height: 456px;
@@ -54,11 +48,9 @@
         background: url(../img/background.png) #ffffff 10% 100% no-repeat; 
         background-size: 25% auto;
     }
-
     @include e(text) {
         width: 100%;
-        padding-left: 77px;
-
+        margin-left: 77px;
         @include m(big) {
             margin-top: 114px;
             margin-bottom: 100px;
@@ -78,5 +70,75 @@
             height: 456px;
         }
     }
-
 }
+@include respond-to(large) {
+    @include b(section1-brend) {
+        width: 100%;
+        margin: 0 auto;
+        @include e(left-panel) {
+            @include flex;
+            flex: 0 0 145px;
+            width: 145px;
+        }
+        @include e(right-panel) {
+            flex: 0 0 145px;
+        }
+    }
+    @include b(brend) {
+        @include flex;
+        @include flex-direction(column);
+        width: calc(100% - 290px);
+        @include e(title) {
+            margin-left: 60px; 
+        }
+        @include e(text) {
+            margin-left: 60px;
+        }
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section1-brend) {
+        width: 100%;
+        // margin: 0 auto;
+        @include e(left-panel) {
+            flex: 0 0 10px;
+            width: 100px;
+        }
+        @include e(right-panel) {
+            flex: 0 0 100px;
+        }
+    }
+    @include b(brend) {
+        width: calc(100% - 200px);
+        @include e(inner) {
+            background: url(../img/background.png) #ffffff 10% 50% no-repeat; 
+            background-size: 25% auto;
+        }
+        @include e(title) {
+            margin-left: 50px;
+        }
+        @include e(text) {
+            margin-left: 50px;
+        }
+    }
+}//.desktop
+@include respond-to(xxlarge) {
+    @include b(brend) {
+        @include e(title) {
+            @include m(big) {
+                font-size: 38px;
+            }
+            @include m(little) {
+                font-size: 19px;
+            }
+        }
+        @include e(text) {
+            @include m(big) {
+                font-size: 24px;
+            }
+            @include m(little) {
+                font-size: 19px;
+            }
+        }
+    }
+}//.xxlarge

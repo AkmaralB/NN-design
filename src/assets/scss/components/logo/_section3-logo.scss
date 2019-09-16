@@ -22,3 +22,26 @@
         font-family: 'Gotham Pro Medium';
     }
 }
+@include respond-to(large) {
+    @include b(section3-logo) {
+        width: calc(100% - 290px);
+        margin: 0 145px 56px;
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section3-logo) {
+        width: calc(100% - 200px);
+        margin: 0 100px 56px;
+    }
+}//.desktop
+
+@include respond-to(xxlarge) {
+    @include b(section3-logo) {
+        @include e(title) {
+            font-size: 29px;
+        }
+        @include e(diagram) {
+            font-size: 14px;
+        }
+    }
+}//.xxlarge

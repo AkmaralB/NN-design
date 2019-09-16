@@ -17,6 +17,9 @@
         <div class="layout__header">
             {{> _header }}
         </div>
+        <div class="layout__mob-header">
+            {{> _mob-header-b }}
+        </div>
 
         <div class="layout__section1">
             <div class="section1-brend">
@@ -57,7 +60,7 @@
                     <div class="section2-brend__stages">
                         <div class="stages-rows">
                             <div class="stages-rows__row">
-                                <div><div class="stages-rows__row--numeral">1</div></div>
+                                <div class="stages-rows__row--width"><div class="stages-rows__row--numeral">1</div></div>
                                 <div class="stages-rows__row--text">
                                     <p class="stages-rows__row--title">Анализ</p>
                                     <p>Массовый сбор информации
@@ -68,7 +71,7 @@
                                 </div>
                             </div>
                             <div class="stages-rows__row">
-                                <div class="stages-rows__row--numeral">2</div>
+                                <div class="stages-rows__row--width"><div class="stages-rows__row--numeral">2</div></div>
                                 <div class="stages-rows__row--text">
                                     <p class="stages-rows__row--title">Концепт</p>
                                     <p>На этом этапе ваш логотип 
@@ -82,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="stages-rows__row">
-                                <div class="stages-rows__row--numeral">3</div>
+                                <div class="stages-rows__row--width"><div class="stages-rows__row--numeral">3</div></div>
                                 <div class="stages-rows__row--text">
                                     <p class="stages-rows__row--title">Утверждение</p>
                                     <p>Финальное утверждение
@@ -92,7 +95,7 @@
                                 </div>
                             </div>
                             <div class="stages-rows__row">
-                                <div class="stages-rows__row--numeral">4</div>
+                                <div class="stages-rows__row--width"><div class="stages-rows__row--numeral">4</div></div>
                                 <div class="stages-rows__row--text">
                                     <p class="stages-rows__row--title">Презентация</p>
                                     <p>Презентация клиенту</p>
@@ -108,12 +111,14 @@
         <div class="layout__section3">
             <div class="section3-brend">
                 <div class="section3-brend__title">
-                    <p>Как работает логотип</p>
+                    <p>Как работает брендинг</p>
                 </div>
                 <div class="section3-brend__diagram"></div>
             </div>
         </div>
-
+        <div class="layout__section6">
+            {{> _section6 }}
+        </div>
         <footer class="layout__footer">
             {{> _footer }}
         </footer>

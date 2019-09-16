@@ -7,13 +7,12 @@
         }
     }
     @include b(section1-services) {
-        width: 100%;
-        margin: auto 40px;
+        width: auto;
+        margin: auto 60px;
         @include e(left-panel) {
             display: none;
         }
         @include e(center) {
-            // flex: 1 1 auto;
         }
         @include e(right-panel) {
             display: none;
@@ -22,9 +21,8 @@
     @include b(center) {
         width: 100%;
         @include e(title) {
-            // flex: 0 0 auto;
             margin-bottom: 20px;
-            padding-left: 77px; 
+            margin-left: 30px; 
             @include m(big) {
                 font-size: 64px;
             }
@@ -32,42 +30,158 @@
                 font-size: 37px;
                 line-height: 125.7%;
                 white-space: normal;
+                color: #BDBDBD;
             }
         }
         @include e(rows) {
-            // flex: 1 1 auto;
+            overflow: hidden;
         }
         @include e(arrow) {
             display: none;
         }
     }
     @include b(rows) {
-        // width: 100%;
+        overflow: hidden;
         @include e(row) {
             width: 260px;
             height: 260px;
-            // margin-right: 32px;
-            // margin-bottom: 32px;
             @include m(img) {
                 display: none;
             }
             @include m(mob-img) {
-                width: 260px;
-                height: 260px;
-                // margin-bottom: 32px;
+                width: 90px;
+                height: 90px;
+                margin: 21px 150px 21px 21px;//Задаю справа т к ширина img не держит
             }
             @include m(text) {
-                // height: 110px;
                 margin-left: 21px;
+                font-size: 20px;
                 white-space: normal;
+                color: #BDBDBD;
             }
             @include m(title) {
-                // margin: 0;
-                font-size: 64px;
+                font-size: 30px;
+                line-height: 1em;
+                color: #222222;
+            }
+            @include m(title2) {
+                display: none;
+            }
+            @include m(mob-title2) {
+                display: block;
             }
             @include m(button) {
                 display: none;
             }
         }
     }    
-}
+}//.landscape
+@include respond-to(medium) {
+    @include b(section1-services) {
+        margin: auto 40px;
+    }
+    @include b(center) {
+        @include e(title) {
+            margin-bottom: 20px;
+            margin-left: 35px; 
+            @include m(big) {
+                font-size: 48px;
+            }
+            @include m(little) {
+                font-size: 28px;
+            }
+        }
+    }
+    @include b(rows) {
+        @include e(row) {
+            width: 200px;
+            height: 210px;
+            margin-right: 15px;
+            @include m(mob-img) {
+                width: 70px;
+                height: 70px;
+                margin: 10px 130px 20px 20px;//Задаю справа т к ширина img не держит
+            }
+            @include m(text) {
+                margin-left: 15px;
+                font-size: 16px;
+            }
+            @include m(title) {
+                font-size: 24px;
+            }
+        }
+    }    
+}//.medium
+@include respond-to(small) {
+    @include b(section1-services) {
+        margin: auto 30px;
+    }
+    @include b(center) {
+        @include e(title) {
+            margin-bottom: 10px;
+            margin-left: 35px; 
+            @include m(big) {
+                font-size: 38px;
+            }
+            @include m(little) {
+                font-size: 22px;
+            }
+        }
+    }
+    @include b(rows) {
+        @include e(row) {
+            width: 150px;
+            height: 160px;
+            margin-right: 15px;
+            @include m(mob-img) {
+                width: 55px;
+                height: 55px;
+                margin: 10px 80px 10px 15px;//Задаю справа т к ширина img не держит
+            }
+            @include m(text) {
+                margin-left: 15px;
+                font-size: 13px;
+            }
+            @include m(title) {
+                font-size: 19px;
+            }
+        }
+    }    
+}//.small
+@include respond-to(xsmall) {
+    @include b(section1-services) {
+        margin: auto 16px 32px 16px;
+    }
+    @include b(center) {
+        @include e(title) {
+            margin-bottom: 10px;
+            margin-left: 24px; 
+            @include m(big) {
+                font-size: 24px;
+            }
+            @include m(little) {
+                font-size: 14px;
+            }
+        }
+    }
+    @include b(rows) {
+        @include e(row) {
+            width: 96px;
+            height: 106px;
+            margin-right: 8px;
+            margin-bottom: 0;
+            @include m(mob-img) {
+                width: 35px;
+                height: 35px;
+                margin: 5px 55px 8px 8px;//Задаю справа т к ширина img не держит
+            }
+            @include m(text) {
+                margin-left: 8px;
+                font-size: 8px;
+            }
+            @include m(title) {
+                font-size: 12px;
+            }
+        }
+    }    
+}//.xsmall

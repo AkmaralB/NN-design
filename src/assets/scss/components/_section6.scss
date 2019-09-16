@@ -1,8 +1,24 @@
+@include b(abi) {
+    .color {
+        background: #e5e5e5;
+    }
+}
+@include b(gm) {
+    .color {
+        background: #e5e5e5;
+    }
+}
+@include b(qt) {
+    .color {
+        background: #e5e5e5;
+    }
+}
 @include b(section6) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
     margin: 0 auto 72px;
+    background: #ffffff;
     @include e(container) {
         margin: 72px 318px 0px 76px;
     }

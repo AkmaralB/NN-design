@@ -4,41 +4,31 @@
     width: 1150px;
     margin: 40px auto 32px auto;
     background: #e5e5e5;
-
     @include e(title) {
         flex: 0 0 auto;
         margin-bottom: 8px;
         padding-left: 77px; 
         font-size: 16px;
-
         @include m(big) {
             font-size: 32px;
             font-family: 'Gotham Pro Black';
             line-height: 0em;
         }
-
     }
-    
     @include e(stages) {
         flex: 1 1 auto;
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;    
     }
 }
-
 @include b(stages-rows) {
     display: flex;
     justify-content: space-between;    
     flex-direction: row;
     overflow: hidden;
     width: 100%;
-
     @include e(row) {
         width: 277px;
         height: 345px;
         background: #ffffff;
-
         @include m(numeral) {
             width: 20px;
             margin: 32px auto 20px;
@@ -49,7 +39,6 @@
             border: 1px solid #DAE4F8;
             border-radius: 100%;
         }
-    
         @include m(text) {
             height: auto;
             margin-left: 24px;
@@ -63,6 +52,39 @@
             font-family: 'Gotham Pro Medium';
             line-height: 0;
         }
-
     }
 }
+@include respond-to(large) {
+    @include b(section2-brend) {
+        width: calc(100% - 290px);
+        margin: 40px 145px 32px;
+        @include e(title) {
+            padding-left: 60px; 
+        }
+    }
+    @include b(stages-rows) {
+        @include e(row) {
+            margin-right: 20px;
+            @include m(width) {
+                width: 277px;
+            }
+        }
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section2-brend) {
+        width: calc(100% - 200px);
+        margin: 40px 100px 32px;
+        @include e(title) {
+            padding-left: 50px; 
+        }
+    }
+    @include b(stages-rows) {
+        @include e(row) {
+            margin-right: 20px;
+            @include m(width) {
+                width: 277px;
+            }
+        }
+    }
+}//.desktop
