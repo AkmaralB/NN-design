@@ -72,7 +72,7 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 12px;
         justify-content: space-between;
-        width: 380px;
+        width: 380px;  
         height: 380px;
         margin-right: 42px;
         margin-top: auto;
@@ -143,7 +143,6 @@
         @include e(text) {
             margin-left: 60px;
         }
-
     }
 }//.large
 @include respond-to(desktop) {
