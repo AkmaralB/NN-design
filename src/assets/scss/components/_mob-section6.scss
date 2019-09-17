@@ -1,4 +1,19 @@
 @include respond-to(landscape) {
+    @include b(abi) {
+        .color {
+            background: #ffffff;
+        }
+    }
+    @include b(gm) {
+        .color {
+            background: #ffffff;
+        }
+    }
+    @include b(qt) {
+        .color {
+            background: #ffffff;
+        }
+    }    
     @include b(section6) {
         @include flex-direction(column);
         width: auto;
@@ -156,4 +171,4 @@
             }
         }
     }
-}//.landscape
+}//.xsmall

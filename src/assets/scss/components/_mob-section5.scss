@@ -1,0 +1,104 @@
+@include respond-to(landscape) {
+    @include b(section5) {
+        width: auto;
+        margin: 0 60px 40px;
+        padding: auto;
+        @include e(text) {
+            width: auto;
+            margin: 0 60px 40px;
+            @include m(item1) {
+                margin-bottom: 10px;
+                font-size: 35px;
+                color: #7E92B8;
+            }
+            @include m(item2) {
+                font-size: 30px;
+                white-space: normal;
+            }
+        }
+        @include e(button) {
+            justify-content: space-between;
+            margin: 0 60px 32px;
+            @include m(elem) {
+                height: auto;
+                margin-right: 0;
+                border: 2px solid #DAE4F8;
+                border-radius: 20px;
+                font-size: 27px;
+                span:first-child {
+                    border-right: 2px solid #DAE4F8;
+                }
+            }
+        }
+    }
+}//.landscape
+@include respond-to(medium) {
+    @include b(section5) {
+        margin: 0 40px 40px;
+        @include e(text) {
+            margin: 0 40px 20px;
+            @include m(item1) {
+                font-size: 28px;
+            }
+            @include m(item2) {
+                font-size: 24px;
+            }
+        }
+        @include e(button) {
+            margin: 0 40px 32px;
+            @include m(elem) {
+                font-size: 21px;
+            }
+        }
+    }
+}//.medium
+@include respond-to(small) {
+    @include b(section5) {
+        margin: 0 30px 30px;
+        @include e(text) {
+            margin: 0 30px 10px;
+            @include m(item1) {
+                font-size: 22px;
+            }
+            @include m(item2) {
+                font-size: 19px;
+            }
+        }
+        @include e(button) {
+            margin: 0 40px 32px;
+            @include m(elem) {
+                font-size: 16px;
+                border: 1px solid #DAE4F8;
+                span:first-child {
+                    border-right: 1px solid #DAE4F8;
+                }
+            }
+        }
+    }
+}//.small
+@include respond-to(xsmall) {
+    @include b(section5) {
+        margin: 0 16px 24px;
+        @include e(text) {
+            width: auto;
+            margin: 0 16px 10px;
+            @include m(item1) {
+                margin-bottom: 0;
+                font-size: 16px;
+            }
+            @include m(item2) {
+                font-size: 14px;
+            }
+        }
+        @include e(button) {
+            margin: 0 16px 16px;
+            @include m(elem) {
+                font-size: 11px;
+                border: 1px solid #DAE4F8;
+                span:first-child {
+                    border-right: 1px solid #DAE4F8;
+                }
+            }
+        }
+    }
+}//.xsmall

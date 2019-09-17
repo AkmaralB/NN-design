@@ -2,7 +2,7 @@
     @include b(section2-projects) {
         @include flex-direction(column);
         width: auto;
-        margin: 0 40px;
+        margin: 0 60px;
         @include e(title) {
             font-family: 'Gotham Pro Bold';
             margin-bottom: 30px;            
@@ -36,7 +36,7 @@
 }//.landsape
 @include respond-to(medium) {
     @include b(section2-projects) {
-        margin: 0 35px;
+        margin: 0 40px;
         @include e(title) {
             font-size: 48px;
         }
@@ -59,7 +59,7 @@
 }//.medium
 @include respond-to(small) {
     @include b(section2-projects) {
-        margin: 0 25px;
+        margin: 0 30px;
         @include e(title) {
             margin-bottom: 20px;       
             font-size: 38px;

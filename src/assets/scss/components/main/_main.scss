@@ -214,7 +214,7 @@ display: none;
 @include respond-to(xxlarge) {
     @include b(main-left) {
         @include e(title) {
-            margin-top: 40%;
+            margin-top: 30%;
             margin-left: 25%;
             font-size: 110px;
         }
@@ -224,7 +224,7 @@ display: none;
             font-size: 40px;
         }
         @include e(button) {
-            margin-top: 15%;
+            margin-top: 10%;
             margin-left: 25%;
             a {
                 width: 250px;
@@ -260,3 +260,16 @@ display: none;
         }
     }
 }//.xxlarge
+// main: desktop, mobile - slider images.
+// projects: desktop - section1: slider 
+// projects: desktop - section2: slider 
+// gm: desktop, mobile - section4: slider
+// services: desktop, mobile - section2: slider
+// logo: desktop - section2: slider
+// logo: desktop - section3: diagram
+// logo: mobile - section1: slider
+// brend: desktop - section2: slider
+// brend: desktop - section3: diagram
+// pack: desktop - section2: slider
+// site: desktop - section2: slider
+

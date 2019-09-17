@@ -123,3 +123,24 @@
         }
     }
 }//.xsmall
+@include respond-to(xxsmall) {
+    @include b(stages-logo) {
+        margin: 25px auto;
+        @include e(row) {
+            width: 90%;
+            height: 32px;
+            border-radius: 16px;
+            @include m(numeral) {
+                margin: auto auto auto 0;
+                font-size: 12px;
+                line-height: 0.5em;
+            }
+            @include m(text) {
+                margin-left: -25px;
+            }
+            @include m(title) {
+                font-size: 10px;
+            }
+        }
+    }
+}//.xxsmall
