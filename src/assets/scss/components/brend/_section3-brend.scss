@@ -19,6 +19,9 @@
         font-size: 12px;
         font-family: 'Gotham Pro Medium';
     }
+    @include e(mob-diagram) {
+        display: none;
+    }
 }
 @include respond-to(large) {
     @include b(section3-brend) {

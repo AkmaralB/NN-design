@@ -2,7 +2,7 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 40px auto 32px auto;
+    margin: 56px auto;
     background: #e5e5e5;
     @include e(title) {
         flex: 0 0 auto;
@@ -19,7 +19,7 @@
         flex: 1 1 auto;
     }
 }
-@include b(stages-rows) {
+@include b(stages-logo) {
     display: flex;
     justify-content: space-between;    
     flex-direction: row;
@@ -29,6 +29,7 @@
     @include e(row) {
         width: 277px;
         height: 345px;
+        margin-right: 20px;
         background: #ffffff;
 
         @include m(numeral) {
@@ -60,34 +61,25 @@
 @include respond-to(large) {
     @include b(section2-logo) {
         width: calc(100% - 290px);
-        margin: 40px 145px 32px;
+        margin: 32px 145px;
         @include e(title) {
             padding-left: 60px; 
         }
     }
-    @include b(stages-rows) {
+    @include b(stages-logo) {
         @include e(row) {
-            margin-right: 20px;
             @include m(width) {
                 width: 277px;
-            }
+            }//чтобы row держал ширину
         }
     }
 }//.large
 @include respond-to(desktop) {
     @include b(section2-logo) {
         width: calc(100% - 200px);
-        margin: 40px 100px 32px;
+        margin: 32px 100px;
         @include e(title) {
             padding-left: 50px; 
-        }
-    }
-    @include b(stages-rows) {
-        @include e(row) {
-            margin-right: 20px;
-            @include m(width) {
-                width: 277px;
-            }
         }
     }
 }//.desktop
@@ -100,17 +92,15 @@
             }
         }
     }
-    @include b(stages-rows) {
+    @include b(stages-logo) {
         @include e(row) {
+            height: 400px;
             @include m(numeral) {
                 font-size: 29px;
                 border: 2px solid #DAE4F8;
             }
             @include m(text) {
                 font-size: 14px;
-                // &:first-child {
-                //     font-size: 29px;
-                // }
                 &:last-child {
                     font-size: 14px;
                 }
@@ -118,10 +108,6 @@
             @include m(title) {
                 font-size: 29px;
             }
-            // 29px не принимает!
-            // &:nth-child(2) {
-            //     font-size: 29px;
-            // }
         }
     }
 }//.xxlarge

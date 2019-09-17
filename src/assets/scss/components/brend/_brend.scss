@@ -26,8 +26,8 @@
     background: #e5e5e5;
     @include e(title) {
         flex: 0 0 auto;
-        margin-top: 20px;
-        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 20px;
         margin-left: 77px; 
         @include m(big) {
             font-size: 32px;
@@ -99,7 +99,6 @@
 @include respond-to(desktop) {
     @include b(section1-brend) {
         width: 100%;
-        // margin: 0 auto;
         @include e(left-panel) {
             flex: 0 0 10px;
             width: 100px;

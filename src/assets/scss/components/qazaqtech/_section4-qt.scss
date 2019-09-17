@@ -5,12 +5,10 @@
     margin: 0 auto;
     padding-bottom: 20px;
     background: #FFFFFF;
-
     @include e(text) {
         flex: 0 0 auto;
         width: 664px;
         margin-left: 76px;
-
         @include m(item1) {
             margin-bottom: 16px;
             font-size: 24px;
@@ -25,12 +23,34 @@
     }
     @include e(img) {
         flex: 1 1 auto;
-
         @include m(img4) {
-            width: 1150px;
+            width: 100%;
             height: auto;
         }
     }
-    
-    
 }
+@include respond-to(large) {
+    @include b(section4-qt) {
+        width: auto;
+        margin: 0 145px;
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section4-qt) {
+        width: auto;
+        margin: 0 100px;
+    }
+}//.desktop
+@include respond-to(xxlarge) {
+    @include b(section4-qt) {
+        @include e(text) {
+            @include m(item1) {
+                font-size: 29px;
+            }
+            @include m(item2) {
+                font-size: 17px;
+                white-space: normal;
+            }
+        }
+    }
+}//.xxlarge

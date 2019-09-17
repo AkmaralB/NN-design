@@ -1,4 +1,4 @@
-@include b(section2-brend) {
+@include b(section2-site) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
@@ -19,7 +19,7 @@
         flex: 1 1 auto;
     }
 }
-@include b(stages-brend) {
+@include b(stages-site) {
     display: flex;
     justify-content: space-between;    
     flex-direction: row;
@@ -55,14 +55,14 @@
     }
 }
 @include respond-to(large) {
-    @include b(section2-brend) {
+    @include b(section2-site) {
         width: calc(100% - 290px);
         margin: 32px 145px;
         @include e(title) {
             padding-left: 60px; 
         }
     }
-    @include b(stages-brend) {
+    @include b(stages-site) {
         @include e(row) {
             margin-right: 20px;
             @include m(width) {
@@ -72,14 +72,14 @@
     }
 }//.large
 @include respond-to(desktop) {
-    @include b(section2-brend) {
+    @include b(section2-site) {
         width: calc(100% - 200px);
         margin: 32px 100px;
         @include e(title) {
             padding-left: 50px; 
         }
     }
-    @include b(stages-brend) {
+    @include b(stages-site) {
         @include e(row) {
             height: 400px;
             margin-right: 20px;
@@ -90,7 +90,7 @@
     }
 }//.desktop
 @include respond-to(xxlarge) {
-    @include b(section2-brend) {
+    @include b(section2-site) {
         @include e(title) {
             font-size: 19px;
             @include m(big) {
@@ -98,7 +98,7 @@
             }
         }
     }
-    @include b(stages-brend) {
+    @include b(stages-site) {
         @include e(row) {
             height: 400px;
             @include m(numeral) {

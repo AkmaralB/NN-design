@@ -1,7 +1,7 @@
 @include respond-to(landscape) {
-    @include b(section1-brend) {
+    @include b(section1-pack) {
         width: auto;
-        margin: 0 60px;
+        margin: 0 60px;   
         @include e(left-panel) {
             display: none;
         }
@@ -9,7 +9,7 @@
             display: none;
         }
     }
-    @include b(brend) {
+    @include b(pack) {
         width: 100%;
         @include e(title) {
             flex: 0 0 auto;
@@ -44,10 +44,10 @@
     }
 }//.landscape
 @include respond-to(medium) {
-    @include b(section1-brend) {
+    @include b(section1-pack) {
         margin: 0 40px;
     }
-    @include b(brend) {
+    @include b(pack) {
         @include e(title) {
             @include m(big) {
                 font-size: 48px;
@@ -64,10 +64,10 @@
     }
 }//.medium
 @include respond-to(small) {
-    @include b(section1-brend) {
+    @include b(section1-pack) {
         margin: 0 30px;
     }
-    @include b(brend) {
+    @include b(pack) {
         @include e(title) {
             margin-bottom: 10px;
             @include m(big) {
@@ -85,10 +85,10 @@
     }
 }//.small
 @include respond-to(xsmall) {
-    @include b(section1-brend) {
+    @include b(section1-pack) {
         margin: 0 16px;
     }
-    @include b(brend) {
+    @include b(pack) {
         @include e(title) {
             @include m(big) {
                 font-size: 24px;

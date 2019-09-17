@@ -9,14 +9,13 @@
         flex: 0 0 auto;
         width: 638px;
         margin-left: 76px;
-
+        margin-bottom: 72px;
         @include m(item1) {
             font-size: 24px;
             margin-bottom: 16px;
             font-family: 'Gotham Pro Medium';
         }
         @include m(item2) {
-            margin-bottom: 72px;
             font-size: 14px;
             line-height: 138.2%;
             white-space: pre-line;
@@ -41,7 +40,6 @@
             text-decoration: none;
             background-color: transparent;
             color: #7E92B8;
-            
             span:first-child {
                 border-right: 1px solid #DAE4F8;
                 padding: 4px 8px;
@@ -50,7 +48,43 @@
                 padding: 5px 6px;
             }
         }
-        
     }
-    
 }
+@include respond-to(large) {
+    @include b(section5) {
+        width: auto;
+        margin: 0 145px;
+    }
+}//.large
+@include respond-to(desktop) {
+    @include b(section5) {
+        width: auto;
+        margin: 0 100px;
+    }
+}//.desktop
+@include respond-to(xxlarge) {
+    @include b(section5) {
+        @include e(text) {
+            @include m(item1) {
+                font-size: 29px;
+            }
+            @include m(item2) {
+                font-size: 17px;
+                white-space: normal;
+            }
+        }
+        @include e(button) {
+            @include m(elem) {
+                height: 35px;
+                font-size: 14px;
+                span:first-child {
+                    border-right: 1px solid #DAE4F8;
+                    padding: 8px 12px;
+                }
+                span:last-child {
+                    padding: 8px 12px;
+                }
+            }
+        }    
+    }
+}//.xxlarge

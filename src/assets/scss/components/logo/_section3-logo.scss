@@ -14,12 +14,14 @@
         font-family: 'Gotham Pro Medium';
         line-height: 0em;
     }
-    
     @include e(diagram) {
         flex: 1 1 auto;
         height: 372px;
         font-size: 12px;
         font-family: 'Gotham Pro Medium';
+    }
+    @include e(mob-diagram) {
+        display: none;
     }
 }
 @include respond-to(large) {

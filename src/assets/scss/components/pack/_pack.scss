@@ -1,14 +1,15 @@
-@include b(section1-logo) {
+@include b(section1-pack) {
     @include flex;
     @include flex-direction(row);
     width: calc(1150px + 290px);
     margin: 0 auto;
+
     @include e(left-panel) {
         @include flex;
         flex: 0 0 145px;
         width: 145px;
     }
-    @include e(content) {
+    @include e(pack) {
         flex: 1 1 auto;
     }
     @include e(right-panel) {
@@ -18,18 +19,16 @@
         display: none;
     }
 }
-@include b(content) {
+@include b(pack) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
     background: #e5e5e5;
-
     @include e(title) {
         flex: 0 0 auto;
         margin-top: 40px;
         margin-bottom: 20px;
-        margin-left: 77px;
-
+        margin-left: 77px; 
         @include m(big) {
             font-size: 32px;
             font-family: 'Gotham Pro Black';
@@ -52,10 +51,9 @@
     @include e(text) {
         width: 100%;
         margin-left: 77px;
-
         @include m(big) {
             margin-top: 114px;
-            margin-bottom: 154px;
+            margin-bottom: 100px;
             font-size: 20px;
             font-family: 'Gotham Pro Bold';
             line-height: 0;
@@ -65,80 +63,33 @@
             white-space: pre-line;
         }
     }
-    @include e(type) {
-        display: grid;
+    @include e(img) {
         float: right;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 12px;
-        justify-content: space-between;
-        width: 380px;  
-        height: 380px;
-        margin-right: 42px;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    @include e(elem) {
-        width: 180px;
-        height: 180px;
-        border: 1px solid #7E92B8;
-        text-align: center;
-        line-height: 0;
-        &:hover {
-            cursor: pointer;
-            p {
-                font-family: 'Gotham Pro Medium';
-            }
-        }
-        @include m(text) {
-            margin-top: 160px;
+        @include m(img) {
+            width: 498px;
+            height: 456px;
         }
     }
-    @include e(elem1) {
-        background: url(../img/logo-img1.png);
-
-        &:hover {
-            background: url(../img/logo-img1-2.png);
-        }
-    }
-    @include e(elem2) {
-        background: url(../img/logo-img2.png);
-
-        &:hover {
-            background: url(../img/logo-img2-2.png);
-        }
-    }
-    @include e(elem3) {
-        background: url(../img/logo-img3.png);
-
-        &:hover {
-            background: url(../img/logo-img3-2.png);
-        }
-    }
-    @include e(elem4) {
-        background: url(../img/logo-img4.png);
-
-        &:hover {
-            background: url(../img/logo-img4-2.png);
-        }
-    }
-}//.content
-
+}
 @include respond-to(large) {
-    @include b(section1-logo) {
+    @include b(section1-pack) {
         width: 100%;
-        // margin: 0 auto;
+        margin: 0 auto;
+        @include e(left-panel) {
+            @include flex;
+            flex: 0 0 145px;
+            width: 145px;
+        }
+        @include e(right-panel) {
+            flex: 0 0 145px;
+        }
     }
-    @include b(content) {
+    @include b(pack) {
         @include flex;
         @include flex-direction(column);
         width: calc(100% - 290px);
-        @include e(inner) {
-            width: 100%;
-            height: 456px;
-        }
         @include e(title) {
-            margin-left: 60px;
+            margin-left: 60px; 
         }
         @include e(text) {
             margin-left: 60px;
@@ -146,7 +97,7 @@
     }
 }//.large
 @include respond-to(desktop) {
-    @include b(section1-logo) {
+    @include b(section1-pack) {
         width: 100%;
         @include e(left-panel) {
             flex: 0 0 10px;
@@ -156,7 +107,7 @@
             flex: 0 0 100px;
         }
     }
-    @include b(content) {
+    @include b(pack) {
         width: calc(100% - 200px);
         @include e(inner) {
             background: url(../img/background.png) #ffffff 10% 50% no-repeat; 
@@ -171,7 +122,7 @@
     }
 }//.desktop
 @include respond-to(xxlarge) {
-    @include b(content) {
+    @include b(pack) {
         @include e(title) {
             @include m(big) {
                 font-size: 38px;

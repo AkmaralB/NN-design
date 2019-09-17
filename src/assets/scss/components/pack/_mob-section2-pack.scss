@@ -1,5 +1,5 @@
 @include respond-to(landscape) {
-    @include b(section2-logo) {
+    @include b(section2-pack) {
         @include flex;
         @include flex-direction(column);
         width: auto;
@@ -9,7 +9,7 @@
             display: none;
         }
     }
-    @include b(stages-logo) {
+    @include b(stages-pack) {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -62,10 +62,10 @@
     }
 }//.landscape
 @include respond-to(medium) {
-    @include b(section2-logo) {
+    @include b(section2-pack) {
         margin: 40px;
     }
-    @include b(stages-logo) {
+    @include b(stages-pack) {
         margin: 40px auto;
         @include e(row) {
             width: 260px;
@@ -82,10 +82,10 @@
     }
 }//.medium
 @include respond-to(small) {
-    @include b(section2-logo) {
+    @include b(section2-pack) {
         margin: 30px;
     }
-    @include b(stages-logo) {
+    @include b(stages-pack) {
         margin: 30px auto;
         @include e(row) {
             width: 200px;
@@ -103,10 +103,10 @@
     }
 }//.small
 @include respond-to(xsmall) {
-    @include b(section2-logo) {
+    @include b(section2-pack) {
         margin: 20px 16px;
     }
-    @include b(stages-logo) {
+    @include b(stages-pack) {
         margin: 25px auto;
         @include e(row) {
             width: 138px;
