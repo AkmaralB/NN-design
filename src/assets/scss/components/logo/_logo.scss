@@ -1,3 +1,9 @@
+@include b(logo) {
+    .item3 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
 @include b(section1-logo) {
     @include flex;
     @include flex-direction(row);

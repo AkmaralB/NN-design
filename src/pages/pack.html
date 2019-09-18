@@ -1,130 +1,110 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pack-page</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/lib/fontawesome.js"></script>
-    <script src="https://kit.fontawesome.com/c9e7a7719e.js"></script>
-</head>
-
-<body>
-
-    <div class="layout">
-        <div class="layout__header">
-            {{> _header }}
-        </div>
-        <div class="layout__mob-header">
-            {{> _mob-header-b }}
-        </div>
-
-        <div class="layout__section1">
-            <div class="section1-pack">
-                <div class="section1-pack__left-panel">
-                    {{> _left-panel }}
-                </div>
-
-                <div class="section1-pack__pack pack">
-                    <div class="pack__title">
-                        <p class="pack__title--big">Упаковка</p>
-                        <p class="pack__title--little">Дизайн упаковки  – ключевой элемент в брендинге потребительских товаров.</p>
-                    </div>
-                    <div class="pack__inner">
-                        <div class="pack__text">
-                            <p class="pack__text--big">Упаковка - это</p>
-                            <p class="pack__text--little">тот главный идентификатор, делающий 
-                                товар желанным и узнаваемым.</p>
-                        </div>
-                        <div class="pack__img">
-                            <img src="assets/img/pack-img.png" alt="pack-img1" class="pack__img--img">
-                        </div>
-                    </div>
-                </div>
-                <div class="section1-logo__right-panel">
-                    {{> _right-panel }}
-                </div>
-            </div>
-
-        </div>
-        <div class="layout__section2">
-                <div class="section2-logo">
-                    <div class="section2-logo__title">
-                        <p class="section2-logo__title--big">Этапы разработки упаковки</p>
-                        <p>Процесс разработки включает в себя четыре важных этапа</p>
-                    </div>
-                    <div class="section2-pack__stages">
-                        <div class="stages-pack">
-                            <div class="stages-pack__row">
-                                <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">1</div></div>
-                                <div class="stages-pack__row--text">
-                                    <p class="stages-pack__row--title">Анализ</p>
-                                    <p class="stages-pack__row--elem">Клиент всегда прав и этот случай 
-                                        не исключение! 
-                                        Комплексный маркетинговый 
-                                        анализ и исследование помогут 
-                                        нам определить что для вашего 
-                                        покупателя будет основной 
-                                        причиной купить ваш продукт и 
-                                        как ему в этом помочь с помощью 
-                                        упаковки</p>
-                                </div>
-                            </div>
-                            <div class="stages-pack__row">
-                                <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">2</div></div>
-                                <div class="stages-pack__row--text">
-                                    <p class="stages-pack__row--title">Концепт</p>
-                                    <p class="stages-pack__row--elem">Соберем только самое лучшее ! 
-                                        Мы изучим весь продукт изнутри. 
-                                        Попробуем, понюхаем, намажем 
-                                        его на себя и будем засыпать с 
-                                        ним и мысли о нем не будут нас 
-                                        покидать пока мы не сможем 
-                                        отразить все самое ценное на 
-                                        вашей упаковке.</p>
-                                </div>
-                            </div>
-                            <div class="stages-pack__row">
-                                <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">3</div></div>
-                                <div class="stages-pack__row--text">
-                                    <p class="stages-pack__row--title">Утверждение</p>
-                                    <p class="stages-pack__row--elem">Собираем мнение потребителей и 
-                                        внутри команды. Разглядываем 
-                                        потенциально самую лучшую 
-                                        упаковку и делаем детальную 
-                                        проработку каждого миллиметра. 
-                                        Собираем мнения: Понятно ли что 
-                                        это, хотят ли они это попробовать. 
-                                        И поняли ли они что на самом деле 
-                                        самое важное в этом продукте</p>
-                                </div>
-                            </div>
-                            <div class="stages-pack__row">
-                                <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">4</div></div>
-                                <div class="stages-pack__row--text">
-                                    <p class="stages-pack__row--title">Презентация</p>
-                                    <p class="stages-pack__row--elem">Презентация клиенту</p>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-        
-        <div class="layout__section6">
-            {{> _section6 }}
-        </div>
-        <footer class="layout__footer">
-            {{> _footer }}
-        </footer>
-
+<div class="layout pack">
+    <div class="layout__header">
+        {{> _header }}
+    </div>
+    <div class="layout__mob-header">
+        {{> _mob-header-b }}
     </div>
 
-    <script src="assets/js/app.js"></script>
-</body>
+    <div class="layout__section1">
+        <div class="section1-pack">
+            <div class="section1-pack__left-panel">
+                {{> _left-panel }}
+            </div>
 
-</html>
+            <div class="section1-pack__pack-center pack-center">
+                <div class=" pack-center__title">
+                    <p class=" pack-center__title--big">Упаковка</p>
+                    <p class=" pack-center__title--little">Дизайн упаковки  – ключевой элемент в брендинге потребительских товаров.</p>
+                </div>
+                <div class=" pack-center__inner">
+                    <div class=" pack-center__text">
+                        <p class=" pack-center__text--big">Упаковка - это</p>
+                        <p class=" pack-center__text--little">тот главный идентификатор, делающий 
+                            товар желанным и узнаваемым.</p>
+                    </div>
+                    <div class=" pack-center__img">
+                        <img src="assets/img/pack-img.png" alt="pack-img1" class=" pack-center__img--img">
+                    </div>
+                </div>
+            </div>
+            <div class="section1-logo__right-panel">
+                {{> _right-panel }}
+            </div>
+        </div>
+
+    </div>
+    <div class="layout__section2">
+            <div class="section2-logo">
+                <div class="section2-logo__title">
+                    <p class="section2-logo__title--big">Этапы разработки упаковки</p>
+                    <p>Процесс разработки включает в себя четыре важных этапа</p>
+                </div>
+                <div class="section2-pack__stages">
+                    <div class="stages-pack">
+                        <div class="stages-pack__row">
+                            <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">1</div></div>
+                            <div class="stages-pack__row--text">
+                                <p class="stages-pack__row--title">Анализ</p>
+                                <p class="stages-pack__row--elem">Клиент всегда прав и этот случай 
+                                    не исключение! 
+                                    Комплексный маркетинговый 
+                                    анализ и исследование помогут 
+                                    нам определить что для вашего 
+                                    покупателя будет основной 
+                                    причиной купить ваш продукт и 
+                                    как ему в этом помочь с помощью 
+                                    упаковки</p>
+                            </div>
+                        </div>
+                        <div class="stages-pack__row">
+                            <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">2</div></div>
+                            <div class="stages-pack__row--text">
+                                <p class="stages-pack__row--title">Концепт</p>
+                                <p class="stages-pack__row--elem">Соберем только самое лучшее ! 
+                                    Мы изучим весь продукт изнутри. 
+                                    Попробуем, понюхаем, намажем 
+                                    его на себя и будем засыпать с 
+                                    ним и мысли о нем не будут нас 
+                                    покидать пока мы не сможем 
+                                    отразить все самое ценное на 
+                                    вашей упаковке.</p>
+                            </div>
+                        </div>
+                        <div class="stages-pack__row">
+                            <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">3</div></div>
+                            <div class="stages-pack__row--text">
+                                <p class="stages-pack__row--title">Утверждение</p>
+                                <p class="stages-pack__row--elem">Собираем мнение потребителей и 
+                                    внутри команды. Разглядываем 
+                                    потенциально самую лучшую 
+                                    упаковку и делаем детальную 
+                                    проработку каждого миллиметра. 
+                                    Собираем мнения: Понятно ли что 
+                                    это, хотят ли они это попробовать. 
+                                    И поняли ли они что на самом деле 
+                                    самое важное в этом продукте</p>
+                            </div>
+                        </div>
+                        <div class="stages-pack__row">
+                            <div class="stages-pack__row--width"><div class="stages-pack__row--numeral">4</div></div>
+                            <div class="stages-pack__row--text">
+                                <p class="stages-pack__row--title">Презентация</p>
+                                <p class="stages-pack__row--elem">Презентация клиенту</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    <div class="layout__section6">
+        {{> _section6 }}
+    </div>
+    <footer class="layout__footer">
+        {{> _footer }}
+    </footer>
+
+</div>

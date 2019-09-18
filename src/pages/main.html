@@ -1,78 +1,54 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" type="text.css" href="assets/css/slick.css"/>
-    <script src="assets/js/lib/fontawesome.js"></script>
-    <script src="https://kit.fontawesome.com/c9e7a7719e.js"></script>
-</head>
-
-<body>
-
-    <div class="layout">
-        <div class="main">
-            <div class="main-left">
-                <p class="main-left__title">NN Design</p>
-                <p class="main-left__text">Хороший дизайн — 
-                    продуман до каждой детали</p>               
-                <div class="main-left__button">
-                    <a href="#">Все проекты</a>
-                </div>
+<div class="layout">
+    <div class="main">
+        <div class="main-left">
+            <p class="main-left__title">NN Design</p>
+            <p class="main-left__text">Хороший дизайн — 
+                продуман до каждой детали</p>               
+            <div class="main-left__button">
+                <a href="#">Все проекты</a>
             </div>
-            <div class="main-right">
-                <img src="assets/img/main-img1.png" alt="img1" class="main-right__img">
-                <!-- <img src="assets/img/main-img2.png" alt="img2" class="main-right__img">
-                <img src="assets/img/main-img3.png" alt="img3" class="main-right__img"> -->
-            </div>
-            <div class="main__toggle">
-                <div><p class="main__number">01/03</p></div>
-                <div class="main__arrow">
-                    <a class="main__arrow--elem"> < </a>
-                    <a class="main__arrow--elem"> > </a>
-                </div>
-            </div>
-            <header class="main__header">
-                {{> _header }}
-            </header>
-            <div class="main__left-panel">
-                {{> _left-panel }}
-            </div>
-            <div class="main__right-panel">
-                {{> _right-panel }}
-            </div>
-
         </div>
-        <div class="main-mob">
-            <div class="main-mob__header">
-                {{> _mob-header-w }}
+        <div class="main-right">
+            <img src="assets/img/main-img1.png" alt="img1" class="main-right__img">
+            <!-- <img src="assets/img/main-img2.png" alt="img2" class="main-right__img">
+            <img src="assets/img/main-img3.png" alt="img3" class="main-right__img"> -->
+        </div>
+        <div class="main__toggle">
+            <div><p class="main__number">01/03</p></div>
+            <div class="main__arrow">
+                <a class="main__arrow--elem"> < </a>
+                <a class="main__arrow--elem"> > </a>
             </div>
-            <div class="main-mob-top">
-                <img src="assets/img/mob-main-img1.png" alt="img1" class="main-mob-top__img">
-                <!-- <img src="assets/img/mob-main-img2.png" alt="img2" class="main-mob-top__img">
-                <img src="assets/img/mob-main-img3.png" alt="img3" class="main-mob-top__img"> -->
-            </div>
-            <div class="main-mob-bottom">
-                <p class="main-mob-bottom__title">NN Design</p>
-                <p class="main-mob-bottom__text">Хороший дизайн — 
-                    продуман до каждой детали</p>               
-                <div class="main-mob-bottom__button">
-                    <a href="#">Все проекты</a>
-                </div>
-            </div>
+        </div>
+        <header class="main__header">
+            {{> _header }}
+        </header>
+        <div class="main__left-panel">
+            {{> _left-panel }}
+        </div>
+        <div class="main__right-panel">
+            {{> _right-panel }}
         </div>
 
     </div>
+    <div class="main-mob">
+        <div class="main-mob__header">
+            {{> _mob-header-w }}
+        </div>
+        <div class="main-mob-top">
+            <img src="assets/img/mob-main-img1.png" alt="img1" class="main-mob-top__img">
+            <!-- <img src="assets/img/mob-main-img2.png" alt="img2" class="main-mob-top__img">
+            <img src="assets/img/mob-main-img3.png" alt="img3" class="main-mob-top__img"> -->
+        </div>
+        <div class="main-mob-bottom">
+            <p class="main-mob-bottom__title">NN Design</p>
+            <p class="main-mob-bottom__text">Хороший дизайн — 
+                продуман до каждой детали</p>               
+            <div class="main-mob-bottom__button">
+                <a href="#">Все проекты</a>
+            </div>
+        </div>
+    </div>
 
-    <script src="assets/js/app.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-</body>
-
-</html>
+</div>
 <!-- git add . && git add --all && git commit -m "" && git pull && git push origin master -->

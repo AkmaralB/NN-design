@@ -1,128 +1,108 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<div class="layout gm">
+    <div class="layout__header">
+        {{> _header }}
+    </div>
+    <div class="layout__mob-header">
+        {{> _mob-header-w }}
+    </div>        
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/lib/fontawesome.js"></script>
-    <script src="https://kit.fontawesome.com/c9e7a7719e.js"></script>
-</head>
-
-<body>
-
-    <div class="layout gm">
-        <div class="layout__header">
-            {{> _header }}
-        </div>
-        <div class="layout__mob-header">
-            {{> _mob-header-w }}
-        </div>        
-
-        <div class="layout__section1">
-            <div class="section1">
-                <div class="section1__left-panel">
-                    {{> _left-panel }}
-                </div>
-                <div class="section1__img">
-                    <img src="assets/img/gm-img1.png" alt="img1" class="section1__img--img1">
-                </div>
-                <div class="section1__right-panel">
-                    {{> _right-panel }}
-                </div>
+    <div class="layout__section1">
+        <div class="section1">
+            <div class="section1__left-panel">
+                {{> _left-panel }}
+            </div>
+            <div class="section1__img">
+                <img src="assets/img/gm-img1.png" alt="img1" class="section1__img--img1">
+            </div>
+            <div class="section1__right-panel">
+                {{> _right-panel }}
             </div>
         </div>
-
-        <div class="layout__section2">
-            <div class="section2">
-                <div class="section2__text">
-                    <h1 class="section2__text--item1">Green Medicus</h1>
-                    <p class="section2__text--item2">О компании</p>
-                    <p class="section2__text--item3">Одна из немногих компаний имеющих в основе только СBD без TGK. Не имеющая наркотических 
-                        своиств.</p>
-                </div>
-                <div class="section2__img">
-                    <img src="assets/img/gm-img2.png" alt="img2" class="section2__img--img2">
-                </div>
-            </div>
-        </div>
-
-        <div class="layout__section3">
-            <div class="section3">
-                <div class="section3__text">
-                    <p class="section3__text--item1">Задача</p>
-                    <p class="section3__text--item2">Задача создать несколько оптимальных решений упаковки так как продук имеет 
-                        специфические условия хранения. И позиционируюется не как наркотическое вещество.
-                        Было решено полностью отойти от Медицинского наклона.
-                        Но в свою очередь создать внушающий доверие вид путем логотипа и нейминга.
-                        Так и началась история казахстанского бренда в США.</p>
-                </div>
-                <div class="section3__img">
-                    <img src="assets/img/gm-img3.png" alt="img3" class="section3__img--img3">
-                </div>
-            </div>
-        </div>
-
-        <div class="layout__section4-gm">
-            <div class="section4-gm">
-                <div class="section4-gm__text">
-                    <p class="section4-gm__text--item1">Комплексный анализ</p>
-                        <p class="section4-gm__text--item2">Но мы не могли упустить этническую принадлежность нашей компании. Поэтому 
-                            неотъемлемой частью является элемент Казахского орнамента.</p>
-                </div>
-                <div class="section4-gm__img">
-                    <div class="section4-gm__img--right">
-                        <img src="assets/img/gm-img5.png" alt="img5">
-                    </div>
-                    <div class="section4-gm__img--left">
-                        <img src="assets/img/gm-img4.png" alt="img4">
-                        <div class="section4-gm__img--splitter">
-                            <span>< ></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="layout__section5">
-            <div class="section5">
-                <div class="section5__text">
-                    <p class="section5__text--item1">Стиль</p>
-                    <p class="section5__text--item2">Решено было создать Интересные концептуальные цвета а также выполнить логотип в 
-                        классическом но при этом деликатном леттеринге. Округлые углы и мягкие цвета 
-                        ассоциируются с природной. Вызывая больший эффект доверия ткк продукт является 
-                        100% натуральным.</p>
-                </div>
-                <div class="section5__button">
-                    <a href="#" class="section5__button--elem">
-                        <span class="">#</span>
-                        <span class="">Айдентика</span>
-                    </a>
-                    <a href="#" class="section5__button--elem">
-                        <span class="">#</span>
-                        <span class="">Брендинг</span>
-                    </a>
-                    <a href="#" class="section5__button--elem">
-                        <span class="">#</span>
-                        <span class="">Логотип</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="layout__section6">
-            {{> _section6 }}
-        </div>
-
-        <footer class="layout__footer">
-            {{> _footer }}
-        </footer>
-
     </div>
 
-    <script src="assets/js/app.js"></script>
-</body>
+    <div class="layout__section2">
+        <div class="section2">
+            <div class="section2__text">
+                <h1 class="section2__text--item1">Green Medicus</h1>
+                <p class="section2__text--item2">О компании</p>
+                <p class="section2__text--item3">Одна из немногих компаний имеющих в основе только СBD без TGK. Не имеющая наркотических 
+                    своиств.</p>
+            </div>
+            <div class="section2__img">
+                <img src="assets/img/gm-img2.png" alt="img2" class="section2__img--img2">
+            </div>
+        </div>
+    </div>
 
-</html>
+    <div class="layout__section3">
+        <div class="section3">
+            <div class="section3__text">
+                <p class="section3__text--item1">Задача</p>
+                <p class="section3__text--item2">Задача создать несколько оптимальных решений упаковки так как продук имеет 
+                    специфические условия хранения. И позиционируюется не как наркотическое вещество.
+                    Было решено полностью отойти от Медицинского наклона.
+                    Но в свою очередь создать внушающий доверие вид путем логотипа и нейминга.
+                    Так и началась история казахстанского бренда в США.</p>
+            </div>
+            <div class="section3__img">
+                <img src="assets/img/gm-img3.png" alt="img3" class="section3__img--img3">
+            </div>
+        </div>
+    </div>
+
+    <div class="layout__section4-gm">
+        <div class="section4-gm">
+            <div class="section4-gm__text">
+                <p class="section4-gm__text--item1">Комплексный анализ</p>
+                    <p class="section4-gm__text--item2">Но мы не могли упустить этническую принадлежность нашей компании. Поэтому 
+                        неотъемлемой частью является элемент Казахского орнамента.</p>
+            </div>
+            <div class="section4-gm__img">
+                <div class="section4-gm__img--right">
+                    <img src="assets/img/gm-img5.png" alt="img5">
+                </div>
+                <div class="section4-gm__img--left">
+                    <img src="assets/img/gm-img4.png" alt="img4">
+                    <div class="section4-gm__img--splitter">
+                        <span>< ></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout__section5">
+        <div class="section5">
+            <div class="section5__text">
+                <p class="section5__text--item1">Стиль</p>
+                <p class="section5__text--item2">Решено было создать Интересные концептуальные цвета а также выполнить логотип в 
+                    классическом но при этом деликатном леттеринге. Округлые углы и мягкие цвета 
+                    ассоциируются с природной. Вызывая больший эффект доверия ткк продукт является 
+                    100% натуральным.</p>
+            </div>
+            <div class="section5__button">
+                <a href="#" class="section5__button--elem">
+                    <span class="">#</span>
+                    <span class="">Айдентика</span>
+                </a>
+                <a href="#" class="section5__button--elem">
+                    <span class="">#</span>
+                    <span class="">Брендинг</span>
+                </a>
+                <a href="#" class="section5__button--elem">
+                    <span class="">#</span>
+                    <span class="">Логотип</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout__section6">
+        {{> _section6 }}
+    </div>
+
+    <footer class="layout__footer">
+        {{> _footer }}
+    </footer>
+
+</div>

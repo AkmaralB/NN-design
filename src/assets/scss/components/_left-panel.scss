@@ -14,7 +14,6 @@
         font-size: 14px;
         text-decoration: none;
         color: #222222;
-
         &:hover {
             width: 44px;
             height: 0px;
@@ -48,3 +47,63 @@
     }
 }//.xxlarge
 
+@include b(abi) {
+    .item2 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(brend) {
+    .item3 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(gm) {
+    .item2 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(logo) {
+    .item3 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(main) {
+    .item1 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(pack) {
+    .item3 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(projects) {
+    .item2 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(qt) {
+    .item2 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(services) {
+    .item3 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}
+@include b(site) {
+    .item3 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid #222222;
+    }
+}

@@ -1,5 +1,5 @@
 @include respond-to(landscape) {
-    @include b(main) {
+    @include b(main-desktop) {
     display: none;
     }
     @include b(main-mob) {

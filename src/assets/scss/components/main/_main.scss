@@ -1,7 +1,7 @@
 @include b(main-mob) {
-display: none;
+    display: none;
 }
-@include b(main) {
+@include b(main-desktop) {
     @include flex;
     @include flex-direction(row);
     position: relative;
@@ -89,7 +89,7 @@ display: none;
             opacity: 1;
         }
     }
-}//.main
+}//.main-desktop
 
 @include b(main-left) {
     width: 50%;
@@ -162,7 +162,7 @@ display: none;
             }
         }
     }
-    @include b(main) {
+    @include b(main-desktop) {
         @include e(right-panel) {
             top: 70px;
         }
@@ -198,7 +198,7 @@ display: none;
             }
         }
     }
-    @include b(main) {
+    @include b(main-desktop) {
         @include e(right-panel) {
             top: 180px;
         }
@@ -234,7 +234,7 @@ display: none;
             }
         }
     }
-    @include b(main) {
+    @include b(main-desktop) {
         @include e(right-panel) {
             top: 25%;
         }

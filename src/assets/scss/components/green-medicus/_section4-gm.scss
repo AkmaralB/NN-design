@@ -53,7 +53,7 @@
             //     color: #FFFFFF;
             // }
             img {
-                width: 200%;
+                width: 1150px;
                 height: 432px;
             }
             div {
@@ -87,7 +87,7 @@
             width: 100%;
             height: 432px;
             img {
-                width: 100%;
+                width: 1150px;
                 height: 432px;
             }
         }
@@ -97,12 +97,36 @@
     @include b(section4-gm) {
         width: auto;
         margin: 0 145px;
+        @include e(img) {
+            @include m(left) {
+                img {
+                    width: 990px;
+                }
+            }
+            @include m(right) {
+                img {
+                    width: 990px;
+                }
+            }    
+        }
     }
 }//.large
 @include respond-to(desktop) {
     @include b(section4-gm) {
         width: auto;
         margin: 0 100px;
+        @include e(img) {
+            @include m(left) {
+                img {
+                    width: 825px;
+                }
+            }
+            @include m(right) {
+                img {
+                    width: 825px;
+                }
+            }    
+        }
     }
 }//.desktop
 @include respond-to(xxlarge) {

@@ -1,134 +1,114 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site-page</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/lib/fontawesome.js"></script>
-    <script src="https://kit.fontawesome.com/c9e7a7719e.js"></script>
-</head>
-
-<body>
-
-    <div class="layout">
-        <div class="layout__header">
-            {{> _header }}
-        </div>
-        <div class="layout__mob-header">
-            {{> _mob-header-b }}
-        </div>
-
-        <div class="layout__section1">
-            <div class="section1-site">
-                <div class="section1-site__left-panel">
-                    {{> _left-panel }}
-                </div>
-
-                <div class="section1-site__site site">
-                    <div class="site__title">
-                        <p class="site__title--big">Веб-сайт</p>
-                        <p class="site__title--little">Сам по себе сайт ничто если не имеет цели.</p>
-                    </div>
-                    <div class="site__inner">
-                        <div class="site__text">
-                            <p class="site__text--big">Веб-сайт - это</p>
-                            <p class="site__text--little">одна или несколько логически 
-                                связанных между собой веб-страниц.</p>
-                        </div>
-                        <div class="site__img">
-                            <img src="assets/img/site-img.png" alt="site-img1" class="site__img--img">
-                        </div>
-                    </div>
-                </div>
-                <div class="section1-logo__right-panel">
-                    {{> _right-panel }}
-                </div>
-            </div>
-
-        </div>
-        <div class="layout__section2">
-                <div class="section2-logo">
-                    <div class="section2-logo__title">
-                        <p class="section2-logo__title--big">Этапы разработки веб-сайта</p>
-                        <p>Процесс разработки включает в себя четыре важных этапа</p>
-                    </div>
-                    <div class="section2-site__stages">
-                        <div class="stages-site">
-                            <div class="stages-site__row">
-                                <div class="stages-site__row--width"><div class="stages-site__row--numeral">1</div></div>
-                                <div class="stages-site__row--text">
-                                    <p class="stages-site__row--title">Анализ</p>
-                                    <p class="stages-site__row--elem">Мы предложим вам лучший 
-                                        вариант взаимодействия с вашим 
-                                        бизнесом.
-                                        Определив главную цель 
-                                        Опираясь на опыт и исследование 
-                                        мы определим (какая структура 
-                                        подойдет лучше всего , лендинг, 
-                                        портал, интрнет магазин, визитка)</p>
-                                </div>
-                            </div>
-                            <div class="stages-site__row">
-                                <div class="stages-site__row--width"><div class="stages-site__row--numeral">2</div></div>
-                                <div class="stages-site__row--text">
-                                    <p class="stages-site__row--title">Концепт</p>
-                                    <p class="stages-site__row--elem">Мы предложим самые простые 
-                                        пути к достижению главной цели 
-                                        сайта. Логика и расстановка форм 
-                                        захвата так же будут описаны на 
-                                        этом этапе.
-                                        Собираем главную информацию о 
-                                        бизнесе. Наполняем контентом
-                                        Разрабатываем подробный макет</p>
-                                </div>
-                            </div>
-                            <div class="stages-site__row">
-                                <div class="stages-site__row--width"><div class="stages-site__row--numeral">3</div></div>
-                                <div class="stages-site__row--text">
-                                    <p class="stages-site__row--title">Утверждение</p>
-                                    <p class="stages-site__row--elem">Собираем мнение потребителей и 
-                                        внутри команды. Разглядываем 
-                                        потенциально самую лучшую 
-                                        упаковку и делаем детальную 
-                                        проработку каждого миллиметра. 
-                                        Собираем мнения: Понятно ли что 
-                                        это, хотят ли они это попробовать. 
-                                        И поняли ли они что на самом деле 
-                                        самое важное в этом продукте</p>
-                                </div>
-                            </div>
-                            <div class="stages-site__row">
-                                <div class="stages-site__row--width"><div class="stages-site__row--numeral">4</div></div>
-                                <div class="stages-site__row--text">
-                                    <p class="stages-site__row--title">Презентация</p>
-                                    <p class="stages-site__row--elem">Мы сдаем вам ваш прекрасный 
-                                        красивый классный 
-                                        конверсионный модный 
-                                        молодежный душевный и 
-                                        притязательный, а так же умный и 
-                                        понятный сайт. Который 
-                                        прослужит вам верной службой и 
-                                        станет активом вашего бизнеса. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        <div class="layout__section6">
-            {{> _section6 }}
-        </div>
-        <footer class="layout__footer">
-            {{> _footer }}
-        </footer>
-
+<div class="layout site">
+    <div class="layout__header">
+        {{> _header }}
+    </div>
+    <div class="layout__mob-header">
+        {{> _mob-header-b }}
     </div>
 
-    <script src="assets/js/app.js"></script>
-</body>
+    <div class="layout__section1">
+        <div class="section1-site">
+            <div class="section1-site__left-panel">
+                {{> _left-panel }}
+            </div>
 
-</html>
+            <div class="section1-site__site site">
+                <div class="site__title">
+                    <p class="site__title--big">Веб-сайт</p>
+                    <p class="site__title--little">Сам по себе сайт ничто если не имеет цели.</p>
+                </div>
+                <div class="site__inner">
+                    <div class="site__text">
+                        <p class="site__text--big">Веб-сайт - это</p>
+                        <p class="site__text--little">одна или несколько логически 
+                            связанных между собой веб-страниц.</p>
+                    </div>
+                    <div class="site__img">
+                        <img src="assets/img/site-img.png" alt="site-img1" class="site__img--img">
+                    </div>
+                </div>
+            </div>
+            <div class="section1-logo__right-panel">
+                {{> _right-panel }}
+            </div>
+        </div>
+
+    </div>
+    <div class="layout__section2">
+            <div class="section2-logo">
+                <div class="section2-logo__title">
+                    <p class="section2-logo__title--big">Этапы разработки веб-сайта</p>
+                    <p>Процесс разработки включает в себя четыре важных этапа</p>
+                </div>
+                <div class="section2-site__stages">
+                    <div class="stages-site">
+                        <div class="stages-site__row">
+                            <div class="stages-site__row--width"><div class="stages-site__row--numeral">1</div></div>
+                            <div class="stages-site__row--text">
+                                <p class="stages-site__row--title">Анализ</p>
+                                <p class="stages-site__row--elem">Мы предложим вам лучший 
+                                    вариант взаимодействия с вашим 
+                                    бизнесом.
+                                    Определив главную цель 
+                                    Опираясь на опыт и исследование 
+                                    мы определим (какая структура 
+                                    подойдет лучше всего , лендинг, 
+                                    портал, интрнет магазин, визитка)</p>
+                            </div>
+                        </div>
+                        <div class="stages-site__row">
+                            <div class="stages-site__row--width"><div class="stages-site__row--numeral">2</div></div>
+                            <div class="stages-site__row--text">
+                                <p class="stages-site__row--title">Концепт</p>
+                                <p class="stages-site__row--elem">Мы предложим самые простые 
+                                    пути к достижению главной цели 
+                                    сайта. Логика и расстановка форм 
+                                    захвата так же будут описаны на 
+                                    этом этапе.
+                                    Собираем главную информацию о 
+                                    бизнесе. Наполняем контентом
+                                    Разрабатываем подробный макет</p>
+                            </div>
+                        </div>
+                        <div class="stages-site__row">
+                            <div class="stages-site__row--width"><div class="stages-site__row--numeral">3</div></div>
+                            <div class="stages-site__row--text">
+                                <p class="stages-site__row--title">Утверждение</p>
+                                <p class="stages-site__row--elem">Собираем мнение потребителей и 
+                                    внутри команды. Разглядываем 
+                                    потенциально самую лучшую 
+                                    упаковку и делаем детальную 
+                                    проработку каждого миллиметра. 
+                                    Собираем мнения: Понятно ли что 
+                                    это, хотят ли они это попробовать. 
+                                    И поняли ли они что на самом деле 
+                                    самое важное в этом продукте</p>
+                            </div>
+                        </div>
+                        <div class="stages-site__row">
+                            <div class="stages-site__row--width"><div class="stages-site__row--numeral">4</div></div>
+                            <div class="stages-site__row--text">
+                                <p class="stages-site__row--title">Презентация</p>
+                                <p class="stages-site__row--elem">Мы сдаем вам ваш прекрасный 
+                                    красивый классный 
+                                    конверсионный модный 
+                                    молодежный душевный и 
+                                    притязательный, а так же умный и 
+                                    понятный сайт. Который 
+                                    прослужит вам верной службой и 
+                                    станет активом вашего бизнеса. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="layout__section6">
+        {{> _section6 }}
+    </div>
+    <footer class="layout__footer">
+        {{> _footer }}
+    </footer>
+
+</div>

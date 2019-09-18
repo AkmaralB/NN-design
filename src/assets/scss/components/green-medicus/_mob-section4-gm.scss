@@ -20,39 +20,16 @@
             @include m(left) {
                 height: 350px;
                 img {
+                    width: 680px;
                     height: 350px;
                 }
-                // div {
-                //     position: absolute;
-                //     flex: 0 0 auto;
-                //     top: 0;
-                //     right: 1px;
-                //     width: 1px;
-                //     min-height: 432px;
-                //     margin-left: -600px;
-                //     cursor: col-resize;  
-                //     background-color:  #7E92B8;
-                //     span {
-                //         display: inline-block;
-                //         z-index: 2;
-                //         width: 32px;
-                //         height: 32px;
-                //         right: -32px;
-                //         margin-top: 200px;
-                //         border-radius: 50%;
-                //         text-align: center;
-                //         vertical-align: middle;
-                //         line-height: 32px;
-                //         background: #7E92B8;
-                //         color: #FFFFFF;
-                //     }
-                // }
             }
             @include m(right) {
                 height: 350px;
                 img {
+                    width: 680px;
                     height: 350px;
-                }
+                }    
             }
         }
     }    
@@ -73,15 +50,17 @@
             @include m(left) {
                 height: 280px;
                 img {
+                    width: 560px;
                     height: 280px;
                 }
             }
             @include m(right) {
                 height: 280px;
                 img {
+                    width: 560px;
                     height: 280px;
                 }
-            }
+            }    
         }
     }
 }//.medium
@@ -102,14 +81,16 @@
             @include m(left) {
                 height: 220px;
                 img {
+                    width: 420px;
                     height: 220px;
                 }
             }
             @include m(right) {
                 height: 220px;
                 img {
+                    width: 420px;
                     height: 220px;
-                }
+                }    
             }
         }
     }
@@ -131,14 +112,16 @@
             @include m(left) {
                 height: 140px;
                 img {
+                    width: 280px;
                     height: 140px;
                 }
             }
             @include m(right) {
                 height: 140px;
                 img {
+                    width: 280px;
                     height: 140px;
-                }
+                }    
             }
         }
     }

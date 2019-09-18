@@ -20,11 +20,11 @@ $(document).foundation();
 //# sourceMappingURL=jquery-resizable.min.js.map
 
 $(document).ready(function () {
-    $(".section4__img--left").resizable({
-        handleSelector: ".section4__img--splitter",
+    $(".section4-gm__img--left").resizable({
+        handleSelector: ".section4-gm__img--splitter",
         resizeHeight: false});
-    $('.main-right').slick({
-      settingName: setting-value
-    });
+    // $('.main-right').slick({
+    //   settingName: setting-value
+    // });
 });
 

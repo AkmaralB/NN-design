@@ -9,7 +9,7 @@
             display: none;
         }
     }
-    @include b(brend) {
+    @include b(center-brend) {
         width: 100%;
         @include e(title) {
             flex: 0 0 auto;
@@ -47,7 +47,7 @@
     @include b(section1-brend) {
         margin: 0 40px;
     }
-    @include b(brend) {
+    @include b(center-brend) {
         @include e(title) {
             @include m(big) {
                 font-size: 48px;
@@ -67,7 +67,7 @@
     @include b(section1-brend) {
         margin: 0 30px;
     }
-    @include b(brend) {
+    @include b(center-brend) {
         @include e(title) {
             margin-bottom: 10px;
             @include m(big) {
@@ -88,7 +88,7 @@
     @include b(section1-brend) {
         margin: 0 16px;
     }
-    @include b(brend) {
+    @include b(center-brend) {
         @include e(title) {
             @include m(big) {
                 font-size: 24px;

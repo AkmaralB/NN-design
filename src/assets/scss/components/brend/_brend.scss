@@ -9,7 +9,7 @@
         flex: 0 0 145px;
         width: 145px;
     }
-    @include e(brend) {
+    @include e(center-brend) {
         flex: 1 1 auto;
     }
     @include e(right-panel) {
@@ -19,7 +19,7 @@
         display: none;
     }
 }
-@include b(brend) {
+@include b(center-brend) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
@@ -84,7 +84,7 @@
             flex: 0 0 145px;
         }
     }
-    @include b(brend) {
+    @include b(center-brend) {
         @include flex;
         @include flex-direction(column);
         width: calc(100% - 290px);
@@ -107,7 +107,7 @@
             flex: 0 0 100px;
         }
     }
-    @include b(brend) {
+    @include b(center-brend) {
         width: calc(100% - 200px);
         @include e(inner) {
             background: url(../img/background.png) #ffffff 10% 50% no-repeat; 
@@ -122,7 +122,7 @@
     }
 }//.desktop
 @include respond-to(xxlarge) {
-    @include b(brend) {
+    @include b(center-brend) {
         @include e(title) {
             @include m(big) {
                 font-size: 38px;

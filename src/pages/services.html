@@ -1,100 +1,80 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects-page</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/lib/fontawesome.js"></script>
-    <script src="https://kit.fontawesome.com/c9e7a7719e.js"></script>
-</head>
-
-<body>
-
-    <div class="layout services">
-        <div class="layout__header">
-            {{> _header }}
-        </div>
-        <div class="layout__mob-header">
-            {{> _mob-header-b }}
-        </div>
-
-        <div class="layout__section1">
-            <div class="section1-services">
-                <div class="section1-services__left-panel">
-                    {{> _left-panel }}
-                </div>
-
-                <div class="section1-services__center center">
-                    <div class="center__title">
-                        <p class="center__title--big">Выберите услугу</p>
-                        <p class="center__title--little">Мы гордимся каждой работой, за которую берёмся, и не 
-                            боимся рисковать</p>
-                    </div>
-                    <div class="center__rows">
-                        <div class="rows">
-                            <div class="rows__row">
-                                <img src="assets/img/serv-img1.png" alt="services-img1" class="rows__row--img">
-                                <img src="assets/img/mob-serv-img1.png" alt="services-img1" class="rows__row--mob-img">
-                                <div class="rows__row--text">
-                                    <p class="rows__row--title">Логотип</p>
-                                    <p>Ваш фирменный знак</p>
-                                </div>
-                                <a href="#" class="rows__row--button">Подробнее</a>
-                            </div>
-                            <div class="rows__row">
-                                <img src="assets/img/serv-img2.png" alt="services-img2" class="rows__row--img">
-                                <img src="assets/img/mob-serv-img2.png" alt="services-img2" class="rows__row--mob-img">
-                                <div class="rows__row--text">
-                                    <p class="rows__row--title rows__row--title2">Брендинг и стиль</p>
-                                    <p class="rows__row--title rows__row--mob-title2">Брендинг</p>
-                                    <p>Ваш имидж и индивидуальность</p>
-                                </div>
-                                <a href="#" class="rows__row--button">Подробнее</a>
-                            </div>
-                            <div class="rows__row">
-                                <img src="assets/img/serv-img3.png" alt="services-img3" class="rows__row--img">
-                                <img src="assets/img/mob-serv-img3.png" alt="services-img3" class="rows__row--mob-img">
-                                <div class="rows__row--text">
-                                    <p class="rows__row--title">Веб-дизайн</p>
-                                    <p>Сервис для вашего
-                                        бизнеса</p>
-                                </div>
-                                <a href="#" class="rows__row--button">Подробнее</a>
-                            </div>
-                            <div class="rows__row">
-                                <img src="assets/img/serv-img4.png" alt="services-img4" class="rows__row--img">
-                                <img src="assets/img/mob-serv-img4.png" alt="services-img4" class="rows__row--mob-img">
-                                <div class="rows__row--text">
-                                    <p class="rows__row--title">Упаковка</p>
-                                    <p>Конкурентное преимущество
-                                        вашего продукта</p>
-                                </div>
-                                <a href="#" class="rows__row--button">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="center__arrow">
-                        <a class="center__arrow--elem"> < </a>
-                        <a class="center__arrow--elem"> > </a>
-                    </div>
-                </div>
-                <div class="section1-services__right-panel">
-                    {{> _right-panel }}
-                </div>
-            </div>
-        </div>
-        <div class="layout__section6">
-            {{> _section6 }}
-        </div>
-        <footer class="layout__footer">
-            {{> _footer }}
-        </footer>
+<div class="layout services">
+    <div class="layout__header">
+        {{> _header }}
+    </div>
+    <div class="layout__mob-header">
+        {{> _mob-header-b }}
     </div>
 
-    <script src="assets/js/app.js"></script>
-</body>
+    <div class="layout__section1">
+        <div class="section1-services">
+            <div class="section1-services__left-panel">
+                {{> _left-panel }}
+            </div>
 
-</html>
+            <div class="section1-services__center center">
+                <div class="center__title">
+                    <p class="center__title--big">Выберите услугу</p>
+                    <p class="center__title--little">Мы гордимся каждой работой, за которую берёмся, и не 
+                        боимся рисковать</p>
+                </div>
+                <div class="center__rows">
+                    <div class="rows">
+                        <div class="rows__row">
+                            <img src="assets/img/serv-img1.png" alt="services-img1" class="rows__row--img">
+                            <img src="assets/img/mob-serv-img1.png" alt="services-img1" class="rows__row--mob-img">
+                            <div class="rows__row--text">
+                                <p class="rows__row--title">Логотип</p>
+                                <p>Ваш фирменный знак</p>
+                            </div>
+                            <a href="#" class="rows__row--button">Подробнее</a>
+                        </div>
+                        <div class="rows__row">
+                            <img src="assets/img/serv-img2.png" alt="services-img2" class="rows__row--img">
+                            <img src="assets/img/mob-serv-img2.png" alt="services-img2" class="rows__row--mob-img">
+                            <div class="rows__row--text">
+                                <p class="rows__row--title rows__row--title2">Брендинг и стиль</p>
+                                <p class="rows__row--title rows__row--mob-title2">Брендинг</p>
+                                <p>Ваш имидж и индивидуальность</p>
+                            </div>
+                            <a href="#" class="rows__row--button">Подробнее</a>
+                        </div>
+                        <div class="rows__row">
+                            <img src="assets/img/serv-img3.png" alt="services-img3" class="rows__row--img">
+                            <img src="assets/img/mob-serv-img3.png" alt="services-img3" class="rows__row--mob-img">
+                            <div class="rows__row--text">
+                                <p class="rows__row--title">Веб-дизайн</p>
+                                <p>Сервис для вашего
+                                    бизнеса</p>
+                            </div>
+                            <a href="#" class="rows__row--button">Подробнее</a>
+                        </div>
+                        <div class="rows__row">
+                            <img src="assets/img/serv-img4.png" alt="services-img4" class="rows__row--img">
+                            <img src="assets/img/mob-serv-img4.png" alt="services-img4" class="rows__row--mob-img">
+                            <div class="rows__row--text">
+                                <p class="rows__row--title">Упаковка</p>
+                                <p>Конкурентное преимущество
+                                    вашего продукта</p>
+                            </div>
+                            <a href="#" class="rows__row--button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center__arrow">
+                    <a class="center__arrow--elem"> < </a>
+                    <a class="center__arrow--elem"> > </a>
+                </div>
+            </div>
+            <div class="section1-services__right-panel">
+                {{> _right-panel }}
+            </div>
+        </div>
+    </div>
+    <div class="layout__section6">
+        {{> _section6 }}
+    </div>
+    <footer class="layout__footer">
+        {{> _footer }}
+    </footer>
+</div>
