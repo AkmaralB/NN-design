@@ -22,9 +22,26 @@ $(document).foundation();
 $(document).ready(function () {
     $(".section4-gm__img--left").resizable({
         handleSelector: ".section4-gm__img--splitter",
-        resizeHeight: false});
+        resizeHeight: false
+    });
     // $('.main-right').slick({
-    //   settingName: setting-value
+    //     settingName: 'setting-value'
     // });
-});
 
+      
+});
+$(document).on('ready', function() {
+
+    $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+    $(".menu-right").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+
+    });
