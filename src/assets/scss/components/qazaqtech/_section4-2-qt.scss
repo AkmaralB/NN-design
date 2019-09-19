@@ -44,12 +44,12 @@
 @include respond-to(xxlarge) {
     @include b(section4-2-qt) {
         @include e(text) {
+            width: 900px;
             @include m(item1) {
                 font-size: 29px;
             }
             @include m(item2) {
                 font-size: 17px;
-                white-space: normal;
             }
         }
     }

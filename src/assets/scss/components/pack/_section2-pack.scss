@@ -107,12 +107,14 @@
             }
             @include m(text) {
                 font-size: 14px;
+                white-space: normal;
                 &:last-child {
                     font-size: 14px;
                 }
             }
             @include m(title) {
                 font-size: 29px;
+                margin: 0 0 30px 0;
             }
         }
     }

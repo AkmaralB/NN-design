@@ -51,6 +51,7 @@
 @include respond-to(xxlarge) {
     @include b(section2) {
         @include e(text) {
+            width: 900px;
             @include m(item1) {
                 font-size: 38px;
             }
@@ -59,7 +60,6 @@
             }
             @include m(item3) {
                 font-size: 17px;
-                white-space: normal;
             }
         }
     }

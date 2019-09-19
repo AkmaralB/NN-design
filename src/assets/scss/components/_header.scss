@@ -32,17 +32,35 @@
         margin-right: 145px;
         margin-top: 40px;
         @include m(elem) {
+            display: block;
             width: 126px;
             height: 32px;
+            margin: auto;
             font-size: 12px;
             text-align: center;
+            text-decoration: none;
+            line-height: 2.5em;
+            color: #000000;
             border: 1px solid #000000;
             border-radius: 16px;
             background-color: transparent;
+            outline: none;
             &:hover {
                 color: #ffffff;
                 border: 1px solid #7E92B8;
                 background-color: #7E92B8;
+            }
+            &:link {
+                text-decoration: none;
+            }
+            &:active {
+                text-decoration: none;
+            }
+            &:focus {
+                text-decoration: none;
+            }
+            &:visited {
+                text-decoration: none;
             }
         }
     }

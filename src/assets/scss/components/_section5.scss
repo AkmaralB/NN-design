@@ -65,12 +65,12 @@
 @include respond-to(xxlarge) {
     @include b(section5) {
         @include e(text) {
+            width: 900px;
             @include m(item1) {
                 font-size: 29px;
             }
             @include m(item2) {
                 font-size: 17px;
-                white-space: normal;
             }
         }
         @include e(button) {
