@@ -63,13 +63,13 @@
     }
     @include b(graph2) {
         @include e(line-inner1) {
-            width: 48%;
+            width: 31%;
         }
         @include e(line-inner2) {
-            width: 61%;
+            width: 39%;
         }
         @include e(line-inner3) {
-            width: 37%;
+            width: 23%;
         }
     }
 }//.landscape
