@@ -26,6 +26,7 @@
             }
             @include m(text) {
                 height: auto;
+                margin-top: 10px;
                 p {
                     margin-top: 0;
                     font-size: 19px;
