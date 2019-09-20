@@ -69,6 +69,14 @@
         margin: 0 auto;
     }
 }
+@include b(layout) {
+    .img-mob {
+        display: none;
+    }
+    .img-desktop {
+        display: block;
+    }
+}
 @include respond-to(landscape) {
     @include b(layout) {
         @include e(header) {
@@ -77,9 +85,14 @@
         @include e(mob-header) {
             display: block;
         }
+        .img-mob {
+            display: block;
+        }
+        .img-desktop {
+            display: none;
+        }
     }
 }
-
 @include respond-to(xlarge) {
     body {
       font-size: 15px;

@@ -35,7 +35,6 @@
         }
     }
 }
-
 @include respond-to(large) {
     @include b(section2) {
         width: auto;

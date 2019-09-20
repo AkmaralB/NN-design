@@ -52,7 +52,7 @@
         height: 456px;
         @include flex;
         @include flex-direction(row);    
-        background: url(../img/background.png) #ffffff 10% 100% no-repeat; 
+        background: url(../img/34.png) #ffffff 10% 100% no-repeat; 
         background-size: 25% auto;
     }
     @include e(text) {
@@ -101,31 +101,31 @@
         }
     }
     @include e(elem1) {
-        background: url(../img/logo-img1.png);
+        background: url(../img/23.png);
 
         &:hover {
-            background: url(../img/logo-img1-2.png);
+            background: url(../img/24.png);
         }
     }
     @include e(elem2) {
-        background: url(../img/logo-img2.png);
+        background: url(../img/25.png);
 
         &:hover {
-            background: url(../img/logo-img2-2.png);
+            background: url(../img/26.png);
         }
     }
     @include e(elem3) {
-        background: url(../img/logo-img3.png);
+        background: url(../img/27.png);
 
         &:hover {
-            background: url(../img/logo-img3-2.png);
+            background: url(../img/28.png);
         }
     }
     @include e(elem4) {
-        background: url(../img/logo-img4.png);
+        background: url(../img/29.png);
 
         &:hover {
-            background: url(../img/logo-img4-2.png);
+            background: url(../img/30.png);
         }
     }
 }//.content
@@ -165,7 +165,7 @@
     @include b(content) {
         width: calc(100% - 200px);
         @include e(inner) {
-            background: url(../img/background.png) #ffffff 10% 50% no-repeat; 
+            background: url(../img/34.png) #ffffff 10% 50% no-repeat; 
             background-size: 25% auto;
         }
         @include e(title) {

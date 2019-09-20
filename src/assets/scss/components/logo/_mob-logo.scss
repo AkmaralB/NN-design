@@ -44,22 +44,22 @@
         }
         @include e(elem1) {
             &:hover {
-                background: url(../img/logo-img1-2.png);
+                background: url(../img/24.png);
             }
         }
         @include e(elem2) {
             &:hover {
-                background: url(../img/logo-img2-2.png);
+                background: url(../img/26.png);
             }
         }
         @include e(elem3) {
             &:hover {
-                background: url(../img/logo-img3-2.png);
+                background: url(../img/28.png);
             }
         }
         @include e(elem4) {
             &:hover {
-                background: url(../img/logo-img4-2.png);
+                background: url(../img/30.png);
             }
         }
         @include e(elem) {

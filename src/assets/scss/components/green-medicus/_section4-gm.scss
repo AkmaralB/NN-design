@@ -27,6 +27,9 @@
         flex-direction: row;
         overflow: hidden;
         xtouch-action: none;
+        width: 100%;
+        height: 432px;
+        // background: url(../img/20.png) no-repeat 100% 100%;
         @include m(left) {
             position: absolute;
             left: 0;
@@ -35,7 +38,6 @@
             width: 50%;
             height: 432px;
             overflow: hidden;
-
             // &:after {
             //     content: '< >';
             //     display: inline-block;
@@ -86,6 +88,7 @@
             flex: 1 1 auto;
             width: 100%;
             height: 432px;
+            background: url(../img/20.png) no-repeat 100% 100%;
             img {
                 width: 1150px;
                 height: 432px;
