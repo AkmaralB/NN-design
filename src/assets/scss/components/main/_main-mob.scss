@@ -65,7 +65,7 @@
         @include flex;
         justify-content: space-between;
         position: absolute;
-        top: 43%;
+        top: 40%;
         z-index: 2;
         width: 200px;
         height: 30px;
@@ -83,6 +83,16 @@
     }
 }
 
+@include respond-to(medium) { 
+    @include b(main-mob-pointer) {
+        width: 150px;
+        height: 20px;
+        @include e(elem) {
+            width: 20px;
+            border-radius: 20px;
+        }
+    }
+}
 @include respond-to(small) {
     @include b(main-mob-bottom) {
         @include e(title) {
@@ -106,6 +116,7 @@
         }
     }
     @include b(main-mob-pointer) {
+        top: 45%;
         width: 150px;
         height: 20px;
         @include e(elem) {
@@ -131,7 +142,14 @@
                 font-size: 14px;
             }
         }
-    
+    }
+    @include b(main-mob-pointer) {
+        width: 80px;
+        height: 10px;
+        @include e(elem) {
+            width: 10px;
+            border-radius: 10px;
+        }
     }
 }
 @include respond-to(xxsmall) {
