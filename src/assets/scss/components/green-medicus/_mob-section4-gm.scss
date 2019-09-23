@@ -17,14 +17,18 @@
             }
         }
         @include e(img) {
+            height: 350px;
             @include m(left) {
-                height: 350px;
                 img {
                     width: 680px;
                     height: 350px;
                 }
+                div {
+                    margin-left: -600px;
+                }
             }
             @include m(right) {
+                width: 680px;
                 height: 350px;
                 img {
                     width: 680px;
@@ -47,14 +51,20 @@
             }
         }
         @include e(img) {
+            height: 280px;
             @include m(left) {
+                width: 560px;
                 height: 280px;
                 img {
                     width: 560px;
                     height: 280px;
                 }
+                div {
+                    margin-left: -300px;
+                }
             }
             @include m(right) {
+                width: 560px;
                 height: 280px;
                 img {
                     width: 560px;
@@ -78,14 +88,17 @@
             }
         }
         @include e(img) {
+            height: 220px;
             @include m(left) {
+                width: 420px;
                 height: 220px;
-                img {
+            img {
                     width: 420px;
                     height: 220px;
                 }
             }
             @include m(right) {
+                width: 420px;
                 height: 220px;
                 img {
                     width: 420px;
@@ -109,6 +122,7 @@
             }
         }
         @include e(img) {
+            height: 140px;
             @include m(left) {
                 height: 140px;
                 img {
@@ -117,6 +131,7 @@
                 }
             }
             @include m(right) {
+                width: 280px;
                 height: 140px;
                 img {
                     width: 280px;
