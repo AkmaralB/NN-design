@@ -134,6 +134,7 @@
     width: 50%;
     height: 100%;
     float: right;
+    overflow: hidden;
     @include e(img) {
         width: 100%;
         height: 100%;
