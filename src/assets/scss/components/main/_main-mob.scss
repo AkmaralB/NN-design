@@ -67,15 +67,16 @@
         position: absolute;
         top: 43%;
         z-index: 2;
-        width: 15%;
-        height: 1%;;
+        width: 200px;
+        height: 30px;
         margin: 0 auto;
         align-self: center;
         @include e(elem) {
-            width: 10%;
+            width: 30px;
             border: 1px solid #ffffff;
-            border-radius: 20px;
+            border-radius: 30px;
             &:hover {
+                cursor: pointer;
                 background: #ffffff;
             }
         }
@@ -103,7 +104,14 @@
                 font-size: 22px;
             }
         }
-    
+    }
+    @include b(main-mob-pointer) {
+        width: 150px;
+        height: 20px;
+        @include e(elem) {
+            width: 20px;
+            border-radius: 20px;
+        }
     }
 }
 @include respond-to(xsmall) {
