@@ -34,6 +34,10 @@ $(document).ready(function () {
     $('#carousel').click(function() {
         slide(true);
     });
+    $('#carousel').on('swipe', function(e) {
+        console.log(e);
+        
+    })
 
     function slide(b) {
         if (b) {
@@ -46,4 +50,13 @@ $(document).ready(function () {
         var n = $('.main-right__img')[0].getAttribute('alt');
         $('#number').html('0' + n);
     }
+
+    document.addEventListener('swiped-left', function(e) {
+        console.log(e.target); // the element that was swiped
+        slide(true);
+    });
+    document.addEventListener('swiped-right', function(e) {
+        console.log(e.target); // element that was swiped
+        slide();
+    });
 });
