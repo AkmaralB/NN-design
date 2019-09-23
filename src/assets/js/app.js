@@ -31,19 +31,19 @@ $(document).ready(function () {
     $('#next').click(function() {
         slide(true);
     });
-    $('#carousel').click(function() {
+    $('#carousel1').click(function() {
         slide(true);
     });
 
     function slide(b) {
         if (b) {
-            $('#carousel').append($("#carousel").children().first().clone());
-            $('.main-right__img')[0].remove();
+            $('#carousel1').append($("#carousel1").children().first().clone());
+            $('.carousel-1')[0].remove();
         } else {
-            $('#carousel').prepend($("#carousel").children().last().clone());
-            $('.main-right__img')[$('.main-right__img').length - 1].remove();
+            $('#carousel1').prepend($("#carousel1").children().last().clone());
+            $('.carousel-1')[$('.carousel-1').length - 1].remove();
         }
-        var n = $('.main-right__img')[0].getAttribute('alt');
+        var n = $('.carousel-1')[0].getAttribute('alt');
         $('#number').html('0' + n);
     }
 });
