@@ -24,16 +24,12 @@ $(document).ready(function () {
         handleSelector: ".section4-gm__img--splitter",
         resizeHeight: false
     });
-    // $('.main-right').slick({
-    //     settingName: 'setting-value'
-    // });
 
-    $('.prev').click(function() {
+    $('#prev').click(function() {
         slide();
     });
-    $('.next').click(function() {
+    $('#next').click(function() {
         slide(true);
-        $('.main-right__img').length
     });
     $('#carousel').click(function() {
         slide(true);
@@ -47,22 +43,7 @@ $(document).ready(function () {
             $('#carousel').prepend($("#carousel").children().last().clone());
             $('.main-right__img')[$('.main-right__img').length - 1].remove();
         }
-        let n = $('.main-right__img')[0].getAttribute('alt');
+        var n = $('.main-right__img')[0].getAttribute('alt');
         $('#number').html('0' + n);
     }
 });
-$(document).on('ready', function() {
-
-    $('.one-time').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true
-    });
-    $(".menu-right").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
-      });
-
-    });
