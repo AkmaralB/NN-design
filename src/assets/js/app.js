@@ -51,12 +51,20 @@ $(document).ready(function () {
         $('#number').html('0' + n);
     }
 
+    $('#carouselMob').height($('#carouselMob').width() / 1.3);
     document.addEventListener('swiped-left', function(e) {
-        console.log(e.target); // the element that was swiped
-        slide(true);
+        slideMob();
     });
     document.addEventListener('swiped-right', function(e) {
-        console.log(e.target); // element that was swiped
-        slide();
+        slideMob(true);
     });
+    function slideMob(b) {
+        if (b) {
+            $('#carouselMob').append($("#carouselMob").children().first().clone());
+            $('.carouselMob')[0].remove();
+        } else {
+            $('#carouselMob').prepend($("#carouselMob").children().last().clone());
+            $('.carouselMob')[$('.carouselMob').length - 1].remove();
+        }
+    }
 });
