@@ -24,7 +24,7 @@
                     height: 350px;
                 }
                 div {
-                    margin-left: -600px;
+                    margin-left: -300px;
                 }
             }
             @include m(right) {
@@ -53,14 +53,13 @@
         @include e(img) {
             height: 280px;
             @include m(left) {
-                width: 560px;
                 height: 280px;
                 img {
                     width: 560px;
                     height: 280px;
                 }
                 div {
-                    margin-left: -300px;
+                    margin-left: -100px;
                 }
             }
             @include m(right) {
@@ -90,12 +89,14 @@
         @include e(img) {
             height: 220px;
             @include m(left) {
-                width: 420px;
                 height: 220px;
-            img {
+                img {
                     width: 420px;
                     height: 220px;
                 }
+                div {
+                    margin-left: -200px;
+                }    
             }
             @include m(right) {
                 width: 420px;
@@ -128,6 +129,9 @@
                 img {
                     width: 280px;
                     height: 140px;
+                }
+                div {
+                    margin-left: -100px;
                 }
             }
             @include m(right) {

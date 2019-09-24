@@ -76,6 +76,11 @@
     .img-desktop {
         display: block;
     }
+    a {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 @include respond-to(landscape) {
     @include b(layout) {
