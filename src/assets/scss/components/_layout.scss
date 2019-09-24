@@ -92,9 +92,11 @@
         }
         .img-mob {
             display: block;
+            overflow: hidden;
         }
         .img-desktop {
             display: none;
+            overflow: hidden;
         }
     }
 }

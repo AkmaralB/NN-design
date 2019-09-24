@@ -44,8 +44,19 @@
         @include e(arrow) {
             top: 550px;
         }
-        .section1__img {
-            height: 440px;
+    }    
+}
+@include respond-to(xlarge) {
+    @include b(projects) {
+        @include e(arrow) {
+            top: 720px;
+        }
+    }
+}
+@include respond-to(xxlarge) {
+    @include b(projects) {
+        @include e(arrow) {
+            top: 810px;
         }
     }    
 }

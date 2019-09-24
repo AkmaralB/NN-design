@@ -65,9 +65,11 @@
     }
     @include e(img) {
         float: right;
+        overflow: hidden;
         @include m(img) {
             width: 498px;
             height: 456px;
+            overflow: hidden;
         }
     }
 }

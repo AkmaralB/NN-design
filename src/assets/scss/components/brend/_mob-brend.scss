@@ -40,7 +40,11 @@
             @include m(img) {
                 width: 100%;
                 height: 365px;
+                overflow: hidden;
             }
+        }
+        .img-desktop {
+            display: none;
         }
     }
 }//.landscape
