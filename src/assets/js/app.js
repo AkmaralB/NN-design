@@ -51,7 +51,7 @@ $(document).ready(function () {
         $('#number').html('0' + n);
     }
 
-    $('#carouselMob').height($('#carouselMob').width() / 1.2);
+    // $('#carouselMob').height($('#carouselMob').width() / 1.2);
     document.addEventListener('swiped-left', function(e) {
         slideMob();
     });

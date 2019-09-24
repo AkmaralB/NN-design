@@ -13,7 +13,7 @@
     }
     @include b(main-mob-top) {
         width: 100%;
-        height: 50%;
+        height: 50vh;
         overflow: hidden;
         @include e(img) {
             width: 100%;
