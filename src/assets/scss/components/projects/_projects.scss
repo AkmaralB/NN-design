@@ -1,0 +1,51 @@
+@include b(projects) {
+    @include e(arrow) {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        display: block;
+        @include flex;
+        @include flex-direction(row);
+        justify-content: baseline;
+        @include m(elem) {
+            display: block;
+            height: 24px;
+            margin-right: 20px;
+            padding: 8px 10px;
+            border: 2px solid #777777;
+            border-radius: 100%;    
+            font-size: 18px;
+            font-family: Arial;
+            color: #777777;
+            &:hover {
+                cursor: pointer;
+                border: 2px solid #222222;
+                color:#222222;
+            }
+        }
+    }
+    .section1 {
+        overflow: hidden;
+    }
+    .section1__img {
+        height: 557px;
+        overflow: hidden;
+    }
+}
+@include respond-to(large) {
+    @include b(projects) {
+        @include e(arrow) {
+            top: 80%;
+        }
+    }
+}
+@include respond-to(desktop) {
+    @include b(projects) {
+        @include e(arrow) {
+            top: 65%;
+        }
+        .section1__img {
+            height: 440px;
+        }
+    }    
+}

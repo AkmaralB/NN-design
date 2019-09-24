@@ -8,8 +8,7 @@
                     </a>
                 </div>
                 <div class="header__divider main--short">
-                    <div class="header__divider--elem">
-                    </div>
+                    <div class="header__divider--elem"></div>
                 </div>
                 <div class="header__button main--hide">
                     <a href="/services.html#call" class="header__button--elem" >Хотите также?</a>
@@ -26,11 +25,28 @@
             <div class="section1__left-panel">
                 {{> _left-panel }}
             </div>
-            <div class="section1__img img-desktop">
-                <img src="assets/img/2.png" alt="img1" class="section1__img--img1">
+            <div class="img-desktop">
+                <div class="section1__img carousel2" id="carousel2">
+                    <img src="assets/img/2.png" alt="img1" class="section1__img--img1 carousel-2">
+                    <img src="assets/img/7.png" alt="img2" class="section1__img--img1 carousel-2">
+                    <img src="assets/img/12.png" alt="img3" class="section1__img--img1 carousel-2">
+                </div>
+                <div class="projects__arrow">
+                    <a class="projects__arrow--elem" id="prev2"> < </a>
+                    <a class="projects__arrow--elem" id="next2"> > </a>
+                </div>
             </div>
-            <div class="section1__img img-mob">
-                <img src="assets/img/21.png" alt="img1" class="section1__img--img1">
+            <div class="img-mob">
+                <div class="section1__img" id="carouselMob">
+                    <img src="assets/img/21.png" alt="img1" class="section1__img--img1 carouselMob">
+                    <img src="assets/img/3.png" alt="img2" class="section1__img--img1 carouselMob">
+                    <img src="assets/img/4.png" alt="img3" class="section1__img--img1 carouselMob">
+                </div>
+                <div class="projects-pointer">
+                    <div class="projects-pointer__elem"></div>
+                    <div class="projects-pointer__elem"></div>
+                    <div class="projects-pointer__elem"></div>
+                </div>
             </div>
             <div class="section1__right-panel">
                 {{> _right-panel }}
