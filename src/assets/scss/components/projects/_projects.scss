@@ -1,7 +1,7 @@
 @include b(projects) {
     @include e(arrow) {
         position: absolute;
-        top: 85%;
+        top: 730px;
         left: 50%;
         display: block;
         @include flex;
@@ -35,14 +35,14 @@
 @include respond-to(large) {
     @include b(projects) {
         @include e(arrow) {
-            top: 80%;
+            top: 680px;
         }
     }
 }
 @include respond-to(desktop) {
     @include b(projects) {
         @include e(arrow) {
-            top: 65%;
+            top: 550px;
         }
         .section1__img {
             height: 440px;
