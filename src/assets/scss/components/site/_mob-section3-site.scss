@@ -1,5 +1,5 @@
 @include respond-to(landscape) {
-    @include b(section3-brend) {
+    @include b(section3-site) {
         @include flex;
         @include flex-direction(column);
         width: auto;
@@ -53,21 +53,21 @@
     }
     @include b(graph1) {
         @include e(line-inner1) {
-            width: 87%;
+            width: 95%;
         }
         @include e(line-inner2) {
-            width: 68%;
+            width: 83%;
         }
         @include e(line-inner3) {
-            width: 77%;
+            width: 75%;
         }
     }
     @include b(graph2) {
         @include e(line-inner1) {
-            width: 31%;
+            width: 23%;
         }
         @include e(line-inner2) {
-            width: 39%;
+            width: 23%;
         }
         @include e(line-inner3) {
             width: 23%;
@@ -75,7 +75,7 @@
     }
 }//.landscape
 @include respond-to(medium) {
-    @include b(section3-brend) {
+    @include b(section3-site) {
         margin: 0 40px 20px;
         @include e(title) {
             padding: 30px 30px 20px 30px;
@@ -102,7 +102,7 @@
     }
 }//.medium
 @include respond-to(small) {
-    @include b(section3-brend) {
+    @include b(section3-site) {
         margin: 0 30px 20px;
         @include e(title) {
             padding: 20px 20px 10px 20px;
@@ -129,7 +129,7 @@
     }
 }//.small
 @include respond-to(xsmall) {
-    @include b(section3-brend) {
+    @include b(section3-site) {
         margin: 0 16px 10px;
         @include e(title) {
             padding: 16px 16px 8px 16px;

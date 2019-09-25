@@ -110,7 +110,7 @@
     @include b(site) {
         width: calc(100% - 200px);
         @include e(inner) {
-            background: url(../img/background.png) #ffffff 10% 50% no-repeat; 
+            background: url(../img/34.png) #ffffff 10% 50% no-repeat; 
             background-size: 25% auto;
         }
         @include e(title) {

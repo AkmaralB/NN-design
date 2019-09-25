@@ -24,12 +24,8 @@
             }
         }
     }
-    .section1 {
-        overflow: hidden;
-    }
-    .section1__img {
-        height: 557px;
-        overflow: hidden;
+    .img-mob {
+        display: none;
     }
 }
 @include respond-to(large) {

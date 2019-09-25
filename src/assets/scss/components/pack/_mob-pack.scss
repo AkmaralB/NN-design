@@ -36,10 +36,11 @@
         @include e(img) {
             float: none;
             width: 100%;
+            height: 365px;
             margin-bottom: 0;
+            text-align: center;
             @include m(img) {
-                width: 100%;
-                height: 365px;
+                width: auto;
             }
         }
     }
@@ -58,8 +59,8 @@
             }
         }
         @include e(img) {
+            height: 288px;
             @include m(img) {
-                height: 288px;
             }
         }
     }
@@ -79,8 +80,8 @@
             }
         }
         @include e(img) {
+            height: 224px;
             @include m(img) {
-                height: 224px;
             }
         }
     }
@@ -99,8 +100,8 @@
             }
         }
         @include e(img) {
+            height: 144px;
             @include m(img) {
-                height: 144px;
             }
         }
     }

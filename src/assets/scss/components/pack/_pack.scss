@@ -65,9 +65,12 @@
     }
     @include e(img) {
         float: right;
+        width: 100%;
+        text-align: center;
+        background: #A3A07E; 
         @include m(img) {
-            width: 498px;
-            height: 456px;
+            width: auto;
+            height: 100%;
         }
     }
 }
@@ -110,7 +113,7 @@
     @include b(pack-center) {
         width: calc(100% - 200px);
         @include e(inner) {
-            background: url(../img/background.png) #ffffff 10% 50% no-repeat; 
+            background: url(../img/34.png) #ffffff 10% 50% no-repeat; 
             background-size: 25% auto;
         }
         @include e(title) {

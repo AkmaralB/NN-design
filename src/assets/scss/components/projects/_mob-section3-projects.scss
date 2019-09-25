@@ -119,6 +119,7 @@
         }
     }
     @include b(item) {
+        overflow: hidden;
         @include e(left) {
             height: 150px;
         }
