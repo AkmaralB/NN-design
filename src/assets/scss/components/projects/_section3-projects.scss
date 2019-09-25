@@ -67,6 +67,7 @@
 @include b(section3-projects-button) {
     width: 100%;
     text-decoration: none;
+    margin: 70px auto 60px;
     font-size: 16px;
     font-family: 'Gotham Pro Bold';
     text-transform: uppercase;
@@ -78,8 +79,6 @@
     border: none;
 }
 @include b(section3-projects-other) {
-    margin: 70px auto 60px;
-    text-align: center;
 }
 @include respond-to(large) {
     @include b(section3-projects) {
