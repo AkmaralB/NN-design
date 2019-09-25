@@ -8,7 +8,7 @@
         @include e(title) {
             flex: 0 0 auto;
             margin-bottom: 0;
-            padding: 40px;
+            padding: 0;
             font-size: 40px;
             font-family: 'Gotham Pro Bold';
         }
@@ -78,7 +78,6 @@
     @include b(section3-pack) {
         margin: 0 40px 20px;
         @include e(title) {
-            padding: 30px 30px 20px 30px;
             font-size: 32px;
         }
         @include e(graph) {
@@ -105,7 +104,6 @@
     @include b(section3-pack) {
         margin: 0 30px 20px;
         @include e(title) {
-            padding: 20px 20px 10px 20px;
             font-size: 25px;
         }
         @include e(graph) {
@@ -132,7 +130,6 @@
     @include b(section3-pack) {
         margin: 0 16px 10px;
         @include e(title) {
-            padding: 16px 16px 8px 16px;
             font-size: 16px;
         }
         @include e(graph) {

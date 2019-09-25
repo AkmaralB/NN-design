@@ -94,7 +94,7 @@
         @include e(row) {
             margin-bottom: 16px;
             img {
-                height: 185px;
+                height: 240px;
             }
             @include m(text) {
                 margin-left: 20px;
@@ -103,6 +103,15 @@
             }
             @include m(title) {
                 font-size: 16px;
+            }
+        }
+    }    
+}//.xsmall
+@include respond-to(xxsmall) {
+    @include b(latest-rows) {
+        @include e(row) {
+            img {
+                height: 185px;
             }
         }
     }    

@@ -2,7 +2,7 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     background: #e5e5e5;
     @include e(title) {
         flex: 0 0 auto;
@@ -67,7 +67,7 @@
 @include b(section3-projects-button) {
     width: 100%;
     text-decoration: none;
-    margin: 70px auto 60px;
+    margin: 30px auto 0;
     font-size: 16px;
     font-family: 'Gotham Pro Bold';
     text-transform: uppercase;
@@ -83,12 +83,12 @@
 @include respond-to(large) {
     @include b(section3-projects) {
         width: auto;
-        margin: 0 145px;
+        margin: 0 145px 40px;
     }
 }//.large
 @include respond-to(desktop) {
     @include b(section3-projects) {
-        margin: 0 100px;
+        margin: 0 100px 40px;
     }   
     @include b(section3-projects-button) {
     }
@@ -103,7 +103,7 @@
         }
     }
     @include b(section3-projects-other) {
-        margin: 20px auto 50px;
+        margin: 0 auto ;
     }    
 }//.desktop
 
@@ -138,7 +138,7 @@
         font-size: 19px;
     }
     @include b(section3-projects-other) {
-        margin: 70px auto 80px;
+        margin: 0 auto;
     }    
 
 }

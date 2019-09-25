@@ -7,7 +7,7 @@
             width: auto;
             margin: auto 60px;
             @include m(item1) {
-                margin-top: 60px;
+                margin-top: 0;
                 margin-bottom: 40px;
                 font-size: 45px;
                 font-family: 'Gotham Pro Medium';

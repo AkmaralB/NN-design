@@ -42,7 +42,7 @@
         @include m(big) {
             font-size: 32px;
             font-family: 'Gotham Pro Black';
-            line-height: 0em;
+            line-height: 1em;
         }
         @include m(little) {
             font-size: 16px;

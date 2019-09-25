@@ -3,14 +3,13 @@
     @include flex-direction(column);
     width: 1150px;
     margin: 0 auto;
-    padding-bottom: 20px;
-    background: #FFFFFF;
+    background: #ffffff;
     @include e(text) {
         flex: 0 0 auto;
         width: 714px;
         margin-left: 76px;
         @include m(item1) {
-            margin-top: 68px;
+            margin-top: 0px;
             margin-bottom: 48px;
             font-size: 32px;
             font-family: 'Gotham Pro Black';

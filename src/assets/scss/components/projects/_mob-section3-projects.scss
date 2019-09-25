@@ -1,7 +1,7 @@
 @include respond-to(landscape) {
     @include b(section3-projects) {
         width: auto;
-        margin: 0 60px 20px;
+        margin: 0 60px 50px;
         @include e(title) {
             font-size: 60px;
             margin-bottom:0;
@@ -47,12 +47,15 @@
         color: #7E92B8;
     }
     @include b(section3-projects-other) {
-        margin: 40px auto 60px;
+        margin: 0 auto;
+    }
+    .items-open {
+        margin: 0;
     }
 }//.landscape
 @include respond-to(medium) {
     @include b(section3-projects) {
-        margin: 0 40px 20px;
+        margin: 0 40px 30px;
         @include e(title) {
             font-size: 50px;
         }   
@@ -79,7 +82,7 @@
         font-size: 32px;
     }
     @include b(section3-projects-other) {
-        margin: 30px auto 50px;
+        margin: 0 auto;
     }
 }//.medium
 @include respond-to(small) {
@@ -108,7 +111,7 @@
         }
     }
     @include b(section3-projects-button) {
-        margin: 30px auto 40px;
+        margin: 30px auto;
         font-size: 25px;
     }
 }//.small
@@ -143,6 +146,6 @@
         font-size: 18px;
     }
     @include b(section3-projects-other) {
-        margin: 16px auto 25px;
+        margin: 0 auto;
     }
 }//.xsmall

@@ -24,10 +24,12 @@
             margin-bottom: 20px;
             margin-left: 30px; 
             @include m(big) {
+                margin: 0;
                 font-size: 64px;
             }
             @include m(little) {
                 font-size: 37px;
+                margin-bottom: 0;
                 line-height: 125.7%;
                 white-space: normal;
                 color: #BDBDBD;
@@ -40,29 +42,41 @@
         }
     }
     @include b(rows) {
-        @include flex;
-        @include flex-direction(row);
-        justify-content: space-between;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+        justify-content: space-around;
+        overflow: none;
+        width: 100%;
+        margin: 40px auto;
         @include e(row) {
-            width: 24.25%;
+            @include flex;
+            @include flex-direction(row);
+            width: 90%;
             height: auto;
             margin-right: 1%;
+            margin-bottom: 0;
+            padding: 3%;
+            background: #ffffff;
             @include m(img) {
                 display: none;
             }
             @include m(mob-img) {
                 width: 90px;
                 height: 90px;
-                margin: 21px 150px 21px 21px;//Задаю справа т к ширина img не держит
             }
             @include m(text) {
-                margin-left: 21px;
+                margin-left: 10px;
                 font-size: 20px;
                 white-space: normal;
                 color: #BDBDBD;
+                p {
+                    margin: 5px;
+                }
             }
             @include m(title) {
-                font-size: 30px;
+                font-size: 25px;
                 line-height: 1em;
                 color: #222222;
             }
@@ -95,14 +109,15 @@
         }
     }
     @include b(rows) {
+        grid-gap: 1vw;
+
         @include e(row) {
             // width: 200px;
-            // height: 210px;
+            height: 70%;
             // margin-right: 15px;
             @include m(mob-img) {
                 width: 70px;
                 height: 70px;
-                margin: 10px 130px 20px 20px;//Задаю справа т к ширина img не держит
             }
             @include m(text) {
                 margin-left: 15px;
@@ -133,14 +148,14 @@
     @include b(rows) {
         @include e(row) {
             // width: 150px;
-            // height: 160px;
+            height: 80%;
             // margin-right: 15px;
             @include m(mob-img) {
                 width: 55px;
                 height: 55px;
-                margin: 10px 80px 10px 15px;//Задаю справа т к ширина img не держит
             }
             @include m(text) {
+                height: auto;
                 margin-left: 15px;
                 font-size: 13px;
             }
@@ -151,6 +166,50 @@
     }    
 }//.small
 @include respond-to(xsmall) {
+    @include b(section1-services) {
+        margin: 16px;
+    }
+    @include b(center) {
+        @include e(title) {
+            margin-bottom: 10px;
+            margin-left: 24px; 
+            @include m(big) {
+                font-size: 24px;
+            }
+            @include m(little) {
+                font-size: 14px;
+            }
+        }
+    }
+    @include b(rows) {
+        @include flex-direction(column);
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        @include e(row) {
+            // width: 96px;
+            // height: 106px;
+            // margin-right: 8px;
+            margin-bottom: 10px;
+            a{
+                margin: auto;
+            }
+            @include m(mob-img) {
+                width: 50px;
+                height: 50px;
+                // margin: auto;
+            }
+            @include m(text) {
+                margin-left: 8px;
+                font-size: 11px;
+            }
+            @include m(title) {
+                font-size: 15px;
+            }
+        }
+    }    
+}//.xsmall
+@include respond-to(xlsmall) {
     @include b(section1-services) {
         margin: auto 16px 32px 16px;
     }
@@ -168,22 +227,56 @@
     }
     @include b(rows) {
         @include e(row) {
-            // width: 96px;
-            // height: 106px;
-            // margin-right: 8px;
-            margin-bottom: 0;
+            @include flex-direction(column);
             @include m(mob-img) {
-                width: 35px;
-                height: 35px;
-                margin: 5px 55px 8px 8px;//Задаю справа т к ширина img не держит
-            }
-            @include m(text) {
-                margin-left: 8px;
-                font-size: 8px;
-            }
-            @include m(title) {
-                font-size: 12px;
+                width: 40px;
+                height: 40px;
+                // margin: auto;
             }
         }
     }    
-}//.xsmall
+}//.xlsmall
+@include respond-to(xxsmall) {
+    @include b(section1-services) {
+        margin: 16px;
+    }
+    @include b(center) {
+        @include e(title) {
+            margin-bottom: 10px;
+            margin-left: 24px; 
+            @include m(big) {
+                font-size: 24px;
+            }
+            @include m(little) {
+                font-size: 14px;
+            }
+        }
+    }
+    @include b(rows) {
+        @include flex-direction(column);
+        align-items: center;
+        text-align: center;
+        @include e(row) {
+            @include flex-direction(column);
+            // width: 96px;
+            // height: 106px;
+            // margin-right: 8px;
+            margin-bottom: 10px;
+            a{
+                margin: auto;
+            }
+            @include m(mob-img) {
+                width: 40px;
+                height: 40px;
+                // margin: auto;
+            }
+            @include m(text) {
+                margin-left: 8px;
+                font-size: 10px;
+            }
+            @include m(title) {
+                font-size: 13px;
+            }
+        }
+    }    
+}//.xxsmall
