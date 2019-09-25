@@ -1,7 +1,50 @@
+
 @include b(rows) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    width: 100%;
     @include e(row) {
+        width: 324px;
+        height: 438px;
+        margin-right: 32px;
+        margin-bottom: 32px;
+        background: #ffffff;
         @include m(mob-img) {
             display: none;
+        }
+        @include m(img) {
+            width: 324px;
+            height: 244px;
+            margin-bottom: 32px;
+        }
+        @include m(text) {
+            height: 110px;
+            margin-left: 35px;
+            line-height: 125.7%;
+            white-space: pre-line;
+        }
+        @include m(title) {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Gotham Pro Medium';
+            line-height: 0;
+        }
+        @include m(title2) {
+            margin-bottom: -16px;
+        }
+        @include m(mob-title2) {
+            display: none;
+        }
+        @include m(button) {
+            margin-left: 35px;
+            margin-bottom: 32px;
+            font-size: 16px;
+            font-family: 'Gotham Pro Bold';
+            line-height: 0;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #7E92B8;
         }
     }
 }
@@ -77,52 +120,6 @@
                 border: 2px solid #222222;    
                 color:  #222222;
             }
-        }
-    }
-}
-@include b(rows) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;    
-    width: 100%;
-    @include e(row) {
-        width: 324px;
-        height: 438px;
-        margin-right: 32px;
-        margin-bottom: 32px;
-        background: #ffffff;
-        @include m(img) {
-            width: 324px;
-            height: 244px;
-            margin-bottom: 32px;
-        }
-        @include m(text) {
-            height: 110px;
-            margin-left: 35px;
-            line-height: 125.7%;
-            white-space: pre-line;
-        }
-        @include m(title) {
-            margin: 0;
-            font-size: 24px;
-            font-family: 'Gotham Pro Medium';
-            line-height: 0;
-        }
-        @include m(title2) {
-            margin-bottom: -16px;
-        }
-        @include m(mob-title2) {
-            display: none;
-        }
-        @include m(button) {
-            margin-left: 35px;
-            margin-bottom: 32px;
-            font-size: 16px;
-            font-family: 'Gotham Pro Bold';
-            line-height: 0;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #7E92B8;
         }
     }
 }

@@ -135,9 +135,30 @@
     height: 100%;
     float: right;
     overflow: hidden;
+}//.main-right
+@include b(carusel-slider) {
+    @include flex;
+    @include flex-direction(row);
+    width: 100%;
+    height: 100%;
     @include e(img) {
         width: 100%;
         height: 100%;
+    }
+    div {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .slick-prev {
+        left: 45px;  
+    }
+    .slick-next {
+        left: 95px;
+    }
+    .slick-prev, .slick-next {
+        z-index: 999;
+        top: 94%;
     }
 }//.main-right
 @include respond-to(desktop) {

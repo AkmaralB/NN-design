@@ -4,22 +4,42 @@
     width: 1440px;
     height: 557px;
     margin: 0 auto 72px;
-    overflow: hidden;
     @include e(left-panel) {
         @include flex;
         flex: 0 0 145px;
         width: 145px;
     }
     @include e(img) {
-        flex: 1 1 auto;
+        flex: 0 0 1150px;
+        width: 1150px;
         height: 100%;
+    }
+    @include e(right-panel) {
+        flex: 0 0 145px;
+    }
+}
+@include b(section1_causel) {
+    width: 100%;
+    @include e(img) {
+        height: 100%;
+        div {
+            width: 100%;
+            height: 100%;
+        }
         @include m(img1) {
             width: 100%;
             height: 100%;
         }
     }
-    @include e(right-panel) {
-        flex: 0 0 145px;
+    .slick-prev {
+        left: 50%;  
+    }
+    .slick-next {
+        left: 55%;
+    }
+    .slick-prev, .slick-next {
+        z-index: 999;
+        top: 105%;
     }
 }
 @include respond-to(large) {
@@ -30,8 +50,8 @@
 @include respond-to(desktop) {
     @include b(section1) {
         width: 100%;
-        height: 440px;
-        margin: 0 auto 50px;
+        // height: 440px;
+        margin: 0 auto 10px;
         @include e(left-panel) {
             flex: 0 0 100px;
             width: 100px;
