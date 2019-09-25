@@ -66,7 +66,6 @@
 }
 @include b(section3-projects-button) {
     width: 100%;
-    margin: 70px auto 60px;
     text-decoration: none;
     font-size: 16px;
     font-family: 'Gotham Pro Bold';
@@ -79,12 +78,14 @@
     border: none;
 }
 @include b(section3-projects-other) {
-    &:hover {
+    margin: 70px auto 60px;
+    text-align: center;
+    &:active {
         @include b(section3-projects-button) {
             display: none;
         }
         @include b(items-open) {
-            display: flex;
+            display: block;
         }
     }
 }
@@ -99,7 +100,6 @@
         margin: 0 100px;
     }   
     @include b(section3-projects-button) {
-        margin: 20px auto 50px;
     }
     @include b(item) {
         @include e(right) {
@@ -111,6 +111,9 @@
             }    
         }
     }
+    @include b(section3-projects-other) {
+        margin: 20px auto 50px;
+    }    
 }//.desktop
 
 @include respond-to(xxlarge) {
@@ -141,7 +144,10 @@
         }
     }
     @include b(section3-projects-button) {
-        margin: 70px auto 80px;
         font-size: 19px;
     }
+    @include b(section3-projects-other) {
+        margin: 70px auto 80px;
+    }    
+
 }

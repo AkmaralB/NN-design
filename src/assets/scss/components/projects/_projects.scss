@@ -24,9 +24,6 @@
             }
         }
     }
-    .img-mob {
-        display: none;
-    }
 }
 @include respond-to(large) {
     @include b(projects) {

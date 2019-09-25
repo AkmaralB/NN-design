@@ -42,10 +42,12 @@
         }
     }
     @include b(section3-projects-button) {
-        margin: 40px auto 60px;
         font-size: 40px;
         font-family: 'Gotham Pro Medium';
         color: #7E92B8;
+    }
+    @include b(section3-projects-other) {
+        margin: 40px auto 60px;
     }
 }//.landscape
 @include respond-to(medium) {
@@ -74,8 +76,10 @@
         }
     }
     @include b(section3-projects-button) {
-        margin: 30px auto 50px;
         font-size: 32px;
+    }
+    @include b(section3-projects-other) {
+        margin: 30px auto 50px;
     }
 }//.medium
 @include respond-to(small) {
@@ -136,7 +140,9 @@
         }
     }
     @include b(section3-projects-button) {
-        margin: 16px auto 25px;
         font-size: 18px;
+    }
+    @include b(section3-projects-other) {
+        margin: 16px auto 25px;
     }
 }//.xsmall

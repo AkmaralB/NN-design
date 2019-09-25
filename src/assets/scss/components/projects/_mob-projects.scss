@@ -22,13 +22,6 @@
         .section1__img {
             height: 525px;
         }
-        .layout--img-desktop {
-            display: none;
-        }
-        .layout--img-mob {
-            display: block;
-        }
-    
     }    
 }
 @include respond-to(medium) {
