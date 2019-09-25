@@ -10,23 +10,23 @@
         margin-bottom: 8px;         
         font-size: 32px;
         font-family: 'Gotham Pro Black';
-        line-height: 0em;
+        line-height: 1em;
     }
 }
 @include b(latest-rows) {
     @include flex;
     @include flex-direction(row);
     justify-content: space-between;    
-    overflow: hidden;
-
+    &:last-child {
+        margin-right: 0;
+    }
     @include e(row) {
-        width: 367px;
+        width: 32%;
         height: 423px;
-        margin-right: 24px;
         background: #ffffff;
 
         img {
-            width: 367px;
+            width: 100%;
             height: 314px;
             margin-bottom: 20px;
         }
@@ -38,7 +38,8 @@
         @include m(title) {
             font-size: 18px;
             font-family: 'Gotham Pro Medium';
-            line-height: 0;
+            line-height: 1em;
+            margin-top: 0;
         }
     }
 }
@@ -55,10 +56,8 @@
     }
     @include b(latest-rows) {
         @include e(row) {
-            width: 300px;
             height: 365px;
             img {
-                width: 300px;
                 height: 256px;
             }
         }

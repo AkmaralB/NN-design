@@ -1,4 +1,4 @@
-@include b(section2-site) {
+@include b(section2) {
     @include flex;
     @include flex-direction(column);
     width: 1150px;
@@ -19,15 +19,18 @@
         flex: 1 1 auto;
     }
 }
-@include b(stages-site) {
+@include b(stages) {
     display: flex;
     justify-content: space-between;    
     flex-direction: row;
-    overflow: hidden;
     width: 100%;
+    &:last-child {
+        margin-right: 0;
+    }
     @include e(row) {
-        width: 277px;
-        height: 345px;
+        width: 24.25%;
+        height: auto;
+        margin-right: 1%;
         background: #ffffff;
         @include m(numeral) {
             width: 20px;
@@ -44,10 +47,12 @@
             margin-left: 24px;
             font-size: 12px;
             line-height: 157%;
+        }
+        @include m(elem) {
             white-space: pre-line;
         }
         @include m(title) {
-            margin: 0;
+            margin: 0 0 25px 0;
             font-size: 24px;
             font-family: 'Gotham Pro Medium';
             line-height: 0;
@@ -55,34 +60,34 @@
     }
 }
 @include respond-to(large) {
-    @include b(section2-site) {
+    @include b(section2) {
         width: calc(100% - 290px);
         margin: 32px 145px;
         @include e(title) {
             padding-left: 60px; 
         }
     }
-    @include b(stages-site) {
+    @include b(stages) {
         @include e(row) {
-            margin-right: 20px;
-            @include m(width) {
-                width: 277px;
-            }
+            height: auto;
+            @include m(elem) {
+                white-space: normal;
+            }    
         }
     }
+    
 }//.large
 @include respond-to(desktop) {
-    @include b(section2-site) {
+    @include b(section2) {
         width: calc(100% - 200px);
         margin: 32px 100px;
         @include e(title) {
             padding-left: 50px; 
         }
     }
-    @include b(stages-site) {
+    @include b(stages) {
         @include e(row) {
-            height: 400px;
-            margin-right: 20px;
+            height: auto;
             @include m(width) {
                 width: 277px;
             }
@@ -90,7 +95,7 @@
     }
 }//.desktop
 @include respond-to(xxlarge) {
-    @include b(section2-site) {
+    @include b(section2) {
         @include e(title) {
             font-size: 19px;
             @include m(big) {
@@ -98,9 +103,8 @@
             }
         }
     }
-    @include b(stages-site) {
+    @include b(stages) {
         @include e(row) {
-            height: 400px;
             @include m(numeral) {
                 font-size: 29px;
                 border: 2px solid #DAE4F8;
