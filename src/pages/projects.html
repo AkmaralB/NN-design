@@ -144,7 +144,7 @@
                 </div>
             </div>
             <div class="section3-projects-other">
-                <a class="section3-projects-button">Загрузить еще</a>
+                <button class="section3-projects-button" onclick="visibilityBlock()">Загрузить еще</button>
 
         <!-- Сюда подгружаются еще проекты, которые открываются при нажатии кнопки "Загрузить еще" -->
                 <div class="section3-projects__items items-open">
@@ -205,4 +205,10 @@
     <footer class="layout__footer">
         {{> _footer }}
     </footer>
+    <script type="text/javascript">
+        function visibilityBlock() {
+            $('.items-open').show();
+            $('.section3-projects-button').hide();
+        }
+    </script>
 </div>
