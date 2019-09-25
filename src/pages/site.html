@@ -153,5 +153,20 @@
     <footer class="layout__footer">
         {{> _footer }}
     </footer>
-
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var chart4 = new Highcharts.Chart('diagram4', {
+                xAxis: {
+                    categories: ['Доверие клиента', 'Узнаваемость', 'Лояльность к бренду']
+                },
+                series: [{
+                    name: 'Сильный бренд',
+                    data: [95, 83, 75]
+                }, {
+                    name: 'Слабый бренд',
+                    data: [23, 23, 23]
+                }],
+            });
+        });
+    </script>
 </div>

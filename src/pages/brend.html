@@ -151,4 +151,20 @@
             {{> _footer }}
         </footer>
 
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var chart = new Highcharts.Chart('diagram', {
+                    xAxis: {
+                        categories: ['Доверие клиента', 'Узнаваемость', 'Лояльность к бренду']
+                    },
+                    series: [{
+                        name: 'Сильный бренд',
+                        data: [87, 68, 77]
+                    }, {
+                        name: 'Слабый бренд',
+                        data: [31, 39, 23]
+                    }],
+                });
+            });
+        </script>
     </div>
