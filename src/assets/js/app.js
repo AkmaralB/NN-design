@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     $(".section4-gm__img--left").resizable({
-        handleSelector: ".section4-gm__img--splitter",
+        handleSelector: ".section4-gm__img--left-splitter",
         resizeHeight: false
     });
     $('.main-mob-top').slick({

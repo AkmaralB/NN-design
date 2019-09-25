@@ -35,6 +35,9 @@
                     height: 350px;
                 }    
             }
+            @include m(left-splitter) {
+                top: 40%;
+            }    
         }
     }    
 }//.landscape
@@ -69,6 +72,9 @@
                     width: 560px;
                     height: 280px;
                 }
+            }
+            @include m(left-splitter) {
+                top: 50%;
             }    
         }
     }
