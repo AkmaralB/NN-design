@@ -60,7 +60,7 @@
             padding: 3%;
             background: #ffffff;
             @include m(img) {
-                display: none;
+                display: none !important;
             }
             @include m(mob-img) {
                 width: 90px;

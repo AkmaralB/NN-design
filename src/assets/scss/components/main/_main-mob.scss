@@ -19,6 +19,20 @@
             width: 100%;
             height: 100%;
         }
+        div {
+            width: 100%;
+            height: 100%;
+        }
+        .slick-dots {
+            bottom: 20px;
+            li {
+                border: 1px solid #ffffff;
+                border-radius: 30px;
+            }
+            .slick-active {
+                background-color: #fff;
+            }
+        }
     }
     @include b(main-mob-bottom) {
         width: 100%;
