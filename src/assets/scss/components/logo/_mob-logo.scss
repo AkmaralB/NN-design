@@ -1,6 +1,7 @@
 @include respond-to(landscape) {
     @include b(section1-logo) {
         width: auto;
+        height: auto;
         margin: 0 60px;;
         @include e(left-panel) {
             display: none;
@@ -33,14 +34,17 @@
             display: none;
         }
         @include e(type) {
-            height: 260px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;    
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3vw;
+            justify-content: space-around;
+            overflow: none;
             width: 100%;
+            height: 100%;
             margin-right: 0;
             margin: 0;
-            overflow: hidden;
+            // overflow: hidden;
         }
         @include e(elem1) {
             &:hover {
@@ -63,25 +67,25 @@
             }
         }
         @include e(elem) {
-            width: 260px;
-            height: 260px;
-            margin-right: 32px;
+            width: 90%;
+            height: 100%;
+            margin: auto;
             border: none;
             text-align: center;
             line-height: 0;
             background-repeat: no-repeat;
-            background-position: 100% 10%;
-            background-size: 100% auto;
+            background-position: 80% 40%;
+            background-size: 90% auto;
             background-color: #ffffff;
+            border: 2px solid #7E92B8;
             &:hover {
                 background-repeat: no-repeat;
-                background-position: 100% 10%;
-                background-size: 100% auto;
+                background-position: 80% 40%;
+                background-size: 90% auto;
                 background-color: #ffffff;     
             }
             @include m(text) {
-                width: 260px;
-                margin-top: 200px;
+                margin-top: 270px;
                 font-size: 26px;
             }
         }
@@ -91,7 +95,11 @@
     @include b(section1-logo) {
         margin: 0 40px;
     }
+    
     @include b(content) {
+        // @include e(inner) {
+        //     height: auto;
+        // }
         @include e(title) {
             @include m(big) {
                 font-size: 48px;
@@ -100,17 +108,17 @@
                 font-size: 28px;
             }
         }
-        @include e(type) {
-            height: 200px;
-        }
+        // @include e(type) {
+        //     height: 200px;
+        // }
         @include e(elem) {
-            width: 200px;
-            height: 200px;
-            margin-right: 15px;
+            // width: 200px;
+            // height: 200px;
+            // margin-right: 15px;
             @include m(text) {
-                width: 200px;
-                margin-top: 160px;
-                font-size: 18px;
+                // width: 200px;
+                margin-top: 200px;
+                font-size: 19px;
             }
         }
     }
@@ -129,17 +137,17 @@
                 font-size: 22px;
             }
         }
-        @include e(type) {
-            height: 150px;
-        }
+        // @include e(type) {
+        //     height: 150px;
+        // }
         @include e(elem) {
-            width: 150px;
-            height: 150px;
-            margin-right: 15px;
+            // width: 150px;
+            // height: 150px;
+            // margin-right: 15px;
             @include m(text) {
-                width: 150px;
-                margin-top: 120px;
-                font-size: 13px;
+                // width: 150px;
+                margin-top: 160px;
+                font-size: 18px;
             }
         }
     }
@@ -154,22 +162,51 @@
                 font-size: 24px;
             }
             @include m(little) {
-                font-size: 14px;
+                font-size: 17px;
             }
         }
-        @include e(type) {
-            height: 96px;
-            margin-bottom: 0;
-        }
+        // @include e(type) {
+        //     height: 96px;
+        //     margin-bottom: 0;
+        // }
         @include e(elem) {
-            width: 96px;
-            height: 96px;
-            margin-right: 8px;
+            // width: 96px;
+            // height: 96px;
+            // margin-right: 8px;
             @include m(text) {
-                width: 96px;
-                margin-top: 80px;
-                font-size: 9px;
+                // width: 96px;
+                margin-top: 120px;
+                font-size: 12px;
             }
         }
     }
 }//.xsmall
+@include respond-to(xxsmall) {
+    @include b(section1-logo) {
+        margin: 0 10px;
+    }
+    @include b(content) {
+        @include e(title) {
+            @include m(big) {
+                font-size: 24px;
+            }
+            @include m(little) {
+                font-size: 17px;
+            }
+        }
+        // @include e(type) {
+        //     height: 96px;
+        //     margin-bottom: 0;
+        // }
+        @include e(elem) {
+            // width: 96px;
+            // height: 96px;
+            // margin-right: 8px;
+            @include m(text) {
+                // width: 96px;
+                margin-top: 100px;
+                font-size: 9px;
+            }
+        }
+    }
+}//.xxsmall

@@ -4,9 +4,20 @@
         @include flex-direction(column);
         width: auto;
         margin: 40px 60px;
-        background: #ffffff;
         @include e(title) {
-            display: none;
+            margin: 30px 0;
+            padding-left: 0; 
+            font-size: 30px;
+            background-color: transparent;
+            color: #BDBDBD;
+            @include m(big) {
+                font-size: 40px;
+                color: #000000;
+                font-family: 'Gotham Pro Bold';
+            }
+            p {
+                margin: 0;
+            }
         }
     }
     @include b(stages) {
@@ -17,7 +28,9 @@
         justify-content: space-around;
         overflow: none;
         width: 100%;
-        margin: 40px auto;
+        margin: 0 auto;
+        padding: 40px 0;
+        background: #ffffff;
         @include e(row) {
             @include flex;
             @include flex-direction(row);
@@ -63,10 +76,17 @@
 }//.landscape
 @include respond-to(medium) {
     @include b(section2) {
-        margin: 40px;
+        margin: 30px 40px 20px;
+        @include e(title) {
+            margin: 20px 0;
+            font-size: 24px;
+            @include m(big) {
+                font-size: 32px;
+            }
+        }
     }
     @include b(stages) {
-        margin: 40px auto;
+        margin: 0 auto;
         @include e(row) {
             width: 260px;
             height: 60px;
@@ -83,10 +103,17 @@
 }//.medium
 @include respond-to(small) {
     @include b(section2) {
-        margin: 30px;
+        margin: 30px 30px 20px;
+        @include e(title) {
+            margin: 10px 0;
+            font-size: 19px;
+            @include m(big) {
+                font-size: 25px;
+            }
+        }
     }
     @include b(stages) {
-        margin: 30px auto;
+        margin: 0 auto;
         @include e(row) {
             width: 200px;
             height: 50px;
@@ -104,10 +131,15 @@
 }//.small
 @include respond-to(xsmall) {
     @include b(section2) {
-        margin: 20px 16px;
+        margin: 25px 16px 15px;
+        @include e(title) {
+            font-size: 12px;
+            @include m(big) {
+                font-size: 16px;
+            }
+        }
     }
     @include b(stages) {
-        margin: 25px auto;
         @include e(row) {
             width: 138px;
             height: 32px;
@@ -125,7 +157,6 @@
 }//.xsmall
 @include respond-to(xxsmall) {
     @include b(stages) {
-        margin: 25px auto;
         @include e(row) {
             width: 90%;
             height: 32px;

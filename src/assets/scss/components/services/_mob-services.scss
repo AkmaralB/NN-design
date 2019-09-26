@@ -1,11 +1,11 @@
 @include respond-to(landscape) {
-    @include b(rows) {
-        @include e(row) {
-            @include m(mob-img) {
-                display: block;
-            }
-        }
+    @include b(rows-desktop) {
+        display: none !important;
     }
+    @include b(rows-mob) {
+        display: block;
+    }
+
     @include b(section1-services) {
         width: auto;
         margin: auto 60px;
@@ -41,7 +41,7 @@
             display: none;
         }
     }
-    @include b(rows) {
+    @include b(rows-mob) {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -59,9 +59,6 @@
             margin-bottom: 0;
             padding: 3%;
             background: #ffffff;
-            @include m(img) {
-                display: none !important;
-            }
             @include m(mob-img) {
                 width: 90px;
                 height: 90px;
@@ -79,15 +76,6 @@
                 font-size: 25px;
                 line-height: 1em;
                 color: #222222;
-            }
-            @include m(title2) {
-                display: none;
-            }
-            @include m(mob-title2) {
-                display: block;
-            }
-            @include m(button) {
-                display: none;
             }
         }
     }    
@@ -108,7 +96,7 @@
             }
         }
     }
-    @include b(rows) {
+    @include b(rows-mob) {
         grid-gap: 1vw;
 
         @include e(row) {
@@ -145,7 +133,7 @@
             }
         }
     }
-    @include b(rows) {
+    @include b(rows-mob) {
         @include e(row) {
             // width: 150px;
             height: 80%;
@@ -181,7 +169,7 @@
             }
         }
     }
-    @include b(rows) {
+    @include b(rows-mob) {
         @include flex-direction(column);
         align-items: center;
         text-align: center;
@@ -225,7 +213,7 @@
             }
         }
     }
-    @include b(rows) {
+    @include b(rows-mob) {
         @include e(row) {
             @include flex-direction(column);
             @include m(mob-img) {
@@ -252,7 +240,7 @@
             }
         }
     }
-    @include b(rows) {
+    @include b(rows-mob) {
         @include flex-direction(column);
         align-items: center;
         text-align: center;

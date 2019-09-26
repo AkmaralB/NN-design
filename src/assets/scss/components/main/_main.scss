@@ -31,28 +31,6 @@
         font-family: 'Gotham Pro Bold';
         color: #7E92B8;
     }
-    @include e(arrow) {
-        display: block;
-        @include flex;
-        @include flex-direction(row);
-        justify-content: baseline;
-        @include m(elem) {
-            display: block;
-            height: 24px;
-            margin-right: 20px;
-            padding: 8px 10px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 100%;    
-            font-size: 18px;
-            font-family: Arial;
-            color:  rgba(255, 255, 255, 0.5);
-            &:hover {
-                cursor: pointer;
-                border: 1px solid #ffffff;
-                color:  #ffffff;
-            }
-        }
-    }//.arrow
     @include e(left-panel) {
         @include flex;
         position: absolute;
@@ -154,11 +132,28 @@
         left: 45px;  
     }
     .slick-next {
-        left: 95px;
+        left: 100px;
     }
     .slick-prev, .slick-next {
         z-index: 999;
-        top: 94%;
+        top: 90%;
+        &::before {
+            width: 24px;
+            height: 24px;
+            padding: 5px 10px;
+            border: 3px solid #222222;
+            border-radius: 100%;    
+            font-size: 30px;
+            font-weight: bolder;
+            color:  #222222;
+        }
+    }
+    .slick-prev:hover, .slick-next:hover {
+        &::before {
+            cursor: pointer;
+            border: 3px solid #ffffff;
+            color:  #ffffff;
+        }
     }
 }//.main-right
 @include respond-to(desktop) {
@@ -273,12 +268,6 @@
         }
         @include e(number) {
             font-size: 48px;
-        }
-        @include e(arrow) {
-            @include m(elem) {
-                padding: 13px 16px;
-                font-size: 24px;
-            }
         }
     }
 }//.xxlarge

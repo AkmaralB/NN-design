@@ -171,6 +171,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
             var chart2 = new Highcharts.Chart('diagram2', {
+                title: {
+                    text: '',
+                    style: {
+                        display: 'none'
+                    }
+                },
                 xAxis: {
                     categories: ['Доверие клиента', 'Узнаваемость', 'Лояльность к бренду']
                 },

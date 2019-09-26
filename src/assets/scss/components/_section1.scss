@@ -4,6 +4,7 @@
     width: 1440px;
     height: 557px;
     margin: 0 auto 72px;
+    // overflow: hidden;
     @include e(left-panel) {
         @include flex;
         flex: 0 0 145px;
@@ -13,6 +14,11 @@
         flex: 0 0 1150px;
         width: 1150px;
         height: 100%;
+        @include m(img1) {
+            width: 100%;
+            height: 100%;
+        }
+
     }
     @include e(right-panel) {
         flex: 0 0 145px;
@@ -20,6 +26,7 @@
 }
 @include b(section1_causel) {
     width: 100%;
+    // overflow: hidden;
     @include e(img) {
         height: 100%;
         div {
@@ -31,33 +38,76 @@
             height: 100%;
         }
     }
-    .slick-prev {
-        left: 50%;  
+    // .slick-prev {
+    //     left: 50%;  
+    // }
+    // .slick-next {
+    //     left: 55%;
+    // }
+    // .slick-prev, .slick-next {
+    //     z-index: 999;
+    //     top: 105%;
+    //     &::before {
+    //         width: 24px;
+    //         height: 24px;
+    //         padding: 5px 10px;
+    //         border: 3px solid #7E92B8;
+    //         border-radius: 100%;    
+    //         font-size: 30px;
+    //         font-weight: bolder;
+    //         color:  #7E92B8;
+    //     }
+    // }
+    // .slick-prev:hover, .slick-next:hover {
+    //     &::before {
+    //         cursor: pointer;
+    //         border: 3px solid #222222;
+    //         color:  #222222;
+    //     }
+    // }
+    div {
+        width: 100%;
+        height: 100%;
     }
-    .slick-next {
-        left: 55%;
+    .slick-dots {
+        bottom: 20px;
+        li {
+            border: 1px solid #ffffff;
+            border-radius: 30px;
+        }
+        .slick-active {
+            background-color: #fff;
+        }
     }
-    .slick-prev, .slick-next {
-        z-index: 999;
-        top: 105%;
-    }
+
 }
 @include respond-to(large) {
     @include b(section1) {
-        width: 100%;
-    }
+        width: auto;
+        // height: 440px;
+        margin: 0 auto 10px;
+        @include e(img) {
+            flex: 0 0 calc(100% - 290px);
+            width: calc(100% - 290px);
+        }    
+    }    
 }
 @include respond-to(desktop) {
     @include b(section1) {
-        width: 100%;
+        width: auto;
         // height: 440px;
         margin: 0 auto 10px;
         @include e(left-panel) {
             flex: 0 0 100px;
             width: 100px;
         }   
+        @include e(img) {
+            flex: 0 0 calc(100% - 200px);
+            width: calc(100% - 200px);
+        }    
         @include e(right-panel) {
             flex: 0 0 100px;
+            width: 100px;
         }
     }    
 }

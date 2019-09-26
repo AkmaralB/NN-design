@@ -18,6 +18,19 @@
         border-right: 3px solid #333333;
     }
 }//.right-panel
+@include respond-to(large) {
+    @include b(right-panel) {
+        margin-left: 80px;
+        @include e(icon) {
+            margin-bottom: 20px;
+        }
+        @include e(divider) {
+            // height: 300px;
+            margin-left: 5px;
+            border-right: 2px solid #333333;
+        }
+    }
+}//.desktop
 @include respond-to(desktop) {
     @include b(right-panel) {
         margin-left: 60px;

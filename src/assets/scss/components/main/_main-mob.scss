@@ -10,10 +10,13 @@
         width: 100%;
         margin: 0 auto;
         background: #ffffff;
+        @include e(header) {
+            z-index: 9999;
+        }
     }
     @include b(main-mob-top) {
         width: 100%;
-        height: 50vh;
+        height: auto;
         overflow: hidden;
         @include e(img) {
             width: 100%;
@@ -97,6 +100,9 @@
 }
 
 @include respond-to(medium) { 
+    @include b(main-mob-top) {
+        // height: 50vh;
+    }
     @include b(main-mob-pointer) {
         width: 180px;
         height: 25px;
