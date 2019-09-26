@@ -1,5 +1,5 @@
 @include respond-to(landscape) {
-    @include b(section2) {
+    @include b(section2-stages) {
         @include flex;
         @include flex-direction(column);
         width: auto;
@@ -75,7 +75,7 @@
     }
 }//.landscape
 @include respond-to(medium) {
-    @include b(section2) {
+    @include b(section2-stages) {
         margin: 30px 40px 20px;
         @include e(title) {
             margin: 20px 0;
@@ -102,7 +102,7 @@
     }
 }//.medium
 @include respond-to(small) {
-    @include b(section2) {
+    @include b(section2-stages) {
         margin: 30px 30px 20px;
         @include e(title) {
             margin: 10px 0;
@@ -130,7 +130,7 @@
     }
 }//.small
 @include respond-to(xsmall) {
-    @include b(section2) {
+    @include b(section2-stages) {
         margin: 25px 16px 15px;
         @include e(title) {
             font-size: 12px;

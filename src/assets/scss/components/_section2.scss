@@ -2,14 +2,15 @@
     @include flex;
     @include flex-direction(column);
     width: 1150px;
-    margin: 0 auto;
+    margin: 0 auto 0;
     background: #ffffff;
     @include e(text) {
         flex: 0 0 auto;
         width: 714px;
+        margin-top: 40px;
         margin-left: 76px;
         @include m(item1) {
-            margin-top: 0px;
+            // margin-top: 0px;
             margin-bottom: 48px;
             font-size: 32px;
             font-family: 'Gotham Pro Black';
@@ -37,13 +38,13 @@
 @include respond-to(large) {
     @include b(section2) {
         width: auto;
-        margin: 0 145px;
+        margin: 50px 145px 0;
     }
 }//.large
 @include respond-to(desktop) {
     @include b(section2) {
         width: auto;
-        margin: 0 100px;
+        margin: 40px 100px 0;
     }
 }//.desktop
 @include respond-to(xxlarge) {
