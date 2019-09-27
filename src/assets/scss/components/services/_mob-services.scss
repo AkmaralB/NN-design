@@ -51,6 +51,7 @@
         width: 100%;
         margin: 40px auto;
         @include e(row) {
+            position: relative;
             @include flex;
             @include flex-direction(row);
             width: 90%;
@@ -64,6 +65,7 @@
                 height: 90px;
             }
             @include m(text) {
+                height: 80%;
                 margin-left: 10px;
                 font-size: 20px;
                 white-space: normal;
@@ -73,9 +75,24 @@
                 }
             }
             @include m(title) {
+                font-family: 'Gotham Pro Medium';
                 font-size: 25px;
                 line-height: 1em;
                 color: #222222;
+            }
+            // @include m(button) {
+            //     position: absolute;
+            //     bottom: 0;
+            //     font-family: 'Gotham Pro Bold';
+            //     font-size: 12px;
+            //     text-transform: uppercase;
+            //     text-decoration: none;
+            //     color: #7E92B8;
+            // }
+            @include m(icon) {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
             }
         }
     }    
@@ -145,7 +162,7 @@
             @include m(text) {
                 height: auto;
                 margin-left: 15px;
-                font-size: 13px;
+                font-size: 12px;
             }
             @include m(title) {
                 font-size: 19px;
@@ -189,7 +206,7 @@
             }
             @include m(text) {
                 margin-left: 8px;
-                font-size: 11px;
+                font-size: 10px;
             }
             @include m(title) {
                 font-size: 15px;
@@ -221,6 +238,11 @@
                 height: 40px;
                 // margin: auto;
             }
+            @include m(icon) {
+                top: 5px;
+                right: 5px;
+            }
+
         }
     }    
 }//.xlsmall
@@ -260,7 +282,7 @@
             }
             @include m(text) {
                 margin-left: 8px;
-                font-size: 10px;
+                font-size: 8px;
             }
             @include m(title) {
                 font-size: 13px;
