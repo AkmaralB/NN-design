@@ -28,7 +28,7 @@ To use this template, your computer needs:
 To manually set up the template, first download it with Git:
 
 ```bash
-git clone https://gitlab.com/M3etis/boilerplate.git
+git clone https://github.com/AkmaralB/NN-design/commits/master
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
